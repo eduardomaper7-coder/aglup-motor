@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Panel de gestión · AGLUP MOTOR</title>
+<style>
+  :root {
+    --rojo: #a60510;
+    --naranja: #d35400;
+    --gris-bg: #f4f5f7;
+    --gris-borde: #dcdfe4;
+    --texto: #22262b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--gris-bg);
+    color: var(--texto);
+  }
+  header.top {
+    background: #111417;
+    color: #fff;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header.top h1 { font-size: 18px; margin: 0; font-weight: 700; }
+  header.top .estado { font-size: 13px; opacity: .8; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+  /* Login */
+  .login-box {
+    max-width: 360px;
+    margin: 80px auto;
+    background: #fff;
+    border: 1px solid var(--gris-borde);
+    border-radius: 10px;
+    padding: 32px;
+    text-align: center;
+  }
+  .login-box h2 { margin-top: 0; }
+  .login-box input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border: 1px solid var(--gris-borde);
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .btn-primario { background: var(--rojo); color: #fff; }
+  .btn-primario:hover { background: #8a040d; }
+  .btn-secundario { background: #fff; border: 1px solid var(--gris-borde) !important; color: var(--texto); }
+  .btn-secundario:hover { background: #eee; }
+  .btn-peligro { background: #fff; color: var(--rojo); border: 1px solid var(--rojo) !important; }
+  .btn-peligro:hover { background: #fdecec; }
+  .btn-mini { padding: 5px 10px; font-size: 12px; }
+  button:disabled { opacity: .5; cursor: default; }
+
+  .barra-acciones { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+
+  .lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .tarjeta {
+    background: #fff;
+    border: 1px solid var(--gris-borde);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .tarjeta.vendido { opacity: .6; }
+  .tarjeta .foto {
+    height: 150px;
+    background: #e8e9ec center/cover no-repeat;
+    position: relative;
+  }
+  .badge {
+    position: absolute; top: 8px; left: 8px;
+    color: #fff; font-size: 11px; font-weight: 800;
+    text-transform: uppercase; padding: 4px 8px; border-radius: 4px;
+  }
+  .badge.vendido { background: var(--rojo); }
+  .badge.reservado { background: var(--naranja); }
+  .tarjeta .cuerpo { padding: 12px 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .tarjeta h3 { font-size: 15px; margin: 0; }
+  .tarjeta .precio { color: var(--rojo); font-weight: 800; font-size: 16px; }
+  .tarjeta .meta { font-size: 12px; color: #666; }
+  .tarjeta .acciones { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
+
+  /* Formulario */
+  .overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,.45);
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 30px 16px; overflow-y: auto; z-index: 50;
+  }
+  .panel-form {
+    background: #fff; border-radius: 10px; padding: 28px;
+    max-width: 720px; width: 100%;
+  }
+  .panel-form h2 { margin-top: 0; }
+  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+  .fila.uno { grid-template-columns: 1fr; }
+  label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  input[type=text], input[type=number], select, textarea {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--gris-borde);
+    border-radius: 6px; font-size: 14px;
+  }
+  textarea { resize: vertical; min-height: 50px; }
+  .checks { display: flex; gap: 14px; flex-wrap: wrap; }
+  .checks label { display: flex; align-items: center; gap: 6px; font-weight: 400; }
+  .separador { border: none; border-top: 1px solid var(--gris-borde); margin: 20px 0; }
+  .dropzone {
+    border: 2px dashed var(--gris-borde); border-radius: 8px; padding: 20px;
+    text-align: center; color: #666; cursor: pointer; margin-bottom: 12px;
+  }
+  .dropzone.dragover { border-color: var(--rojo); background: #fff4f4; }
+  .fotos-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+  .foto-item { position: relative; width: 90px; height: 90px; border-radius: 6px; overflow: hidden; border: 1px solid var(--gris-borde); }
+  .foto-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .foto-item button { position: absolute; top: 2px; right: 2px; background: rgba(0,0,0,.6); color: #fff; padding: 2px 6px; font-size: 11px; border-radius: 4px; }
+  .foto-item .mover { position: absolute; bottom: 2px; left: 2px; display: flex; gap: 2px; }
+  .foto-item .mover button { position: static; background: rgba(0,0,0,.6); }
+  .form-acciones { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+  .aviso { font-size: 13px; padding: 10px 12px; border-radius: 6px; margin-bottom: 14px; }
+  .aviso.error { background: #fdecec; color: var(--rojo); }
+  .aviso.ok { background: #eafaf0; color: #1c7c3f; }
+  .cargando { font-size: 13px; color: #666; }
+  .vacio { text-align: center; padding: 60px 20px; color: #888; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>AGLUP MOTOR · Panel de gestión</h1>
+  <div class="estado" id="estadoTop"></div>
+</header>
+
+<main>
+  <div id="zonaLogin" style="display:none">
+    <div class="login-box">
+      <h2>Acceso</h2>
+      <p>Introduce la contraseña del panel.</p>
+      <input type="password" id="inputPassword" placeholder="Contraseña" />
+      <div id="loginError" class="aviso error" style="display:none"></div>
+      <button class="btn-primario" style="width:100%" id="btnLogin">Entrar</button>
+    </div>
+  </div>
+
+  <div id="zonaPanel" style="display:none">
+    <div class="barra-acciones">
+      <div id="avisoGlobal"></div>
+      <button class="btn-primario" id="btnNuevo">+ Añadir vehículo</button>
+    </div>
+    <div id="lista" class="lista"></div>
+  </div>
+</main>
+
+<div class="overlay" id="overlayForm" style="display:none">
+  <div class="panel-form">
+    <h2 id="tituloForm">Nuevo vehículo</h2>
+    <div id="avisoForm"></div>
+
+    <div class="fila">
+      <div>
+        <label>Marca</label>
+        <input type="text" id="fMarca" placeholder="Audi" />
+      </div>
+      <div>
+        <label>Modelo</label>
+        <input type="text" id="fModelo" placeholder="A1 Adrenalin" />
+      </div>
+    </div>
+
+    <div class="fila uno">
+      <div>
+        <label>Título completo (se muestra tal cual en la web)</label>
+        <input type="text" id="fTitulo" placeholder="Audi A1 Adrenalin" />
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label>Precio (€, sin el símbolo)</label>
+        <input type="text" id="fPrecio" placeholder="11.000" />
+      </div>
+      <div>
+        <label>Categoría</label>
+        <select id="fCategoria">
+          <option value="ocasion">Ocasión</option>
+          <option value="segunda-mano">Segunda mano</option>
+          <option value="seminuevo">Seminuevo</option>
+          <option value="sin-categorizar">Sin categorizar</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label>Año de matriculación</label>
+        <input type="text" id="fAnio" placeholder="2019" />
+      </div>
+      <div>
+        <label>Kilómetros</label>
+        <input type="text" id="fKm" placeholder="120000 km" />
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label>Potencia</label>
+        <input type="text" id="fPotencia" placeholder="150 CV" />
+      </div>
+      <div>
+        <label>Puertas</label>
+        <input type="text" id="fPuertas" placeholder="5" />
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label>Carrocería</label>
+        <select id="fCarroceria">
+          <option value="berlina">Berlina</option>
+          <option value="cabrio">Cabrio</option>
+          <option value="compacto">Compacto</option>
+          <option value="coupe">Coupé</option>
+          <option value="familiar">Familiar</option>
+          <option value="furgoneta">Furgoneta</option>
+          <option value="monovolumen">Monovolumen</option>
+          <option value="pickup">Pickup</option>
+          <option value="suv">SUV</option>
+        </select>
+      </div>
+      <div>
+        <label>Cambio</label>
+        <select id="fCambio">
+          <option value="manual">Manual</option>
+          <option value="automatico">Automático</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="fila uno">
+      <label>Combustible</label>
+      <div class="checks">
+        <label><input type="checkbox" value="gasolina" class="fCombustible" /> Gasolina</label>
+        <label><input type="checkbox" value="diesel" class="fCombustible" /> Diésel</label>
+        <label><input type="checkbox" value="hibrido" class="fCombustible" /> Híbrido</label>
+        <label><input type="checkbox" value="electrico" class="fCombustible" /> Eléctrico</label>
+        <label><input type="checkbox" value="glp" class="fCombustible" /> GLP</label>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label>Etiqueta medioambiental DGT</label>
+        <select id="fEtiquetaDgt">
+          <option value="">Sin etiqueta</option>
+          <option value="etiqueta-0">0 Emisiones</option>
+          <option value="etiqueta-eco">ECO</option>
+          <option value="etiqueta-c">C</option>
+          <option value="etiqueta-b">B</option>
+        </select>
+      </div>
+      <div>
+        <label>Garantía (texto libre)</label>
+        <input type="text" id="fGarantia" placeholder="Garantía incluida: 12 meses" />
+      </div>
+    </div>
+
+    <div class="fila uno">
+      <div class="checks">
+        <label><input type="checkbox" id="fVendido" /> Vendido (se moverá al final del listado)</label>
+        <label><input type="checkbox" id="fReservado" /> Reservado</label>
+      </div>
+    </div>
+
+    <hr class="separador" />
+    <label>Fotos</label>
+    <div class="dropzone" id="dropzone">
+      Arrastra fotos aquí o haz clic para elegirlas (se comprimen automáticamente)
+    </div>
+    <input type="file" id="inputFotos" accept="image/*" multiple style="display:none" />
+    <div class="fotos-grid" id="fotosGrid"></div>
+
+    <div class="form-acciones">
+      <button class="btn-secundario" id="btnCancelar">Cancelar</button>
+      <button class="btn-primario" id="btnGuardar">Guardar y publicar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+let password = sessionStorage.getItem('aglup_admin_password') || '';
+let datos = { categorias: {}, vehiculos: [] };
+let editandoSlug = null; // null = nuevo vehiculo
+let fotosActuales = []; // array de URLs (string)
+let subiendoFoto = false;
+
+function slugify(s) {
+  return String(s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+function apiFetch(url, options = {}) {
+  return fetch(url, {
+    ...options,
+    headers: {
+      'Content-Type': 'application/json',
+      'x-admin-password': password,
+      ...(options.headers || {}),
+    },
+  });
+}
+
+// ---------- LOGIN ----------
+async function intentarLogin() {
+  const pass = $('inputPassword').value;
+  $('loginError').style.display = 'none';
+  password = pass;
+  const res = await apiFetch('/api/vehiculos');
+  if (res.status === 401) {
+    $('loginError').textContent = 'Contraseña incorrecta.';
+    $('loginError').style.display = 'block';
+    password = '';
+    return;
+  }
+  if (!res.ok) {
+    $('loginError').textContent = 'Error de conexión con el servidor.';
+    $('loginError').style.display = 'block';
+    return;
+  }
+  sessionStorage.setItem('aglup_admin_password', pass);
+  datos = await res.json();
+  mostrarPanel();
+}
+
+$('btnLogin').addEventListener('click', intentarLogin);
+$('inputPassword').addEventListener('keydown', (e) => { if (e.key === 'Enter') intentarLogin(); });
+
+function mostrarPanel() {
+  $('zonaLogin').style.display = 'none';
+  $('zonaPanel').style.display = 'block';
+  renderLista();
+}
+
+async function cargarDatos() {
+  const res = await apiFetch('/api/vehiculos');
+  if (res.status === 401) {
+    sessionStorage.removeItem('aglup_admin_password');
+    password = '';
+    $('zonaLogin').style.display = 'block';
+    $('zonaPanel').style.display = 'none';
+    return;
+  }
+  datos = await res.json();
+  renderLista();
+}
+
+// ---------- LISTADO ----------
+function ordenar(vehiculos) {
+  return vehiculos.slice().sort((a, b) => {
+    const va = a.vendido ? 1 : 0, vb = b.vendido ? 1 : 0;
+    if (va !== vb) return va - vb;
+    return (a.orden || 0) - (b.orden || 0);
+  });
+}
+
+function renderLista() {
+  const cont = $('lista');
+  const vehiculos = ordenar(datos.vehiculos || []);
+  if (vehiculos.length === 0) {
+    cont.innerHTML = '<div class="vacio">Todavía no hay vehículos. Pulsa "Añadir vehículo" para crear el primero.</div>';
+    return;
+  }
+  cont.innerHTML = '';
+  for (const v of vehiculos) {
+    const foto = (v.fotos && v.fotos[0]) || '';
+    const div = document.createElement('div');
+    div.className = 'tarjeta' + (v.vendido ? ' vendido' : '');
+    div.innerHTML = `
+      <div class="foto" style="background-image:url('${foto}')">
+        ${v.vendido ? '<span class="badge vendido">Vendido</span>' : (v.reservado ? '<span class="badge reservado">Reservado</span>' : '')}
+      </div>
+      <div class="cuerpo">
+        <h3>${escapeHtml(v.titulo)}</h3>
+        <div class="precio">${escapeHtml(v.precio || '')} €</div>
+        <div class="meta">${escapeHtml(v.anio || '')} · ${escapeHtml(v.km || '')} · ${escapeHtml(v.potencia || '')}</div>
+        <div class="acciones">
+          <button class="btn-secundario btn-mini" data-accion="editar">Editar</button>
+          <button class="btn-secundario btn-mini" data-accion="vendido">${v.vendido ? 'Quitar vendido' : 'Marcar vendido'}</button>
+          <button class="btn-secundario btn-mini" data-accion="reservado">${v.reservado ? 'Quitar reserva' : 'Reservar'}</button>
+          <button class="btn-peligro btn-mini" data-accion="eliminar">Eliminar</button>
+        </div>
+      </div>
+    `;
+    div.querySelector('[data-accion=editar]').addEventListener('click', () => abrirFormulario(v));
+    div.querySelector('[data-accion=vendido]').addEventListener('click', () => toggleCampo(v, 'vendido'));
+    div.querySelector('[data-accion=reservado]').addEventListener('click', () => toggleCampo(v, 'reservado'));
+    div.querySelector('[data-accion=eliminar]').addEventListener('click', () => eliminarVehiculo(v));
+    cont.appendChild(div);
+  }
+}
+
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+async function toggleCampo(vehiculo, campo) {
+  mostrarAviso('avisoGlobal', 'Guardando y publicando cambios (puede tardar ~1 minuto en verse en la web)...', 'ok');
+  const actualizado = { ...vehiculo, [campo]: !vehiculo[campo] };
+  const res = await apiFetch('/api/vehiculos', { method: 'POST', body: JSON.stringify({ vehiculo: actualizado }) });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    mostrarAviso('avisoGlobal', 'Error: ' + (err.error || res.status), 'error');
+    return;
+  }
+  mostrarAviso('avisoGlobal', 'Guardado. Vercel está desplegando los cambios.', 'ok');
+  await cargarDatos();
+}
+
+async function eliminarVehiculo(vehiculo) {
+  if (!confirm(`¿Eliminar "${vehiculo.titulo}"? Esta acción no se puede deshacer.`)) return;
+  mostrarAviso('avisoGlobal', 'Eliminando...', 'ok');
+  const res = await apiFetch('/api/vehiculos?slug=' + encodeURIComponent(vehiculo.slug), { method: 'DELETE' });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    mostrarAviso('avisoGlobal', 'Error: ' + (err.error || res.status), 'error');
+    return;
+  }
+  mostrarAviso('avisoGlobal', 'Eliminado. Vercel está desplegando los cambios.', 'ok');
+  await cargarDatos();
+}
+
+function mostrarAviso(elId, texto, tipo) {
+  const el = $(elId);
+  el.innerHTML = `<div class="aviso ${tipo}">${escapeHtml(texto)}</div>`;
+  if (elId === 'avisoGlobal') setTimeout(() => { if (el.innerHTML.includes(texto)) el.innerHTML = ''; }, 6000);
+}
+
+// ---------- FORMULARIO ----------
+$('btnNuevo').addEventListener('click', () => abrirFormulario(null));
+$('btnCancelar').addEventListener('click', cerrarFormulario);
+
+function abrirFormulario(vehiculo) {
+  editandoSlug = vehiculo ? vehiculo.slug : null;
+  $('tituloForm').textContent = vehiculo ? 'Editar vehículo' : 'Nuevo vehículo';
+  $('avisoForm').innerHTML = '';
+
+  $('fMarca').value = vehiculo?.marca || '';
+  $('fModelo').value = vehiculo?.modelo || '';
+  $('fTitulo').value = vehiculo?.titulo || '';
+  $('fPrecio').value = vehiculo?.precio || '';
+  $('fCategoria').value = vehiculo?.categoria || 'ocasion';
+  $('fAnio').value = vehiculo?.anio || '';
+  $('fKm').value = vehiculo?.km || '';
+  $('fPotencia').value = vehiculo?.potencia || '';
+  $('fPuertas').value = vehiculo?.puertas || '';
+  $('fCarroceria').value = vehiculo?.carroceria || 'suv';
+  $('fCambio').value = vehiculo?.cambio || 'manual';
+  $('fEtiquetaDgt').value = vehiculo?.etiquetaDgt || '';
+  $('fGarantia').value = vehiculo?.garantiaTexto || 'Garantía incluida: 12 meses';
+  $('fVendido').checked = !!vehiculo?.vendido;
+  $('fReservado').checked = !!vehiculo?.reservado;
+
+  const combustiblesActivos = (vehiculo?.combustibles || []).map((c) => c.slug);
+  document.querySelectorAll('.fCombustible').forEach((cb) => {
+    cb.checked = combustiblesActivos.includes(cb.value);
+  });
+
+  fotosActuales = vehiculo ? [...(vehiculo.fotos || [])] : [];
+  renderFotos();
+
+  $('overlayForm').style.display = 'flex';
+}
+
+function cerrarFormulario() {
+  $('overlayForm').style.display = 'none';
+}
+
+const textoCombustible = {
+  gasolina: 'Gasolina', diesel: 'Diésel', hibrido: 'Híbrido', electrico: 'Eléctrico', glp: 'GLP',
+};
+const textoCarroceria = {
+  berlina: 'Berlina', cabrio: 'Cabrio', compacto: 'Compacto', coupe: 'Coupé', familiar: 'Familiar',
+  furgoneta: 'Furgoneta', monovolumen: 'Monovolumen', pickup: 'Pickup', suv: 'SUV',
+};
+const textoCambio = { manual: 'Manual', automatico: 'Automático' };
+
+function recogerFormulario() {
+  const combustibles = Array.from(document.querySelectorAll('.fCombustible'))
+    .filter((cb) => cb.checked)
+    .map((cb) => ({ slug: cb.value, texto: textoCombustible[cb.value] }));
+
+  const carroceria = $('fCarroceria').value;
+  const cambio = $('fCambio').value;
+
+  return {
+    slug: editandoSlug || slugify($('fTitulo').value),
+    marca: $('fMarca').value.trim(),
+    modelo: $('fModelo').value.trim(),
+    titulo: $('fTitulo').value.trim(),
+    precio: $('fPrecio').value.trim(),
+    categoria: $('fCategoria').value,
+    anio: $('fAnio').value.trim(),
+    km: $('fKm').value.trim(),
+    potencia: $('fPotencia').value.trim(),
+    puertas: $('fPuertas').value.trim(),
+    carroceria,
+    carroceriaTexto: textoCarroceria[carroceria],
+    cambio,
+    cambioTexto: textoCambio[cambio],
+    combustibles,
+    etiquetaDgt: $('fEtiquetaDgt').value,
+    garantiaTexto: $('fGarantia').value.trim(),
+    vendido: $('fVendido').checked,
+    reservado: $('fReservado').checked,
+    fotos: fotosActuales,
+  };
+}
+
+$('btnGuardar').addEventListener('click', async () => {
+  const vehiculo = recogerFormulario();
+  if (!vehiculo.titulo) {
+    mostrarAviso('avisoForm', 'El título es obligatorio.', 'error');
+    return;
+  }
+  if (subiendoFoto) {
+    mostrarAviso('avisoForm', 'Espera a que terminen de subirse las fotos.', 'error');
+    return;
+  }
+  $('btnGuardar').disabled = true;
+  mostrarAviso('avisoForm', 'Guardando y publicando (puede tardar ~1 minuto en verse en la web)...', 'ok');
+  const res = await apiFetch('/api/vehiculos', { method: 'POST', body: JSON.stringify({ vehiculo }) });
+  $('btnGuardar').disabled = false;
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    mostrarAviso('avisoForm', 'Error: ' + (err.error || res.status), 'error');
+    return;
+  }
+  cerrarFormulario();
+  mostrarAviso('avisoGlobal', 'Guardado. Vercel está desplegando los cambios.', 'ok');
+  await cargarDatos();
+});
+
+// ---------- FOTOS ----------
+function renderFotos() {
+  const cont = $('fotosGrid');
+  cont.innerHTML = '';
+  fotosActuales.forEach((url, i) => {
+    const div = document.createElement('div');
+    div.className = 'foto-item';
+    div.innerHTML = `
+      <img src="${url}" />
+      <button data-i="${i}" data-accion="quitar">✕</button>
+      <div class="mover">
+        <button data-i="${i}" data-accion="izq">◀</button>
+        <button data-i="${i}" data-accion="der">▶</button>
+      </div>
+    `;
+    cont.appendChild(div);
+  });
+  cont.querySelectorAll('[data-accion=quitar]').forEach((b) => b.addEventListener('click', () => {
+    fotosActuales.splice(Number(b.dataset.i), 1);
+    renderFotos();
+  }));
+  cont.querySelectorAll('[data-accion=izq]').forEach((b) => b.addEventListener('click', () => {
+    const i = Number(b.dataset.i);
+    if (i > 0) { [fotosActuales[i-1], fotosActuales[i]] = [fotosActuales[i], fotosActuales[i-1]]; renderFotos(); }
+  }));
+  cont.querySelectorAll('[data-accion=der]').forEach((b) => b.addEventListener('click', () => {
+    const i = Number(b.dataset.i);
+    if (i < fotosActuales.length - 1) { [fotosActuales[i+1], fotosActuales[i]] = [fotosActuales[i], fotosActuales[i+1]]; renderFotos(); }
+  }));
+}
+
+$('dropzone').addEventListener('click', () => $('inputFotos').click());
+$('dropzone').addEventListener('dragover', (e) => { e.preventDefault(); $('dropzone').classList.add('dragover'); });
+$('dropzone').addEventListener('dragleave', () => $('dropzone').classList.remove('dragover'));
+$('dropzone').addEventListener('drop', (e) => {
+  e.preventDefault();
+  $('dropzone').classList.remove('dragover');
+  subirArchivos(e.dataTransfer.files);
+});
+$('inputFotos').addEventListener('change', (e) => subirArchivos(e.target.files));
+
+function comprimirImagen(file, maxAncho = 1600, calidad = 0.82) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const reader = new FileReader();
+    reader.onload = () => { img.src = reader.result; };
+    reader.onerror = reject;
+    img.onload = () => {
+      const escala = Math.min(1, maxAncho / img.width);
+      const w = Math.round(img.width * escala);
+      const h = Math.round(img.height * escala);
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      const dataUrl = canvas.toDataURL('image/jpeg', calidad);
+      resolve(dataUrl.split(',')[1]);
+    };
+    img.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+async function subirArchivos(files) {
+  if (!editandoSlug) {
+    // Vehículo nuevo: aseguramos un slug estable antes de subir fotos.
+    const base = slugify($('fTitulo').value);
+    if (!base) {
+      mostrarAviso('avisoForm', 'Escribe primero el título del vehículo para poder subir fotos.', 'error');
+      return;
+    }
+    editandoSlug = base + '-' + Date.now().toString(36).slice(-4);
+  }
+  subiendoFoto = true;
+  mostrarAviso('avisoForm', `Subiendo ${files.length} foto(s)...`, 'ok');
+  for (const file of Array.from(files)) {
+    try {
+      const base64 = await comprimirImagen(file);
+      const res = await apiFetch('/api/upload', {
+        method: 'POST',
+        body: JSON.stringify({ slug: editandoSlug, filename: file.name, contentType: 'image/jpeg', dataBase64: base64 }),
+      });
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error || res.status);
+      fotosActuales.push(json.url);
+      renderFotos();
+    } catch (e) {
+      mostrarAviso('avisoForm', 'Error subiendo foto: ' + e.message, 'error');
+    }
+  }
+  subiendoFoto = false;
+  mostrarAviso('avisoForm', 'Fotos subidas.', 'ok');
+}
+
+// ---------- INICIO ----------
+(function init() {
+  if (password) {
+    cargarDatos().then(() => { if (password) mostrarPanel(); });
+  } else {
+    $('zonaLogin').style.display = 'block';
+  }
+})();
+</script>
+</body>
+</html>

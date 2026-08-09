@@ -1,0 +1,148 @@
+{
+  "categorias": {
+    "ocasion": "Ocasión",
+    "segunda-mano": "Segunda mano",
+    "seminuevo": "Seminuevo",
+    "sin-categorizar": "Sin categorizar"
+  },
+  "vehiculos": [
+    {
+      "slug": "nissan-juke-1-6-hybrid-n-connecta-auto",
+      "marca": "Nissan",
+      "modelo": "Juke",
+      "titulo": "Nissan Juke 1.6 Hybrid N-Connecta Auto",
+      "categoria": "seminuevo",
+      "precio": "15.980",
+      "anio": "2019",
+      "km": "12000 km",
+      "potencia": "150 CV",
+      "puertas": "3",
+      "carroceria": "suv",
+      "carroceriaTexto": "SUV",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        { "slug": "gasolina", "texto": "Gasolina" },
+        { "slug": "hibrido", "texto": "Híbrido" }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "etiqueta-eco",
+      "fotos": [
+        "/wp-content/uploads/2026/03/nissan-juke-3.png",
+        "/wp-content/uploads/2026/03/nissan-juke-1.png",
+        "/wp-content/uploads/2026/03/nissan-juke-2.png"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "orden": 1
+    },
+    {
+      "slug": "audi-a1-adrenalin-copia",
+      "marca": "Audi",
+      "modelo": "A1",
+      "titulo": "Audi A1 Adrenalin",
+      "categoria": "ocasion",
+      "precio": "11.000",
+      "anio": "2015",
+      "km": "120000 km",
+      "potencia": "90 CV",
+      "puertas": "5",
+      "carroceria": "compacto",
+      "carroceriaTexto": "Compacto",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        { "slug": "gasolina", "texto": "Gasolina" }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "etiqueta-c",
+      "fotos": [
+        "/wp-content/uploads/2026/05/aglup-audia1.png"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "orden": 2
+    },
+    {
+      "slug": "audi-tt-coupe-s-line-edition-copia",
+      "marca": "Audi",
+      "modelo": "TT",
+      "titulo": "Audi TT Coupe S line edition",
+      "categoria": "sin-categorizar",
+      "precio": "35.000",
+      "anio": "2017",
+      "km": "135000 km",
+      "potencia": "230 CV",
+      "puertas": "3",
+      "carroceria": "coupe",
+      "carroceriaTexto": "Coupé",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        { "slug": "gasolina", "texto": "Gasolina" }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "etiqueta-c",
+      "fotos": [
+        "/wp-content/uploads/2026/05/auditt-aglup.png"
+      ],
+      "vendido": true,
+      "reservado": false,
+      "orden": 3
+    },
+    {
+      "slug": "mercedes-gle-coupe-350-d-4matic-copia",
+      "marca": "Mercedes",
+      "modelo": "GLE",
+      "titulo": "MERCEDES GLE Coupé 350 d 4MATIC",
+      "categoria": "seminuevo",
+      "precio": "68.000",
+      "anio": "1999",
+      "km": "68000 km",
+      "potencia": "258 CV",
+      "puertas": "3",
+      "carroceria": "coupe",
+      "carroceriaTexto": "Coupé",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        { "slug": "diesel", "texto": "Diésel" }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "etiqueta-c",
+      "fotos": [
+        "/wp-content/uploads/2026/05/mercedes-gl-aglup.png"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "orden": 4
+    },
+    {
+      "slug": "opel-mokka",
+      "marca": "Opel",
+      "modelo": "Mokka",
+      "titulo": "Opel Mokka",
+      "categoria": "seminuevo",
+      "precio": "8.500",
+      "anio": "2013",
+      "km": "165000 km",
+      "potencia": "130 CV",
+      "puertas": "5",
+      "carroceria": "suv",
+      "carroceriaTexto": "SUV",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        { "slug": "diesel", "texto": "Diésel" }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "etiqueta-c",
+      "fotos": [
+        "/wp-content/uploads/2026/05/opel-mokka-aglup.png"
+      ],
+      "vendido": false,
+      "reservado": true,
+      "orden": 5
+    }
+  ]
+}

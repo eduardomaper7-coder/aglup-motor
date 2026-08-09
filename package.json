@@ -1,0 +1,12 @@
+{
+  "name": "aglup-motor",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Web de AGLUP MOTOR CANARIAS. Catalogo de vehiculos generado a partir de data/vehiculos.json + panel /admin.",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "^0.27.0"
+  }
+}
