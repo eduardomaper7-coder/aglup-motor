@@ -1,6 +1,10 @@
 {
-  "step": "titulo",
-  "datos": {},
+  "step": "categoria",
+  "datos": {
+    "titulo": "BMW X6",
+    "marca": "BMW",
+    "modelo": "X6"
+  },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400437012-x0ldz5-99W8aktayFMgDMJdJGSiiDEXpUlwIn.jpg",
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400439497-imvk56-bu0OoWhBFNgxS9NxcJpvLzAtQtRRyh.jpg"
