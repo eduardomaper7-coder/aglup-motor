@@ -1,11 +1,12 @@
 {
-  "step": "km",
+  "step": "potencia",
   "datos": {
     "titulo": "Toyota Proace City",
     "marca": "Toyota",
     "modelo": "Proace City",
     "precio": "19.990",
-    "anio": "2022"
+    "anio": "2022",
+    "km": "1000 km"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786389176385-1-IJDE3aDLyUHDo0sFKFo4miOL4KOIv0.jpg"
