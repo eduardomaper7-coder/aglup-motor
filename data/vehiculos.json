@@ -7,38 +7,6 @@
   },
   "vehiculos": [
     {
-      "slug": "audi-tt-coupe-s-line-edition-copia",
-      "marca": "Audi",
-      "modelo": "TT",
-      "titulo": "Audi TT Coupe S line edition",
-      "categoria": "sin-categorizar",
-      "precio": "35.000",
-      "anio": "2017",
-      "km": "135000 km",
-      "potencia": "230 CV",
-      "puertas": "3",
-      "carroceria": "coupe",
-      "carroceriaTexto": "Coupé",
-      "cambio": "manual",
-      "cambioTexto": "Manual",
-      "combustibles": [
-        {
-          "slug": "gasolina",
-          "texto": "Gasolina"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/auditt-aglup.png"
-      ],
-      "vendido": true,
-      "reservado": false,
-      "orden": 3,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
       "slug": "volkswagen-golf-gti-qp30",
       "marca": "Volkswagen",
       "modelo": "golf gti",
