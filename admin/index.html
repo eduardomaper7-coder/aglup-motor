@@ -138,6 +138,11 @@
   .aviso.ok { background: #eafaf0; color: #1c7c3f; }
   .cargando { font-size: 13px; color: #666; }
   .vacio { text-align: center; padding: 60px 20px; color: #888; }
+  .titulo-seccion { font-size: 16px; margin: 24px 0 6px; }
+  .contador-pendientes { display: inline-block; background: var(--naranja); color: #fff; font-size: 12px; font-weight: 800; border-radius: 999px; padding: 2px 9px; vertical-align: middle; }
+  .ayuda-pendientes { font-size: 13px; color: #666; margin: 0 0 14px; }
+  .tarjeta.pendiente { border: 2px solid var(--naranja); }
+  .badge.pendiente { background: var(--naranja); }
 </style>
 </head>
 <body>
@@ -163,6 +168,15 @@
       <div id="avisoGlobal"></div>
       <button class="btn-primario" id="btnNuevo">+ Añadir vehículo</button>
     </div>
+
+    <div id="zonaPendientes" style="display:none">
+      <h2 class="titulo-seccion">Pendientes de revisar <span id="contadorPendientes" class="contador-pendientes"></span></h2>
+      <p class="ayuda-pendientes">Vehículos recibidos por WhatsApp. Revisa los datos, corrige lo que haga falta y publica.</p>
+      <div id="listaPendientes" class="lista"></div>
+      <hr class="separador" />
+    </div>
+
+    <h2 class="titulo-seccion">Publicados</h2>
     <div id="lista" class="lista"></div>
   </div>
 </main>
@@ -308,6 +322,7 @@ const $ = (id) => document.getElementById(id);
 let password = sessionStorage.getItem('aglup_admin_password') || '';
 let datos = { categorias: {}, vehiculos: [] };
 let editandoSlug = null; // null = nuevo vehiculo
+let editandoBorrador = false; // si el vehículo que se edita venía de WhatsApp y sigue pendiente
 let fotosActuales = []; // array de URLs (string)
 let subiendoFoto = false;
 
@@ -385,14 +400,53 @@ function ordenar(vehiculos) {
 }
 
 function renderLista() {
+  const todos = datos.vehiculos || [];
+  const pendientes = todos.filter((v) => v.borrador);
+  const publicados = ordenar(todos.filter((v) => !v.borrador));
+
+  // --- Pendientes de revisar (recibidos por WhatsApp) ---
+  const zonaPend = $('zonaPendientes');
+  if (pendientes.length === 0) {
+    zonaPend.style.display = 'none';
+  } else {
+    zonaPend.style.display = 'block';
+    $('contadorPendientes').textContent = pendientes.length;
+    const contPend = $('listaPendientes');
+    contPend.innerHTML = '';
+    for (const v of pendientes) {
+      const foto = (v.fotos && v.fotos[0]) || '';
+      const div = document.createElement('div');
+      div.className = 'tarjeta pendiente';
+      div.innerHTML = `
+        <div class="foto" style="background-image:url('${foto}')">
+          <span class="badge pendiente">Pendiente</span>
+        </div>
+        <div class="cuerpo">
+          <h3>${escapeHtml(v.titulo)}</h3>
+          <div class="precio">${escapeHtml(v.precio || '')} €</div>
+          <div class="meta">${escapeHtml(v.anio || '')} · ${escapeHtml(v.km || '')} · ${escapeHtml(v.potencia || '')}</div>
+          <div class="acciones">
+            <button class="btn-secundario btn-mini" data-accion="editar">Editar</button>
+            <button class="btn-primario btn-mini" data-accion="publicar">Publicar</button>
+            <button class="btn-peligro btn-mini" data-accion="descartar">Descartar</button>
+          </div>
+        </div>
+      `;
+      div.querySelector('[data-accion=editar]').addEventListener('click', () => abrirFormulario(v));
+      div.querySelector('[data-accion=publicar]').addEventListener('click', () => publicarVehiculo(v));
+      div.querySelector('[data-accion=descartar]').addEventListener('click', () => eliminarVehiculo(v, true));
+      contPend.appendChild(div);
+    }
+  }
+
+  // --- Publicados ---
   const cont = $('lista');
-  const vehiculos = ordenar(datos.vehiculos || []);
-  if (vehiculos.length === 0) {
-    cont.innerHTML = '<div class="vacio">Todavía no hay vehículos. Pulsa "Añadir vehículo" para crear el primero.</div>';
+  if (publicados.length === 0) {
+    cont.innerHTML = '<div class="vacio">Todavía no hay vehículos publicados. Pulsa "Añadir vehículo" para crear el primero.</div>';
     return;
   }
   cont.innerHTML = '';
-  for (const v of vehiculos) {
+  for (const v of publicados) {
     const foto = (v.fotos && v.fotos[0]) || '';
     const div = document.createElement('div');
     div.className = 'tarjeta' + (v.vendido ? ' vendido' : '');
@@ -420,6 +474,19 @@ function renderLista() {
   }
 }
 
+async function publicarVehiculo(vehiculo) {
+  mostrarAviso('avisoGlobal', 'Publicando y desplegando (puede tardar ~1 minuto)...', 'ok');
+  const actualizado = { ...vehiculo, borrador: false };
+  const res = await apiFetch('/api/vehiculos', { method: 'POST', body: JSON.stringify({ vehiculo: actualizado }) });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    mostrarAviso('avisoGlobal', 'Error: ' + (err.error || res.status), 'error');
+    return;
+  }
+  mostrarAviso('avisoGlobal', 'Publicado. Vercel está desplegando los cambios.', 'ok');
+  await cargarDatos();
+}
+
 function escapeHtml(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -437,9 +504,12 @@ async function toggleCampo(vehiculo, campo) {
   await cargarDatos();
 }
 
-async function eliminarVehiculo(vehiculo) {
-  if (!confirm(`¿Eliminar "${vehiculo.titulo}"? Esta acción no se puede deshacer.`)) return;
-  mostrarAviso('avisoGlobal', 'Eliminando...', 'ok');
+async function eliminarVehiculo(vehiculo, esDescarte) {
+  const pregunta = esDescarte
+    ? `¿Descartar "${vehiculo.titulo}"? No se publicará y esta acción no se puede deshacer.`
+    : `¿Eliminar "${vehiculo.titulo}"? Esta acción no se puede deshacer.`;
+  if (!confirm(pregunta)) return;
+  mostrarAviso('avisoGlobal', esDescarte ? 'Descartando...' : 'Eliminando...', 'ok');
   const res = await apiFetch('/api/vehiculos?slug=' + encodeURIComponent(vehiculo.slug), { method: 'DELETE' });
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
@@ -462,6 +532,7 @@ $('btnCancelar').addEventListener('click', cerrarFormulario);
 
 function abrirFormulario(vehiculo) {
   editandoSlug = vehiculo ? vehiculo.slug : null;
+  editandoBorrador = !!(vehiculo && vehiculo.borrador);
   $('tituloForm').textContent = vehiculo ? 'Editar vehículo' : 'Nuevo vehículo';
   $('avisoForm').innerHTML = '';
 
@@ -533,6 +604,7 @@ function recogerFormulario() {
     garantiaTexto: $('fGarantia').value.trim(),
     vendido: $('fVendido').checked,
     reservado: $('fReservado').checked,
+    borrador: editandoBorrador,
     fotos: fotosActuales,
   };
 }

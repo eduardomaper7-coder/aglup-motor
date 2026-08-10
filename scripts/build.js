@@ -255,8 +255,13 @@ function spliceGrid(fileContent, gridInnerHtml, gridEnd) {
 function main() {
   log('Cargando data/vehiculos.json...');
   const { categorias, vehiculos } = loadData();
-  const ordenados = ordenarVehiculos(vehiculos);
-  log(`${ordenados.length} vehículos (${ordenados.filter((v) => v.vendido).length} vendidos).`);
+  const publicables = vehiculos.filter((v) => !v.borrador);
+  const enBorrador = vehiculos.length - publicables.length;
+  const ordenados = ordenarVehiculos(publicables);
+  log(
+    `${ordenados.length} vehículos publicados (${ordenados.filter((v) => v.vendido).length} vendidos)` +
+      (enBorrador ? `, ${enBorrador} en borrador (no se publican).` : '.')
+  );
 
   const tplDetalle = readFile(TPL_DETALLE);
   const tplCard = readFile(TPL_CARD);
