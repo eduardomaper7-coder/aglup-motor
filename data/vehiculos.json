@@ -7,44 +7,6 @@
   },
   "vehiculos": [
     {
-      "slug": "nissan-juke-1-6-hybrid-n-connecta-auto",
-      "marca": "Nissan",
-      "modelo": "Juke",
-      "titulo": "Nissan Juke 1.6 Hybrid N-Connecta Auto",
-      "categoria": "seminuevo",
-      "precio": "15.980",
-      "anio": "2019",
-      "km": "12000 km",
-      "potencia": "150 CV",
-      "puertas": "3",
-      "carroceria": "suv",
-      "carroceriaTexto": "SUV",
-      "cambio": "manual",
-      "cambioTexto": "Manual",
-      "combustibles": [
-        {
-          "slug": "gasolina",
-          "texto": "Gasolina"
-        },
-        {
-          "slug": "hibrido",
-          "texto": "Híbrido"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-eco",
-      "fotos": [
-        "/wp-content/uploads/2026/03/nissan-juke-3.png",
-        "/wp-content/uploads/2026/03/nissan-juke-1.png",
-        "/wp-content/uploads/2026/03/nissan-juke-2.png"
-      ],
-      "vendido": false,
-      "reservado": false,
-      "orden": 1,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
       "slug": "audi-a1-adrenalin-copia",
       "marca": "Audi",
       "modelo": "A1",
