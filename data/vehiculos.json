@@ -7,38 +7,6 @@
   },
   "vehiculos": [
     {
-      "slug": "audi-a1-adrenalin-copia",
-      "marca": "Audi",
-      "modelo": "A1",
-      "titulo": "Audi A1 Adrenalin",
-      "categoria": "ocasion",
-      "precio": "11.000",
-      "anio": "2015",
-      "km": "120000 km",
-      "potencia": "90 CV",
-      "puertas": "5",
-      "carroceria": "compacto",
-      "carroceriaTexto": "Compacto",
-      "cambio": "manual",
-      "cambioTexto": "Manual",
-      "combustibles": [
-        {
-          "slug": "gasolina",
-          "texto": "Gasolina"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/aglup-audia1.png"
-      ],
-      "vendido": false,
-      "reservado": false,
-      "orden": 2,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
       "slug": "audi-tt-coupe-s-line-edition-copia",
       "marca": "Audi",
       "modelo": "TT",
