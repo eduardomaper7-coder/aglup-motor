@@ -39,38 +39,6 @@
       "traccionTexto": "Delantera"
     },
     {
-      "slug": "mercedes-gle-coupe-350-d-4matic-copia",
-      "marca": "Mercedes",
-      "modelo": "GLE",
-      "titulo": "MERCEDES GLE Coupé 350 d 4MATIC",
-      "categoria": "seminuevo",
-      "precio": "68.000",
-      "anio": "1999",
-      "km": "68000 km",
-      "potencia": "258 CV",
-      "puertas": "3",
-      "carroceria": "coupe",
-      "carroceriaTexto": "Coupé",
-      "cambio": "automatico",
-      "cambioTexto": "Automático",
-      "combustibles": [
-        {
-          "slug": "diesel",
-          "texto": "Diésel"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/mercedes-gl-aglup.png"
-      ],
-      "vendido": false,
-      "reservado": false,
-      "orden": 4,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
       "slug": "volkswagen-golf-gti-qp30",
       "marca": "Volkswagen",
       "modelo": "golf gti",
