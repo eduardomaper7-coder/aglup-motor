@@ -28,7 +28,9 @@ async function githubRequest(path, options = {}) {
   });
   if (!res.ok) {
     const text = await res.text().catch(() => '');
-    throw new Error(`GitHub API ${res.status}: ${text.slice(0, 500)}`);
+    const err = new Error(`GitHub API ${res.status}: ${text.slice(0, 500)}`);
+    err.status = res.status;
+    throw err;
   }
   return res.json();
 }

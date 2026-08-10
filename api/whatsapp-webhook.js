@@ -1,6 +1,6 @@
 const { put } = require('@vercel/blob');
 const { sendText, getMediaUrl, downloadMedia } = require('./_lib/whatsapp');
-const { getSession, saveSession, clearSession } = require('./_lib/sessions');
+const { getSession, saveSession, clearSession, mutarSesion } = require('./_lib/sessions');
 const { crearVehiculoBorrador } = require('./_lib/vehiculos-store');
 
 // ---------------------------------------------------------------------------
@@ -15,6 +15,8 @@ const TEXTOS = {
   pideFotoOtraVez: 'Manda al menos una foto y luego escribe *LISTO* para continuar.',
   fotoRecibida: (n) => `Foto ${n} recibida ✅. Manda más fotos o escribe *LISTO* para continuar.`,
   pideTitulo: '¿Marca y modelo del coche? (ejemplo: Audi A1 Adrenalin)',
+  pideCategoria: '¿Categoría? Responde: ocasión, segunda mano o seminuevo',
+  categoriaInvalida: 'No reconozco esa opción. Responde: ocasión, segunda mano o seminuevo',
   pidePrecio: '¿Precio de venta en euros? (solo el número, ejemplo: 11000)',
   precioInvalido: 'No he entendido el precio. Manda solo el número, ejemplo: 11000',
   pideAnio: '¿Año de matriculación? (ejemplo: 2019)',
@@ -31,6 +33,8 @@ const TEXTOS = {
     '¿Carrocería? Responde: berlina, suv, compacto, coupe, familiar, monovolumen, furgoneta, pickup o cabrio',
   carroceriaInvalida:
     'No reconozco esa opción. Responde: berlina, suv, compacto, coupe, familiar, monovolumen, furgoneta, pickup o cabrio',
+  pideTraccion: '¿Tracción? Responde: delantera, trasera, total o 4x4',
+  traccionInvalida: 'No reconozco esa opción. Responde: delantera, trasera, total o 4x4',
   pideConfirmacion: (resumen) => `Resumen:\n\n${resumen}\n\n¿Confirmas? Responde *SI* o *NO*.`,
   confirmacionInvalida: 'Responde *SI* para enviarlo a revisión, o *NO* para cancelar.',
   guardado: '¡Recibido! El equipo lo va a revisar y lo publicará en la web en breve. Gracias 🙌',
@@ -68,6 +72,24 @@ const CARROCERIAS = {
   suv: 'SUV',
 };
 
+const CATEGORIAS = {
+  ocasion: 'ocasion',
+  'ocasión': 'ocasion',
+  'segunda mano': 'segunda-mano',
+  segundamano: 'segunda-mano',
+  'segunda-mano': 'segunda-mano',
+  seminuevo: 'seminuevo',
+};
+const CATEGORIA_TEXTO = { ocasion: 'Ocasión', 'segunda-mano': 'Segunda mano', seminuevo: 'Seminuevo' };
+
+const TRACCIONES = {
+  delantera: { slug: 'delantera', texto: 'Delantera' },
+  trasera: { slug: 'trasera', texto: 'Trasera' },
+  total: { slug: 'total', texto: 'Total' },
+  '4x4': { slug: '4x4', texto: '4x4' },
+  '4×4': { slug: '4x4', texto: '4x4' },
+};
+
 function normalizar(texto) {
   return String(texto || '')
     .trim()
@@ -85,21 +107,26 @@ function formatearPrecio(digitos) {
 function resumenTexto(datos) {
   return (
     `Coche: ${datos.titulo}\n` +
+    `Categoría: ${CATEGORIA_TEXTO[datos.categoria] || datos.categoria}\n` +
     `Precio: ${datos.precio} €\n` +
     `Año: ${datos.anio}\n` +
     `Km: ${datos.km}\n` +
     `Potencia: ${datos.potencia}\n` +
     `Combustible: ${datos.combustibles.map((c) => c.texto).join(', ')}\n` +
     `Cambio: ${datos.cambioTexto}\n` +
-    `Carrocería: ${datos.carroceriaTexto}`
+    `Carrocería: ${datos.carroceriaTexto}\n` +
+    `Tracción: ${datos.traccionTexto}`
   );
 }
 
-async function subirFotoWhatsapp(mediaId, telefono, indice) {
+// El identificador incluye un sufijo aleatorio (no solo Date.now()) para que
+// dos fotos que lleguen casi a la vez en peticiones distintas nunca choquen.
+async function subirFotoWhatsapp(mediaId, telefono) {
   const media = await getMediaUrl(mediaId);
   const buffer = await downloadMedia(media.url);
   const ext = (media.mime_type || 'image/jpeg').includes('png') ? 'png' : 'jpg';
-  const blob = await put(`vehiculos/whatsapp-${telefono}/${Date.now()}-${indice}.${ext}`, buffer, {
+  const sufijo = Math.random().toString(36).slice(2, 8);
+  const blob = await put(`vehiculos/whatsapp-${telefono}/${Date.now()}-${sufijo}.${ext}`, buffer, {
     access: 'public',
     contentType: media.mime_type || 'image/jpeg',
     token: process.env.BLOB_READ_WRITE_TOKEN,
@@ -126,10 +153,15 @@ async function procesarMensaje(telefono, mensaje) {
 
   if (session.step === 'fotos') {
     if (mensaje.type === 'image') {
-      const url = await subirFotoWhatsapp(mensaje.image.id, telefono, session.fotos.length + 1);
-      session.fotos.push(url);
-      await saveSession(telefono, session, sha);
-      return TEXTOS.fotoRecibida(session.fotos.length);
+      // Varias fotos pueden llegar como peticiones de webhook casi simultáneas;
+      // usamos mutarSesion para no perder ninguna por conflicto de escritura.
+      const url = await subirFotoWhatsapp(mensaje.image.id, telefono);
+      const actualizada = await mutarSesion(
+        telefono,
+        () => ({ step: 'fotos', datos: {}, fotos: [] }),
+        (s) => ({ ...s, fotos: s.fotos.includes(url) ? s.fotos : [...s.fotos, url] })
+      );
+      return TEXTOS.fotoRecibida(actualizada.fotos.length);
     }
     if (texto === 'listo') {
       if (session.fotos.length === 0) return TEXTOS.pideFotoOtraVez;
@@ -153,6 +185,15 @@ async function procesarMensaje(telefono, mensaje) {
       session.datos.titulo = original;
       session.datos.marca = partes[0] || '';
       session.datos.modelo = partes.slice(1).join(' ');
+      session.step = 'categoria';
+      await saveSession(telefono, session, sha);
+      return TEXTOS.pideCategoria;
+    }
+    case 'categoria': {
+      const clave = normalizar(original);
+      const slug = CATEGORIAS[clave];
+      if (!slug) return TEXTOS.categoriaInvalida;
+      session.datos.categoria = slug;
       session.step = 'precio';
       await saveSession(telefono, session, sha);
       return TEXTOS.pidePrecio;
@@ -215,6 +256,16 @@ async function procesarMensaje(telefono, mensaje) {
       if (!texto2) return TEXTOS.carroceriaInvalida;
       session.datos.carroceria = clave === 'coupé' ? 'coupe' : clave;
       session.datos.carroceriaTexto = texto2;
+      session.step = 'traccion';
+      await saveSession(telefono, session, sha);
+      return TEXTOS.pideTraccion;
+    }
+    case 'traccion': {
+      const clave = normalizar(original);
+      const encontrado = TRACCIONES[clave];
+      if (!encontrado) return TEXTOS.traccionInvalida;
+      session.datos.traccion = encontrado.slug;
+      session.datos.traccionTexto = encontrado.texto;
       session.step = 'confirmar';
       await saveSession(telefono, session, sha);
       return TEXTOS.pideConfirmacion(resumenTexto(session.datos));

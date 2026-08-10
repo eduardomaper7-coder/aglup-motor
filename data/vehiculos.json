@@ -40,7 +40,9 @@
       ],
       "vendido": false,
       "reservado": false,
-      "orden": 1
+      "orden": 1,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     },
     {
       "slug": "audi-a1-adrenalin-copia",
@@ -70,7 +72,9 @@
       ],
       "vendido": false,
       "reservado": false,
-      "orden": 2
+      "orden": 2,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     },
     {
       "slug": "audi-tt-coupe-s-line-edition-copia",
@@ -100,7 +104,9 @@
       ],
       "vendido": true,
       "reservado": false,
-      "orden": 3
+      "orden": 3,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     },
     {
       "slug": "mercedes-gle-coupe-350-d-4matic-copia",
@@ -130,7 +136,9 @@
       ],
       "vendido": false,
       "reservado": false,
-      "orden": 4
+      "orden": 4,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     },
     {
       "slug": "opel-mokka",
@@ -160,7 +168,9 @@
       ],
       "vendido": false,
       "reservado": true,
-      "orden": 5
+      "orden": 5,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     },
     {
       "slug": "volkswagen-golf-gti-qp30",
@@ -191,7 +201,9 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291341490-754070168_17899737651542891_7437406996783162291_n-kopUxNSVuuO5n5punI9e1YXWH4gwKj.jpg",
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291343270-754070163_17899737636542891_2547038750971224646_n-ND0K2kdP2cBafFbmFe0qdx8hC6MUSM.jpg"
       ],
-      "orden": 6
+      "orden": 6,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     }
   ]
 }

@@ -266,6 +266,18 @@
       </div>
     </div>
 
+    <div class="fila">
+      <div>
+        <label>Tracción</label>
+        <select id="fTraccion">
+          <option value="delantera">Delantera</option>
+          <option value="trasera">Trasera</option>
+          <option value="total">Total</option>
+          <option value="4x4">4x4</option>
+        </select>
+      </div>
+    </div>
+
     <div class="fila uno">
       <label>Combustible</label>
       <div class="checks">
@@ -547,6 +559,7 @@ function abrirFormulario(vehiculo) {
   $('fPuertas').value = vehiculo?.puertas || '';
   $('fCarroceria').value = vehiculo?.carroceria || 'suv';
   $('fCambio').value = vehiculo?.cambio || 'manual';
+  $('fTraccion').value = vehiculo?.traccion || 'delantera';
   $('fEtiquetaDgt').value = vehiculo?.etiquetaDgt || '';
   $('fGarantia').value = vehiculo?.garantiaTexto || 'Garantía incluida: 12 meses';
   $('fVendido').checked = !!vehiculo?.vendido;
@@ -575,6 +588,7 @@ const textoCarroceria = {
   furgoneta: 'Furgoneta', monovolumen: 'Monovolumen', pickup: 'Pickup', suv: 'SUV',
 };
 const textoCambio = { manual: 'Manual', automatico: 'Automático' };
+const textoTraccion = { delantera: 'Delantera', trasera: 'Trasera', total: 'Total', '4x4': '4x4' };
 
 function recogerFormulario() {
   const combustibles = Array.from(document.querySelectorAll('.fCombustible'))
@@ -583,6 +597,7 @@ function recogerFormulario() {
 
   const carroceria = $('fCarroceria').value;
   const cambio = $('fCambio').value;
+  const traccion = $('fTraccion').value;
 
   return {
     slug: editandoSlug || slugify($('fTitulo').value),
@@ -599,6 +614,8 @@ function recogerFormulario() {
     carroceriaTexto: textoCarroceria[carroceria],
     cambio,
     cambioTexto: textoCambio[cambio],
+    traccion,
+    traccionTexto: textoTraccion[traccion],
     combustibles,
     etiquetaDgt: $('fEtiquetaDgt').value,
     garantiaTexto: $('fGarantia').value.trim(),

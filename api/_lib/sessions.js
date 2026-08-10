@@ -32,4 +32,35 @@ async function clearSession(telefono) {
   await deleteFile(pathFor(telefono), `whatsapp: cierra sesion ${telefono}`, file.sha);
 }
 
-module.exports = { getSession, saveSession, clearSession };
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Aplica una mutación a la sesión de forma segura ante escrituras concurrentes
+// (p.ej. varias fotos llegando casi a la vez en mensajes separados de WhatsApp).
+// Relee la sesión más reciente y reintenta si GitHub rechaza el commit por
+// conflicto de sha (409), en vez de perder la escritura de la otra petición.
+async function mutarSesion(telefono, sesionInicial, mutar, intentosMax = 5) {
+  let existente = await getSession(telefono);
+  let session = existente ? existente.data : sesionInicial();
+  let sha = existente ? existente.sha : undefined;
+
+  for (let intento = 0; intento < intentosMax; intento++) {
+    const siguiente = mutar(session);
+    try {
+      await saveSession(telefono, siguiente, sha);
+      return siguiente;
+    } catch (e) {
+      if (e && e.status === 409 && intento < intentosMax - 1) {
+        await sleep(200 * (intento + 1));
+        existente = await getSession(telefono);
+        session = existente ? existente.data : sesionInicial();
+        sha = existente ? existente.sha : undefined;
+        continue;
+      }
+      throw e;
+    }
+  }
+}
+
+module.exports = { getSession, saveSession, clearSession, mutarSesion };

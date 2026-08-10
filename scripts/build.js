@@ -112,6 +112,7 @@ function buildDetallePage(tplDetalle, v) {
     '{{CAMBIO_TEXTO}}': v.cambioTexto,
     '{{CARROCERIA_SLUG}}': v.carroceria,
     '{{CARROCERIA_TEXTO}}': v.carroceriaTexto,
+    '{{TRACCION_TEXTO}}': v.traccionTexto || '',
     '{{FOTO_PRINCIPAL}}': (v.fotos && v.fotos[0]) || '',
     '{{GALERIA}}': buildGaleriaHtml(v),
   };
