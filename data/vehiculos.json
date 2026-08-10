@@ -204,6 +204,39 @@
       "orden": 6,
       "traccion": "delantera",
       "traccionTexto": "Delantera"
+    },
+    {
+      "slug": "toyota-proace-city",
+      "marca": "Toyota",
+      "modelo": "Proace City",
+      "titulo": "Toyota Proace City",
+      "categoria": "sin-categorizar",
+      "precio": "19.990",
+      "anio": "2022",
+      "km": "1000 km",
+      "potencia": "130 CV",
+      "puertas": "",
+      "carroceria": "coupe",
+      "carroceriaTexto": "Coupé",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786389176385-1-IJDE3aDLyUHDo0sFKFo4miOL4KOIv0.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "orden": 7,
+      "traccion": "delantera",
+      "traccionTexto": "Delantera"
     }
   ]
 }
