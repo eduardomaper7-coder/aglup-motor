@@ -1,5 +1,5 @@
 {
-  "step": "combustible",
+  "step": "cambio",
   "datos": {
     "titulo": "Hola",
     "marca": "Hola",
@@ -8,7 +8,13 @@
     "precio": "28.282",
     "anio": "2000",
     "km": "3333 km",
-    "potencia": "100 CV"
+    "potencia": "100 CV",
+    "combustibles": [
+      {
+        "slug": "hibrido",
+        "texto": "Híbrido"
+      }
+    ]
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400186742-y1lrxr-iKcUeBYMGzpE0pvSamQzHHW1NB1TiE.jpg",
