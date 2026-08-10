@@ -1,5 +1,5 @@
 {
-  "step": "cambio",
+  "step": "carroceria",
   "datos": {
     "titulo": "Hola",
     "marca": "Hola",
@@ -14,7 +14,9 @@
         "slug": "hibrido",
         "texto": "Híbrido"
       }
-    ]
+    ],
+    "cambio": "manual",
+    "cambioTexto": "Manual"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400186742-y1lrxr-iKcUeBYMGzpE0pvSamQzHHW1NB1TiE.jpg",
