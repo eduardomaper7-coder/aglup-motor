@@ -1,11 +1,12 @@
 {
-  "step": "anio",
+  "step": "km",
   "datos": {
     "titulo": "Hola",
     "marca": "Hola",
     "modelo": "",
     "categoria": "ocasion",
-    "precio": "28.282"
+    "precio": "28.282",
+    "anio": "2000"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400186742-y1lrxr-iKcUeBYMGzpE0pvSamQzHHW1NB1TiE.jpg",
