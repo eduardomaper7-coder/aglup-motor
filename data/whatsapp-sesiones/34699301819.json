@@ -1,5 +1,5 @@
 {
-  "step": "potencia",
+  "step": "combustible",
   "datos": {
     "titulo": "Hola",
     "marca": "Hola",
@@ -7,7 +7,8 @@
     "categoria": "ocasion",
     "precio": "28.282",
     "anio": "2000",
-    "km": "3333 km"
+    "km": "3333 km",
+    "potencia": "100 CV"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400186742-y1lrxr-iKcUeBYMGzpE0pvSamQzHHW1NB1TiE.jpg",
