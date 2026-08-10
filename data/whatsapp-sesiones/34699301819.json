@@ -1,6 +1,10 @@
 {
-  "step": "titulo",
-  "datos": {},
+  "step": "precio",
+  "datos": {
+    "titulo": "Toyota Proace City",
+    "marca": "Toyota",
+    "modelo": "Proace City"
+  },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786389176385-1-IJDE3aDLyUHDo0sFKFo4miOL4KOIv0.jpg"
   ]
