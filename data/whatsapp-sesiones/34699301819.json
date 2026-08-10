@@ -1,5 +1,5 @@
 {
-  "step": "combustible",
+  "step": "cambio",
   "datos": {
     "titulo": "BMW X6",
     "marca": "BMW",
@@ -8,7 +8,13 @@
     "precio": "26.990",
     "anio": "2011",
     "km": "190000 km",
-    "potencia": "408 CV"
+    "potencia": "408 CV",
+    "combustibles": [
+      {
+        "slug": "gasolina",
+        "texto": "Gasolina"
+      }
+    ]
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400437012-x0ldz5-99W8aktayFMgDMJdJGSiiDEXpUlwIn.jpg",
