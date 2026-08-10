@@ -237,6 +237,40 @@
       "orden": 7,
       "traccion": "delantera",
       "traccionTexto": "Delantera"
+    },
+    {
+      "slug": "bmw-x6",
+      "marca": "BMW",
+      "modelo": "X6",
+      "titulo": "BMW X6",
+      "categoria": "ocasion",
+      "precio": "26.990",
+      "anio": "2011",
+      "km": "190000 km",
+      "potencia": "408 CV",
+      "puertas": "",
+      "carroceria": "suv",
+      "carroceriaTexto": "SUV",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "traccion": "total",
+      "traccionTexto": "Total",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400437012-x0ldz5-99W8aktayFMgDMJdJGSiiDEXpUlwIn.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400439497-imvk56-bu0OoWhBFNgxS9NxcJpvLzAtQtRRyh.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": true,
+      "orden": 8
     }
   ]
 }
