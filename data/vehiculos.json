@@ -141,38 +141,6 @@
       "traccionTexto": "Delantera"
     },
     {
-      "slug": "opel-mokka",
-      "marca": "Opel",
-      "modelo": "Mokka",
-      "titulo": "Opel Mokka",
-      "categoria": "seminuevo",
-      "precio": "8.500",
-      "anio": "2013",
-      "km": "165000 km",
-      "potencia": "130 CV",
-      "puertas": "5",
-      "carroceria": "suv",
-      "carroceriaTexto": "SUV",
-      "cambio": "automatico",
-      "cambioTexto": "Automático",
-      "combustibles": [
-        {
-          "slug": "diesel",
-          "texto": "Diésel"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/opel-mokka-aglup.png"
-      ],
-      "vendido": false,
-      "reservado": true,
-      "orden": 5,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
       "slug": "volkswagen-golf-gti-qp30",
       "marca": "Volkswagen",
       "modelo": "golf gti",
