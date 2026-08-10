@@ -22,8 +22,14 @@
       "cambio": "manual",
       "cambioTexto": "Manual",
       "combustibles": [
-        { "slug": "gasolina", "texto": "Gasolina" },
-        { "slug": "hibrido", "texto": "Híbrido" }
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        },
+        {
+          "slug": "hibrido",
+          "texto": "Híbrido"
+        }
       ],
       "garantiaTexto": "Garantía incluida: 12 meses",
       "etiquetaDgt": "etiqueta-eco",
@@ -52,7 +58,10 @@
       "cambio": "manual",
       "cambioTexto": "Manual",
       "combustibles": [
-        { "slug": "gasolina", "texto": "Gasolina" }
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
       ],
       "garantiaTexto": "Garantía incluida: 12 meses",
       "etiquetaDgt": "etiqueta-c",
@@ -79,7 +88,10 @@
       "cambio": "manual",
       "cambioTexto": "Manual",
       "combustibles": [
-        { "slug": "gasolina", "texto": "Gasolina" }
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
       ],
       "garantiaTexto": "Garantía incluida: 12 meses",
       "etiquetaDgt": "etiqueta-c",
@@ -106,7 +118,10 @@
       "cambio": "automatico",
       "cambioTexto": "Automático",
       "combustibles": [
-        { "slug": "diesel", "texto": "Diésel" }
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
       ],
       "garantiaTexto": "Garantía incluida: 12 meses",
       "etiquetaDgt": "etiqueta-c",
@@ -133,7 +148,10 @@
       "cambio": "automatico",
       "cambioTexto": "Automático",
       "combustibles": [
-        { "slug": "diesel", "texto": "Diésel" }
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
       ],
       "garantiaTexto": "Garantía incluida: 12 meses",
       "etiquetaDgt": "etiqueta-c",
@@ -143,6 +161,37 @@
       "vendido": false,
       "reservado": true,
       "orden": 5
+    },
+    {
+      "slug": "volkswagen-golf-gti-qp30",
+      "marca": "Volkswagen",
+      "modelo": "golf gti",
+      "titulo": "Volkswagen golf gti",
+      "precio": "13.990",
+      "categoria": "ocasion",
+      "anio": "2010",
+      "km": "",
+      "potencia": "210",
+      "puertas": "4",
+      "carroceria": "suv",
+      "carroceriaTexto": "SUV",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291341490-754070168_17899737651542891_7437406996783162291_n-kopUxNSVuuO5n5punI9e1YXWH4gwKj.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291343270-754070163_17899737636542891_2547038750971224646_n-ND0K2kdP2cBafFbmFe0qdx8hC6MUSM.jpg"
+      ],
+      "orden": 6
     }
   ]
 }
