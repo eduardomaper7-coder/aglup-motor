@@ -1,5 +1,5 @@
 {
-  "step": "cambio",
+  "step": "carroceria",
   "datos": {
     "titulo": "Toyota Proace City",
     "marca": "Toyota",
@@ -13,7 +13,9 @@
         "slug": "diesel",
         "texto": "Diésel"
       }
-    ]
+    ],
+    "cambio": "manual",
+    "cambioTexto": "Manual"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786389176385-1-IJDE3aDLyUHDo0sFKFo4miOL4KOIv0.jpg"
