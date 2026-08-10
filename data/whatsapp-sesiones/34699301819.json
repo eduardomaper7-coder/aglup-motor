@@ -1,5 +1,5 @@
 {
-  "step": "carroceria",
+  "step": "traccion",
   "datos": {
     "titulo": "Hola",
     "marca": "Hola",
@@ -16,7 +16,9 @@
       }
     ],
     "cambio": "manual",
-    "cambioTexto": "Manual"
+    "cambioTexto": "Manual",
+    "carroceria": "furgoneta",
+    "carroceriaTexto": "Furgoneta"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400186742-y1lrxr-iKcUeBYMGzpE0pvSamQzHHW1NB1TiE.jpg",
