@@ -1,11 +1,12 @@
 {
-  "step": "anio",
+  "step": "km",
   "datos": {
     "titulo": "Mitsubishi Montero 4x4 7 Plazas",
     "marca": "Mitsubishi",
     "modelo": "Montero 4x4 7 Plazas",
     "categoria": "segunda-mano",
-    "precio": "11.990"
+    "precio": "11.990",
+    "anio": "1999"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444027331-dssaej-3dIjoYL60dolneHR2KVkPwmnjBGzqg.jpg"
