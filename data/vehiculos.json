@@ -32,12 +32,13 @@
       "vendido": false,
       "reservado": false,
       "fotos": [
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291341490-754070168_17899737651542891_7437406996783162291_n-kopUxNSVuuO5n5punI9e1YXWH4gwKj.jpg",
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291343270-754070163_17899737636542891_2547038750971224646_n-ND0K2kdP2cBafFbmFe0qdx8hC6MUSM.jpg"
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291343270-754070163_17899737636542891_2547038750971224646_n-ND0K2kdP2cBafFbmFe0qdx8hC6MUSM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-gti-qp30/1786291341490-754070168_17899737651542891_7437406996783162291_n-kopUxNSVuuO5n5punI9e1YXWH4gwKj.jpg"
       ],
       "orden": 6,
       "traccion": "delantera",
-      "traccionTexto": "Delantera"
+      "traccionTexto": "Delantera",
+      "borrador": false
     },
     {
       "slug": "toyota-proace-city",
