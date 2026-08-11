@@ -1,5 +1,5 @@
 {
-  "step": "cambio",
+  "step": "confirmar",
   "datos": {
     "titulo": "Mitsubishi Montero 4x4 7 Plazas",
     "marca": "Mitsubishi",
@@ -14,7 +14,9 @@
         "slug": "diesel",
         "texto": "Diésel"
       }
-    ]
+    ],
+    "cambio": "manual",
+    "cambioTexto": "Manual"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444027331-dssaej-3dIjoYL60dolneHR2KVkPwmnjBGzqg.jpg"
