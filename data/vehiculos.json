@@ -228,7 +228,7 @@
       ],
       "vendido": false,
       "reservado": false,
-      "borrador": true,
+      "borrador": false,
       "orden": 12
     }
   ]
