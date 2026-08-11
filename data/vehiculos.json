@@ -136,6 +136,37 @@
       "reservado": false,
       "borrador": true,
       "orden": 9
+    },
+    {
+      "slug": "bmw-x5-xdrive",
+      "marca": "BMW",
+      "modelo": "X5 XDRIVE",
+      "titulo": "BMW X5 XDRIVE",
+      "categoria": "ocasion",
+      "precio": "27.990",
+      "anio": "2016",
+      "km": "173000 km",
+      "potencia": "217 CV",
+      "puertas": "",
+      "carroceria": "",
+      "carroceriaTexto": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443601664-2wnv3w-2t8l1BLz3flLJizIAz3rUsrqa7EfNe.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": true,
+      "orden": 10
     }
   ]
 }
