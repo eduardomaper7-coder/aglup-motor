@@ -1,10 +1,11 @@
 {
-  "step": "precio",
+  "step": "anio",
   "datos": {
     "titulo": "BMW X5 XDRIVE",
     "marca": "BMW",
     "modelo": "X5 XDRIVE",
-    "categoria": "ocasion"
+    "categoria": "ocasion",
+    "precio": "27.990"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443601664-2wnv3w-2t8l1BLz3flLJizIAz3rUsrqa7EfNe.jpg"
