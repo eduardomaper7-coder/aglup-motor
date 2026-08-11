@@ -242,38 +242,12 @@
       </div>
     </div>
 
-    <div class="fila">
-      <div>
-        <label>Carrocería</label>
-        <select id="fCarroceria">
-          <option value="berlina">Berlina</option>
-          <option value="cabrio">Cabrio</option>
-          <option value="compacto">Compacto</option>
-          <option value="coupe">Coupé</option>
-          <option value="familiar">Familiar</option>
-          <option value="furgoneta">Furgoneta</option>
-          <option value="monovolumen">Monovolumen</option>
-          <option value="pickup">Pickup</option>
-          <option value="suv">SUV</option>
-        </select>
-      </div>
+    <div class="fila uno">
       <div>
         <label>Cambio</label>
         <select id="fCambio">
           <option value="manual">Manual</option>
           <option value="automatico">Automático</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="fila">
-      <div>
-        <label>Tracción</label>
-        <select id="fTraccion">
-          <option value="delantera">Delantera</option>
-          <option value="trasera">Trasera</option>
-          <option value="total">Total</option>
-          <option value="4x4">4x4</option>
         </select>
       </div>
     </div>
@@ -557,9 +531,7 @@ function abrirFormulario(vehiculo) {
   $('fKm').value = vehiculo?.km || '';
   $('fPotencia').value = vehiculo?.potencia || '';
   $('fPuertas').value = vehiculo?.puertas || '';
-  $('fCarroceria').value = vehiculo?.carroceria || 'suv';
   $('fCambio').value = vehiculo?.cambio || 'manual';
-  $('fTraccion').value = vehiculo?.traccion || 'delantera';
   $('fEtiquetaDgt').value = vehiculo?.etiquetaDgt || '';
   $('fGarantia').value = vehiculo?.garantiaTexto || 'Garantía incluida: 12 meses';
   $('fVendido').checked = !!vehiculo?.vendido;
@@ -583,21 +555,14 @@ function cerrarFormulario() {
 const textoCombustible = {
   gasolina: 'Gasolina', diesel: 'Diésel', hibrido: 'Híbrido', electrico: 'Eléctrico', glp: 'GLP',
 };
-const textoCarroceria = {
-  berlina: 'Berlina', cabrio: 'Cabrio', compacto: 'Compacto', coupe: 'Coupé', familiar: 'Familiar',
-  furgoneta: 'Furgoneta', monovolumen: 'Monovolumen', pickup: 'Pickup', suv: 'SUV',
-};
 const textoCambio = { manual: 'Manual', automatico: 'Automático' };
-const textoTraccion = { delantera: 'Delantera', trasera: 'Trasera', total: 'Total', '4x4': '4x4' };
 
 function recogerFormulario() {
   const combustibles = Array.from(document.querySelectorAll('.fCombustible'))
     .filter((cb) => cb.checked)
     .map((cb) => ({ slug: cb.value, texto: textoCombustible[cb.value] }));
 
-  const carroceria = $('fCarroceria').value;
   const cambio = $('fCambio').value;
-  const traccion = $('fTraccion').value;
 
   return {
     slug: editandoSlug || slugify($('fTitulo').value),
@@ -610,12 +575,8 @@ function recogerFormulario() {
     km: $('fKm').value.trim(),
     potencia: $('fPotencia').value.trim(),
     puertas: $('fPuertas').value.trim(),
-    carroceria,
-    carroceriaTexto: textoCarroceria[carroceria],
     cambio,
     cambioTexto: textoCambio[cambio],
-    traccion,
-    traccionTexto: textoTraccion[traccion],
     combustibles,
     etiquetaDgt: $('fEtiquetaDgt').value,
     garantiaTexto: $('fGarantia').value.trim(),

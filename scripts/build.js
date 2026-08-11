@@ -110,9 +110,6 @@ function buildDetallePage(tplDetalle, v) {
     '{{COMBUSTIBLE_TEXTO}}': combustibleTexto,
     '{{CAMBIO_SLUG}}': v.cambio,
     '{{CAMBIO_TEXTO}}': v.cambioTexto,
-    '{{CARROCERIA_SLUG}}': v.carroceria,
-    '{{CARROCERIA_TEXTO}}': v.carroceriaTexto,
-    '{{TRACCION_TEXTO}}': v.traccionTexto || '',
     '{{FOTO_PRINCIPAL}}': (v.fotos && v.fotos[0]) || '',
     '{{GALERIA}}': buildGaleriaHtml(v),
   };
@@ -189,7 +186,6 @@ function buildPaClasses(v) {
     .join(' ');
   return [
     `pa_cambio-${v.cambio}`,
-    `pa_carroceria-${v.carroceria}`,
     combustibleClasses,
     `pa_marca-${marcaSlug}`,
     `pa_modelo-${modeloSlug}`,

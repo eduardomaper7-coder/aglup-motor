@@ -29,12 +29,6 @@ const TEXTOS = {
   combustibleInvalido: 'No reconozco ese combustible. Responde: gasolina, diésel, híbrido, eléctrico o glp',
   pideCambio: '¿Cambio? Responde: manual o automático',
   cambioInvalido: 'No reconozco esa opción. Responde: manual o automático',
-  pideCarroceria:
-    '¿Carrocería? Responde: berlina, suv, compacto, coupe, familiar, monovolumen, furgoneta, pickup o cabrio',
-  carroceriaInvalida:
-    'No reconozco esa opción. Responde: berlina, suv, compacto, coupe, familiar, monovolumen, furgoneta, pickup o cabrio',
-  pideTraccion: '¿Tracción? Responde: delantera, trasera, total o 4x4',
-  traccionInvalida: 'No reconozco esa opción. Responde: delantera, trasera, total o 4x4',
   pideConfirmacion: (resumen) => `Resumen:\n\n${resumen}\n\n¿Confirmas? Responde *SI* o *NO*.`,
   confirmacionInvalida: 'Responde *SI* para enviarlo a revisión, o *NO* para cancelar.',
   guardado: '¡Recibido! El equipo lo va a revisar y lo publicará en la web en breve. Gracias 🙌',
@@ -59,19 +53,6 @@ const CAMBIOS = {
   automático: { slug: 'automatico', texto: 'Automático' },
 };
 
-const CARROCERIAS = {
-  berlina: 'Berlina',
-  cabrio: 'Cabrio',
-  compacto: 'Compacto',
-  coupe: 'Coupé',
-  coupé: 'Coupé',
-  familiar: 'Familiar',
-  furgoneta: 'Furgoneta',
-  monovolumen: 'Monovolumen',
-  pickup: 'Pickup',
-  suv: 'SUV',
-};
-
 const CATEGORIAS = {
   ocasion: 'ocasion',
   'ocasión': 'ocasion',
@@ -81,14 +62,6 @@ const CATEGORIAS = {
   seminuevo: 'seminuevo',
 };
 const CATEGORIA_TEXTO = { ocasion: 'Ocasión', 'segunda-mano': 'Segunda mano', seminuevo: 'Seminuevo' };
-
-const TRACCIONES = {
-  delantera: { slug: 'delantera', texto: 'Delantera' },
-  trasera: { slug: 'trasera', texto: 'Trasera' },
-  total: { slug: 'total', texto: 'Total' },
-  '4x4': { slug: '4x4', texto: '4x4' },
-  '4×4': { slug: '4x4', texto: '4x4' },
-};
 
 function normalizar(texto) {
   return String(texto || '')
@@ -113,9 +86,7 @@ function resumenTexto(datos) {
     `Km: ${datos.km}\n` +
     `Potencia: ${datos.potencia}\n` +
     `Combustible: ${datos.combustibles.map((c) => c.texto).join(', ')}\n` +
-    `Cambio: ${datos.cambioTexto}\n` +
-    `Carrocería: ${datos.carroceriaTexto}\n` +
-    `Tracción: ${datos.traccionTexto}`
+    `Cambio: ${datos.cambioTexto}`
   );
 }
 
@@ -246,26 +217,6 @@ async function procesarMensaje(telefono, mensaje) {
       if (!encontrado) return TEXTOS.cambioInvalido;
       session.datos.cambio = encontrado.slug;
       session.datos.cambioTexto = encontrado.texto;
-      session.step = 'carroceria';
-      await saveSession(telefono, session, sha);
-      return TEXTOS.pideCarroceria;
-    }
-    case 'carroceria': {
-      const clave = normalizar(original);
-      const texto2 = CARROCERIAS[clave];
-      if (!texto2) return TEXTOS.carroceriaInvalida;
-      session.datos.carroceria = clave === 'coupé' ? 'coupe' : clave;
-      session.datos.carroceriaTexto = texto2;
-      session.step = 'traccion';
-      await saveSession(telefono, session, sha);
-      return TEXTOS.pideTraccion;
-    }
-    case 'traccion': {
-      const clave = normalizar(original);
-      const encontrado = TRACCIONES[clave];
-      if (!encontrado) return TEXTOS.traccionInvalida;
-      session.datos.traccion = encontrado.slug;
-      session.datos.traccionTexto = encontrado.texto;
       session.step = 'confirmar';
       await saveSession(telefono, session, sha);
       return TEXTOS.pideConfirmacion(resumenTexto(session.datos));
