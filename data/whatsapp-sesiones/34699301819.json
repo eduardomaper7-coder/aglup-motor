@@ -1,5 +1,5 @@
 {
-  "step": "potencia",
+  "step": "combustible",
   "datos": {
     "titulo": "BMW X5 XDRIVE",
     "marca": "BMW",
@@ -7,7 +7,8 @@
     "categoria": "ocasion",
     "precio": "27.990",
     "anio": "2016",
-    "km": "173000 km"
+    "km": "173000 km",
+    "potencia": "217 CV"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443601664-2wnv3w-2t8l1BLz3flLJizIAz3rUsrqa7EfNe.jpg"
