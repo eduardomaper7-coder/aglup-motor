@@ -118,7 +118,20 @@ async function procesarMensaje(telefono, mensaje) {
 
   // Primer contacto: da la bienvenida y no procesa nada más en este mensaje.
   if (esNueva) {
-    await saveSession(telefono, session);
+    // Si el primerísimo mensaje ya es una foto (el cliente adjunta varias
+    // antes de que le dé tiempo a leer el saludo), la guardamos directamente
+    // en vez de descartarla — y usamos mutarSesion por si llegan dos "primeros
+    // mensajes" casi a la vez (crear el fichero de sesión también puede chocar).
+    if (mensaje.type === 'image') {
+      const url = await subirFotoWhatsapp(mensaje.image.id, telefono);
+      const actualizada = await mutarSesion(
+        telefono,
+        () => ({ step: 'fotos', datos: {}, fotos: [] }),
+        (s) => ({ ...s, fotos: (s.fotos || []).includes(url) ? s.fotos : [...(s.fotos || []), url] })
+      );
+      return TEXTOS.bienvenida + '\n\n' + TEXTOS.fotoRecibida(actualizada.fotos.length);
+    }
+    await mutarSesion(telefono, () => ({ step: 'fotos', datos: {}, fotos: [] }), (s) => s);
     return TEXTOS.bienvenida;
   }
 

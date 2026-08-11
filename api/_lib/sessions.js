@@ -39,11 +39,18 @@ function sleep(ms) {
 // Aplica una mutación a la sesión de forma segura ante escrituras concurrentes
 // (p.ej. varias fotos llegando casi a la vez en mensajes separados de WhatsApp).
 // Relee la sesión más reciente y reintenta si GitHub rechaza el commit por
-// conflicto de sha (409), en vez de perder la escritura de la otra petición.
-async function mutarSesion(telefono, sesionInicial, mutar, intentosMax = 5) {
+// conflicto de sha, en vez de perder la escritura de la otra petición.
+//
+// GitHub puede devolver el conflicto como 409 o como 422 según el caso (sha
+// que no coincide, o intento de crear un fichero que ya existe en el primer
+// mensaje de una conversación nueva), así que reintentamos ante cualquier
+// error de escritura, no solo 409 — la mutación siempre relee el estado más
+// reciente antes de reintentar, así que es seguro repetir.
+async function mutarSesion(telefono, sesionInicial, mutar, intentosMax = 6) {
   let existente = await getSession(telefono);
   let session = existente ? existente.data : sesionInicial();
   let sha = existente ? existente.sha : undefined;
+  let ultimoError;
 
   for (let intento = 0; intento < intentosMax; intento++) {
     const siguiente = mutar(session);
@@ -51,16 +58,17 @@ async function mutarSesion(telefono, sesionInicial, mutar, intentosMax = 5) {
       await saveSession(telefono, siguiente, sha);
       return siguiente;
     } catch (e) {
-      if (e && e.status === 409 && intento < intentosMax - 1) {
-        await sleep(200 * (intento + 1));
+      ultimoError = e;
+      if (intento < intentosMax - 1) {
+        await sleep(150 * (intento + 1) + Math.floor(Math.random() * 150));
         existente = await getSession(telefono);
         session = existente ? existente.data : sesionInicial();
         sha = existente ? existente.sha : undefined;
         continue;
       }
-      throw e;
     }
   }
+  throw ultimoError;
 }
 
 module.exports = { getSession, saveSession, clearSession, mutarSesion };
