@@ -1,11 +1,12 @@
 {
-  "step": "anio",
+  "step": "km",
   "datos": {
     "titulo": "Nissan Qashqai",
     "marca": "Nissan",
     "modelo": "Qashqai",
     "categoria": "ocasion",
-    "precio": "13.990"
+    "precio": "13.990",
+    "anio": "2017"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443396638-wfgw88-UhQAbSMJzWUY1Bk6ya7v2fEUSxJm2V.jpg"
