@@ -199,6 +199,37 @@
       "reservado": false,
       "borrador": true,
       "orden": 11
+    },
+    {
+      "slug": "mitsubishi-montero-4x4-7-plazas",
+      "marca": "Mitsubishi",
+      "modelo": "Montero 4x4 7 Plazas",
+      "titulo": "Mitsubishi Montero 4x4 7 Plazas",
+      "categoria": "segunda-mano",
+      "precio": "11.990",
+      "anio": "1999",
+      "km": "25000 km",
+      "potencia": "125 CV",
+      "puertas": "",
+      "carroceria": "",
+      "carroceriaTexto": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444027331-dssaej-3dIjoYL60dolneHR2KVkPwmnjBGzqg.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": true,
+      "orden": 12
     }
   ]
 }
