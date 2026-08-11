@@ -1,5 +1,5 @@
 {
-  "step": "cambio",
+  "step": "confirmar",
   "datos": {
     "titulo": "Renault Megane RS",
     "marca": "Renault",
@@ -14,7 +14,9 @@
         "slug": "gasolina",
         "texto": "Gasolina"
       }
-    ]
+    ],
+    "cambio": "manual",
+    "cambioTexto": "Manual"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378598-6nipas-C7UrssTMABuoaEIEzI2xs3M1jn17Or.jpg",
