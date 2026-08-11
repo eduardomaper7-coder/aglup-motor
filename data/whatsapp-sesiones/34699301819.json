@@ -1,6 +1,10 @@
 {
-  "step": "titulo",
-  "datos": {},
+  "step": "categoria",
+  "datos": {
+    "titulo": "Mitsubishi Montero Sport 4x4",
+    "marca": "Mitsubishi",
+    "modelo": "Montero Sport 4x4"
+  },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443913031-amyiga-MkoZUk7HdoJ4EAq5EyRH4GQfp3yOdl.jpg",
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443914120-d2i5uh-KDzAPUxGQATdsBDWtFs6euxjudfUa0.jpg"
