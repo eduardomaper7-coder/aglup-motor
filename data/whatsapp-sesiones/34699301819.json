@@ -1,9 +1,10 @@
 {
-  "step": "categoria",
+  "step": "precio",
   "datos": {
     "titulo": "Nissan Qashqai",
     "marca": "Nissan",
-    "modelo": "Qashqai"
+    "modelo": "Qashqai",
+    "categoria": "ocasion"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443396638-wfgw88-UhQAbSMJzWUY1Bk6ya7v2fEUSxJm2V.jpg"
