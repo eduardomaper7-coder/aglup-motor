@@ -105,6 +105,37 @@
       "reservado": false,
       "borrador": true,
       "orden": 8
+    },
+    {
+      "slug": "nissan-qashqai",
+      "marca": "Nissan",
+      "modelo": "Qashqai",
+      "titulo": "Nissan Qashqai",
+      "categoria": "ocasion",
+      "precio": "13.990",
+      "anio": "2017",
+      "km": "149000 km",
+      "potencia": "110 CV",
+      "puertas": "",
+      "carroceria": "",
+      "carroceriaTexto": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443396638-wfgw88-UhQAbSMJzWUY1Bk6ya7v2fEUSxJm2V.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": true,
+      "orden": 9
     }
   ]
 }
