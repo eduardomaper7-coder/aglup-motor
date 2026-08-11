@@ -1,10 +1,11 @@
 {
-  "step": "precio",
+  "step": "anio",
   "datos": {
     "titulo": "Renault Megane RS",
     "marca": "Renault",
     "modelo": "Megane RS",
-    "categoria": "ocasion"
+    "categoria": "ocasion",
+    "precio": "115.000"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378598-6nipas-C7UrssTMABuoaEIEzI2xs3M1jn17Or.jpg",
