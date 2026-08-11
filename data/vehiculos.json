@@ -7,172 +7,6 @@
   },
   "vehiculos": [
     {
-      "slug": "nissan-juke-1-6-hybrid-n-connecta-auto",
-      "marca": "Nissan",
-      "modelo": "Juke",
-      "titulo": "Nissan Juke 1.6 Hybrid N-Connecta Auto",
-      "categoria": "seminuevo",
-      "precio": "15.980",
-      "anio": "2019",
-      "km": "12000 km",
-      "potencia": "150 CV",
-      "puertas": "3",
-      "carroceria": "suv",
-      "carroceriaTexto": "SUV",
-      "cambio": "manual",
-      "cambioTexto": "Manual",
-      "combustibles": [
-        {
-          "slug": "gasolina",
-          "texto": "Gasolina"
-        },
-        {
-          "slug": "hibrido",
-          "texto": "Híbrido"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-eco",
-      "fotos": [
-        "/wp-content/uploads/2026/03/nissan-juke-3.png",
-        "/wp-content/uploads/2026/03/nissan-juke-1.png",
-        "/wp-content/uploads/2026/03/nissan-juke-2.png"
-      ],
-      "vendido": false,
-      "reservado": false,
-      "orden": 1,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
-      "slug": "audi-a1-adrenalin-copia",
-      "marca": "Audi",
-      "modelo": "A1",
-      "titulo": "Audi A1 Adrenalin",
-      "categoria": "ocasion",
-      "precio": "11.000",
-      "anio": "2015",
-      "km": "120000 km",
-      "potencia": "90 CV",
-      "puertas": "5",
-      "carroceria": "compacto",
-      "carroceriaTexto": "Compacto",
-      "cambio": "manual",
-      "cambioTexto": "Manual",
-      "combustibles": [
-        {
-          "slug": "gasolina",
-          "texto": "Gasolina"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/aglup-audia1.png"
-      ],
-      "vendido": false,
-      "reservado": false,
-      "orden": 2,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
-      "slug": "audi-tt-coupe-s-line-edition-copia",
-      "marca": "Audi",
-      "modelo": "TT",
-      "titulo": "Audi TT Coupe S line edition",
-      "categoria": "sin-categorizar",
-      "precio": "35.000",
-      "anio": "2017",
-      "km": "135000 km",
-      "potencia": "230 CV",
-      "puertas": "3",
-      "carroceria": "coupe",
-      "carroceriaTexto": "Coupé",
-      "cambio": "manual",
-      "cambioTexto": "Manual",
-      "combustibles": [
-        {
-          "slug": "gasolina",
-          "texto": "Gasolina"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/auditt-aglup.png"
-      ],
-      "vendido": true,
-      "reservado": false,
-      "orden": 3,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
-      "slug": "mercedes-gle-coupe-350-d-4matic-copia",
-      "marca": "Mercedes",
-      "modelo": "GLE",
-      "titulo": "MERCEDES GLE Coupé 350 d 4MATIC",
-      "categoria": "seminuevo",
-      "precio": "68.000",
-      "anio": "1999",
-      "km": "68000 km",
-      "potencia": "258 CV",
-      "puertas": "3",
-      "carroceria": "coupe",
-      "carroceriaTexto": "Coupé",
-      "cambio": "automatico",
-      "cambioTexto": "Automático",
-      "combustibles": [
-        {
-          "slug": "diesel",
-          "texto": "Diésel"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/mercedes-gl-aglup.png"
-      ],
-      "vendido": false,
-      "reservado": false,
-      "orden": 4,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
-      "slug": "opel-mokka",
-      "marca": "Opel",
-      "modelo": "Mokka",
-      "titulo": "Opel Mokka",
-      "categoria": "seminuevo",
-      "precio": "8.500",
-      "anio": "2013",
-      "km": "165000 km",
-      "potencia": "130 CV",
-      "puertas": "5",
-      "carroceria": "suv",
-      "carroceriaTexto": "SUV",
-      "cambio": "automatico",
-      "cambioTexto": "Automático",
-      "combustibles": [
-        {
-          "slug": "diesel",
-          "texto": "Diésel"
-        }
-      ],
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "etiquetaDgt": "etiqueta-c",
-      "fotos": [
-        "/wp-content/uploads/2026/05/opel-mokka-aglup.png"
-      ],
-      "vendido": false,
-      "reservado": true,
-      "orden": 5,
-      "traccion": "delantera",
-      "traccionTexto": "Delantera"
-    },
-    {
       "slug": "volkswagen-golf-gti-qp30",
       "marca": "Volkswagen",
       "modelo": "golf gti",
@@ -237,6 +71,40 @@
       "orden": 7,
       "traccion": "delantera",
       "traccionTexto": "Delantera"
+    },
+    {
+      "slug": "bmw-x6",
+      "marca": "BMW",
+      "modelo": "X6",
+      "titulo": "BMW X6",
+      "categoria": "ocasion",
+      "precio": "26.990",
+      "anio": "2011",
+      "km": "190000 km",
+      "potencia": "408 CV",
+      "puertas": "",
+      "carroceria": "suv",
+      "carroceriaTexto": "SUV",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "traccion": "total",
+      "traccionTexto": "Total",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400437012-x0ldz5-99W8aktayFMgDMJdJGSiiDEXpUlwIn.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786400439497-imvk56-bu0OoWhBFNgxS9NxcJpvLzAtQtRRyh.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": true,
+      "orden": 8
     }
   ]
 }
