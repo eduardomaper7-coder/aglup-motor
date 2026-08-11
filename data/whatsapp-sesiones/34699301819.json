@@ -1,5 +1,5 @@
 {
-  "step": "potencia",
+  "step": "combustible",
   "datos": {
     "titulo": "Renault Megane RS",
     "marca": "Renault",
@@ -7,7 +7,8 @@
     "categoria": "ocasion",
     "precio": "115.000",
     "anio": "2010",
-    "km": "115000 km"
+    "km": "115000 km",
+    "potencia": "000 CV"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378598-6nipas-C7UrssTMABuoaEIEzI2xs3M1jn17Or.jpg",
