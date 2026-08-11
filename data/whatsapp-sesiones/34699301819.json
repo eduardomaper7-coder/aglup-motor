@@ -1,12 +1,13 @@
 {
-  "step": "km",
+  "step": "potencia",
   "datos": {
     "titulo": "Mitsubishi Montero Sport 4x4",
     "marca": "Mitsubishi",
     "modelo": "Montero Sport 4x4",
     "categoria": "ocasion",
     "precio": "8.990",
-    "anio": "2004"
+    "anio": "2004",
+    "km": "216000 km"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443913031-amyiga-MkoZUk7HdoJ4EAq5EyRH4GQfp3yOdl.jpg",
