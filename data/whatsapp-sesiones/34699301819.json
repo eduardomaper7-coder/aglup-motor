@@ -1,5 +1,5 @@
 {
-  "step": "cambio",
+  "step": "confirmar",
   "datos": {
     "titulo": "BMW X5 XDRIVE",
     "marca": "BMW",
@@ -14,7 +14,9 @@
         "slug": "diesel",
         "texto": "Diésel"
       }
-    ]
+    ],
+    "cambio": "manual",
+    "cambioTexto": "Manual"
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443601664-2wnv3w-2t8l1BLz3flLJizIAz3rUsrqa7EfNe.jpg"
