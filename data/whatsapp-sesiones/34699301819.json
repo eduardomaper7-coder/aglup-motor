@@ -1,5 +1,5 @@
 {
-  "step": "combustible",
+  "step": "cambio",
   "datos": {
     "titulo": "Mitsubishi Montero Sport 4x4",
     "marca": "Mitsubishi",
@@ -8,7 +8,13 @@
     "precio": "8.990",
     "anio": "2004",
     "km": "216000 km",
-    "potencia": "125 CV"
+    "potencia": "125 CV",
+    "combustibles": [
+      {
+        "slug": "diesel",
+        "texto": "Diésel"
+      }
+    ]
   },
   "fotos": [
     "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786443913031-amyiga-MkoZUk7HdoJ4EAq5EyRH4GQfp3yOdl.jpg",
