@@ -230,6 +230,38 @@
       "reservado": false,
       "borrador": false,
       "orden": 12
+    },
+    {
+      "slug": "renault-megane-rs",
+      "marca": "Renault",
+      "modelo": "Megane RS",
+      "titulo": "Renault Megane RS",
+      "categoria": "ocasion",
+      "precio": "115.000",
+      "anio": "2010",
+      "km": "115000 km",
+      "potencia": "000 CV",
+      "puertas": "",
+      "carroceria": "",
+      "carroceriaTexto": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "etiquetaDgt": "",
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378598-6nipas-C7UrssTMABuoaEIEzI2xs3M1jn17Or.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378685-lh48d5-z67lYEjjgNE8k9O4OhcEMXZ9Wf5ef4.jpg"
+      ],
+      "vendido": false,
+      "reservado": false,
+      "borrador": true,
+      "orden": 13
     }
   ]
 }
