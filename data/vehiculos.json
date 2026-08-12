@@ -288,7 +288,7 @@
       "precio": "115.000",
       "anio": "2010",
       "km": "115000 km",
-      "potencia": "000 CV",
+      "potencia": "",
       "puertas": "",
       "carroceria": "",
       "carroceriaTexto": "",
@@ -303,8 +303,16 @@
       "garantiaTexto": "Garantía incluida: 12 meses",
       "etiquetaDgt": "",
       "fotos": [
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378598-6nipas-C7UrssTMABuoaEIEzI2xs3M1jn17Or.jpg",
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/whatsapp-34699301819/1786444378685-lh48d5-z67lYEjjgNE8k9O4OhcEMXZ9Wf5ef4.jpg"
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530655511-SaveClip.App_730463922_17893699776542891_8498267747372218191_n-U8VFf4lasbforx9fxzoxtA3NBwkuxM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530657771-SaveClip.App_729705925_17893699794542891_1522046756508860185_n-mAOFFmL6dY747aD00KrMCmHExefNnE.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530659325-SaveClip.App_729867607_17893699785542891_288296787338554490_n-hIVxsud688z90IoufygrFaJx1y8lhV.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530660525-SaveClip.App_728675596_17893702959542891_4607773289013530675_n-Ihi1ZcG1hdIFLUSYJdvqaoeiZVsUdS.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530662074-SaveClip.App_729260103_17893702971542891_1791050688672716483_n-4BOjcMwGGu3VC2RT4IFTyLbhVoILKB.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530663622-SaveClip.App_728794894_17893702980542891_9176119336997368723_n-XGIBAdfPH7KeHQRIXdxX8sY0Mi1H1n.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530665280-SaveClip.App_729979588_17893703001542891_2471169073922938663_n-s51XpfEJ6ScRKI0FmmNqMcT1pRaEmc.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530667151-SaveClip.App_728463114_17893702992542891_4757735039547582863_n-vCAeQyvIsMugOJkaziyAfgomIIwCZJ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530668839-SaveClip.App_730373549_17893703010542891_1768369317119323774_n-zu5cTGMF0N7U8gOrz9A1ukJiUS4aNu.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/renault-megane-rs/1786530670432-SaveClip.App_731058995_17893703022542891_2618233113439680775_n-tpPY1Snw7qtUECJOaruJo2luc07Qkr.jpg"
       ],
       "vendido": false,
       "reservado": false,
