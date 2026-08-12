@@ -1099,6 +1099,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549104817-SaveClip.App_724937519_17892641340542891_4992025355293143374_n-Pvs3O5TQbIObNtrFGIZiZFIAR6ZgbG.jpg"
       ],
       "orden": 35
+    },
+    {
+      "slug": "peugeot-2008-9z02",
+      "marca": "PEUGEOT",
+      "modelo": "2008",
+      "titulo": "PEUGEOT 2008",
+      "precio": "7990",
+      "categoria": "ocasion",
+      "anio": "2015",
+      "km": "",
+      "potencia": "82",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549220764-SaveClip.App_726494515_17892643740542891_196460294937188764_n-XCwZ4ffRCv9DYm5EdCy79acTgUkXRb.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549222241-SaveClip.App_726704655_17892643752542891_4471737102601294003_n-ZqpAoXglznQuQsQKovPSciyZcaThmD.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549223544-SaveClip.App_725751155_17892643773542891_8731668370557912928_n-kg3YEqwddlTBgNCvGmUXp1VuiOk1Cr.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549225089-SaveClip.App_726704551_17892643782542891_8805023105891608000_n-ZIWKsg7GiG03QKbvKWkEjaoNLjNqYL.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549226709-SaveClip.App_726564221_17892643791542891_7846932762747700638_n-AUD0IplWhEL6eKwOGEbbSQpjRJWohX.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549228402-SaveClip.App_726330269_17892643800542891_4678444340964811674_n-BPriZqMqEu7YD4ZBwhHMSBTZCzQYLG.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549229779-SaveClip.App_726439894_17892645786542891_8898277570946919601_n-xOhPTbOnkm1jm7p6x2ap4DHRUh2e5A.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549231497-SaveClip.App_725127303_17892645819542891_9216661795855348267_n-U9mR917JXBgYM9ejf0fcwMwtkWRTTt.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549232912-SaveClip.App_724181760_17892645807542891_1926856147238957857_n-zns4KfSdxtDPqBWZCRuJnhas0cdGWm.jpg"
+      ],
+      "orden": 36
     }
   ]
 }
