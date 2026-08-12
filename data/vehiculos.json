@@ -1705,6 +1705,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-c-rsbu/1786553415004-b17c1d64-267a-41bd-9711-61347ba154e2-jTOQ0JBCUSUbtti6Jw7OI0NhyuuBa8.webp"
       ],
       "orden": 54
+    },
+    {
+      "slug": "audi-a4-uj6b",
+      "marca": "Audi",
+      "modelo": "A4",
+      "titulo": "Audi A4",
+      "precio": "8.990",
+      "categoria": "ocasion",
+      "anio": "2005",
+      "km": "321.000",
+      "potencia": "140",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a4-uj6b/1786553539502-374f293d-8211-49a2-8f1e-e3973d2b810d-PYp1s5O7ogMvYOxRWtmoNenNvVQtOl.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a4-uj6b/1786553541009-8096c732-eace-4e70-b679-df35719b8c64-lKUKBZ9ZeMhTT3a2SCNyTI14alTNn0.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a4-uj6b/1786553542790-79500665-46a1-4043-8aea-d1e468d7bc9c-2STbtyuh1qu7891ZVqIjMql67Yu6HL.webp"
+      ],
+      "orden": 55
     }
   ]
 }
