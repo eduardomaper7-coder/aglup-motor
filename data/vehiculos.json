@@ -1798,6 +1798,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-a3s1/1786554270532-f210732c-b5af-42c4-99ad-268fcd44a0b0-O7FQIiM8t5NSFlhZdDgIJ2gJy3wIqf.webp"
       ],
       "orden": 57
+    },
+    {
+      "slug": "peugeot-108-buay",
+      "marca": "Peugeot",
+      "modelo": "108",
+      "titulo": "Peugeot 108",
+      "precio": "",
+      "categoria": "segunda-mano",
+      "anio": "2018",
+      "km": "8.990",
+      "potencia": "82",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-buay/1786554347259-617ab42c-8ba0-47a0-9381-c4c17aa8ef6d-00EI2DgKhR3BKqeyGJRL29BbPpdbxD.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-buay/1786554349343-6cb1bfb5-fa46-4156-b90c-2d0c437a5acd-2KxkP1mPBox5aD0yl8prsn5pBY1oMB.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-buay/1786554351087-e688d64d-6c8e-4738-a2fa-d05d92f301f6--1--AQAxGztbpwMcL9ACyhjK6FeHP5Qei0.webp"
+      ],
+      "orden": 58
     }
   ]
 }
