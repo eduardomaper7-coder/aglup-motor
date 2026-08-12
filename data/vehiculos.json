@@ -725,6 +725,45 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530330464-SaveClip.App_742096686_17896797102542891_162489498231145362_n-VSFNjeNGkubYmnPnqC9U4ZSG4VpTDd.jpg"
       ],
       "orden": 25
+    },
+    {
+      "slug": "mitsubishi-montero-4x4-7-plazas-3adm",
+      "marca": "MITSUBISHI",
+      "modelo": "MONTERO 4x4 7 PLAZAS",
+      "titulo": "MITSUBISHI MONTERO 4x4 7 PLAZAS",
+      "precio": "11.990",
+      "categoria": "segunda-mano",
+      "anio": "1999",
+      "km": "25000",
+      "potencia": "125",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530432989-SaveClip.App_731071846_17895295704542891_4129555474775067829_n-zp2u41hDqRRB6e8p0Q2DB9KfTIZOnT.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530434979-SaveClip.App_731071839_17895295713542891_3906370165235075576_n-U9RX1ghhC1dypvL0J7uchphmRuyVbP.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530436720-SaveClip.App_731111360_17895295734542891_6860871777116991871_n-2PSujF3ioA3EiBfVOXYL0EEmsngbTb.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530438701-SaveClip.App_731067977_17895295746542891_700808172976529140_n-PKZm7pWsJbHclG1aLhFipiYOweYUYi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530440452-SaveClip.App_731700137_17895295758542891_3154081817085654112_n-1KDpij0DAAcoucCvMPrikGh7F5Dm77.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530442025-SaveClip.App_731078652_17895295767542891_5041331494328920001_n-EGjkN7jT6O4kKELTEFSbVyV3TWQV7D.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530443759-SaveClip.App_730496416_17895295776542891_7752356574933851436_n-M2pxzQ1KAkCREMOD2k0k6MkKhg4Rgn.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530445605-SaveClip.App_731068186_17895295785542891_3763565196080017676_n-gaDXa7avFxi1hmpnFKwsDoRVEoZUoQ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530447246-SaveClip.App_731106890_17895295824542891_7311490207301694100_n-RcpOMTfL4zlB10KiPz8gUGNj3liYbi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530448929-SaveClip.App_731060111_17895295833542891_5591853625564138131_n-0f2MQ3IYFveRazmvwUdFYtVOC71ZKB.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530450436-SaveClip.App_731113764_17895295842542891_2777049208194898830_n-cIV18iCVHDcDgMwSH9h8OglfpvkZSv.jpg"
+      ],
+      "orden": 26
     }
   ]
 }
