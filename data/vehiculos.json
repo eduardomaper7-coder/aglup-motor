@@ -1643,6 +1643,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-tourneo-courier-nv69/1786553233106-0d7ba51c-0652-4afc-8c99-cbe80a055bd5-mYbGOqlU7SWc9VD02OA89UDTbVDYsf.webp"
       ],
       "orden": 52
+    },
+    {
+      "slug": "ford-c-max-pkat",
+      "marca": "Ford",
+      "modelo": "C-Max",
+      "titulo": "Ford C-Max",
+      "precio": "8.990",
+      "categoria": "segunda-mano",
+      "anio": "2014",
+      "km": "114.000",
+      "potencia": "125",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-pkat/1786553307605-ca8ccc3e-cb40-4dc0-b0c7-1dd56f6f5643-jvGxoXtXdvIar2Rd0A4A4DM7GU1m8S.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-pkat/1786553309143-ab4160fe-96ed-4e6b-b2de-95a811469348-GwurioxXFx0woQAESA4XHhOLHzxTkB.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-pkat/1786553310533-d9529149-d925-4b43-bc07-c74489671833-D9aBqRzAvrStEcDeLL9mGoqc1VzLtn.webp"
+      ],
+      "orden": 53
     }
   ]
 }
