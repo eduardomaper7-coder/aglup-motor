@@ -1891,6 +1891,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-focus-g1fo/1786554547420-369c5090-cd59-4dbe-8065-3b228262a238-t9eHSZ7KY3SnmIUpkGATXQTyYn7MKA.webp"
       ],
       "orden": 60
+    },
+    {
+      "slug": "mercedes-clase-m-iezl",
+      "marca": "Mercedes-Benz",
+      "modelo": "Clase M",
+      "titulo": "Mercedes Clase M",
+      "precio": "13.990",
+      "categoria": "segunda-mano",
+      "anio": "2005",
+      "km": "235.000",
+      "potencia": "272",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-m-iezl/1786554654372-6ea808d3-a144-4031-a2ab-18bfa6d4ac7e-4tsiZ4RhEkVKgxRBe7JwRVD2DbuKsS.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-m-iezl/1786554656238-d4dec97f-aab6-4299-ab32-118d9ad7abb2-Nn4bMUX8AQF49O4nAT6I9MJE9XRyIo.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-m-iezl/1786554658117-4a6e987f-2713-4eb5-a632-4c83b8b1dba7-gHXmnqpfviquismUDk4lD9QTH1kPje.webp"
+      ],
+      "orden": 61
     }
   ]
 }
