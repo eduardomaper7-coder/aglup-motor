@@ -432,6 +432,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528761471-SaveClip.App_771844930_17903013402542891_4121166064234349342_n-hdjoRPu0EzJE6HlhjXcUIkBK11s1tJ.jpg"
       ],
       "orden": 18
+    },
+    {
+      "slug": "opel-cascada-5vwf",
+      "marca": "OPEL",
+      "modelo": "CASCADA",
+      "titulo": "OPEL CASCADA",
+      "precio": "9490",
+      "categoria": "segunda-mano",
+      "anio": "2013",
+      "km": "174000",
+      "potencia": "140",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528874394-SaveClip.App_771347562_17903012319542891_4252433309109435115_n-o72TJQJmwzucWq9bAzqWz65rRgPtgt.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528876031-SaveClip.App_771822964_17903012310542891_97284428334476124_n-UTzxr4TtMH1NnGpeDIgljw0JJTKWp3.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528877249-SaveClip.App_772685530_17903012331542891_8644449184602658772_n-PrzLUTCpckQWTjfiKY9zSHjBJtB3WY.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528878655-SaveClip.App_772840584_17903012295542891_8060740673771305501_n-895sWbgeR5TAVkWLD2VyESLpeBtQDi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528879929-SaveClip.App_772707688_17903012286542891_308863100829670843_n-k3HqVbhdkMB4wbsopY26i5HOGlgQQq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528881120-SaveClip.App_772647472_17903012322542891_4468207298212006287_n-VIy8O69x7aHaFqIXUwEPFZmsLHiGjb.jpg"
+      ],
+      "orden": 19
     }
   ]
 }
