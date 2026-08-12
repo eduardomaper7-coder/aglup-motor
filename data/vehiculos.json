@@ -331,6 +331,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-mokka-x/1786528355987-SaveClip.App_772713603_17903019885542891_7678176743767110272_n-qxGwuL8Ld6PtJGVQtZGzYt1TZUFIQi.jpg"
       ],
       "orden": 15
+    },
+    {
+      "slug": "toyota-auris-x1np",
+      "marca": "TOYOTA",
+      "modelo": "auris",
+      "titulo": "TOYOTA auris",
+      "precio": "8990",
+      "categoria": "segunda-mano",
+      "anio": "2008",
+      "km": "",
+      "potencia": "",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-auris-x1np/1786528462081-SaveClip.App_771431071_17903016933542891_1438967775005425316_n-G3xtRPFaDOl1oDQZysmDkb4tBrqPKV.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-auris-x1np/1786528463512-SaveClip.App_774033798_17903016960542891_6629764991930351957_n-uwEDz4l5JzT7BpTNTPCtnyzPzLG1QT.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-auris-x1np/1786528465083-SaveClip.App_772868662_17903016951542891_4927089779825815156_n-CSWCg2hSeHgNnr8lWPleFx6YKigJH5.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-auris-x1np/1786528466461-SaveClip.App_772863173_17903016984542891_9100398551992687415_n-TbsghcTcedACdzoRcGRVghJ1poFJlu.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-auris-x1np/1786528467874-SaveClip.App_773271179_17903017026542891_796863534128341230_n-t9mO89GJg7HZvD2qd0KFiNUXxQ10og.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-auris-x1np/1786528469130-SaveClip.App_772863170_17903017050542891_2329390757506637166_n-ggBiaXB42wdjFSlUG6TV2GpoZYiwBo.jpg"
+      ],
+      "orden": 16
     }
   ]
 }
