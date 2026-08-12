@@ -536,6 +536,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529293874-SaveClip.App_770962926_17903009406542891_1587934155498446597_n-P4UTaUWPxb0tX1N7O9IsJ9feTwnFqp.jpg"
       ],
       "orden": 21
+    },
+    {
+      "slug": "peugeot-rifter-1-5-i29z",
+      "marca": "PEUGEOT",
+      "modelo": "RIFTER",
+      "titulo": "PEUGEOT RIFTER 1.5",
+      "precio": "",
+      "categoria": "ocasion",
+      "anio": "2019",
+      "km": "",
+      "potencia": "100",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529442762-SaveClip.App_773662919_17903009019542891_4133581252749684324_n-LhYTIgBKETmdqDOSxVSQdUPKDTJVO9.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529444669-SaveClip.App_771998502_17903009028542891_6885936760262217534_n-cZvIPFgAoeCORRX0tW0rhJCOAuDyr6.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529446308-SaveClip.App_772656160_17903009055542891_5419733591492766249_n-VK5lU6pfissdGyrDriFGwiZb4gajPp.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529447980-SaveClip.App_771939419_17903009046542891_8991742569173373871_n-ybpG37gLyPuLPhpi73lOh8LQF7lwqu.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529449467-SaveClip.App_770823758_17903009037542891_6163501023956250706_n-yxiNAmOx3WVXSXfEgCjLNE1w8upJuk.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529451005-SaveClip.App_771347577_17903009073542891_1390862487803689544_n-mxfjx893lwGnJSPxMmP3dWir0MsN8e.jpg"
+      ],
+      "orden": 22
     }
   ]
 }
