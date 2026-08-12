@@ -1427,6 +1427,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/land-rover-discovery-0a5z/1786552129549-8a7d883e-0afa-4381-91b2-d5f1b4b0823d-bmpivHtEELIAtJfDgfHE1GxEqYP6qY.webp"
       ],
       "orden": 45
+    },
+    {
+      "slug": "volkswagen-t-cross-6cn5",
+      "marca": "VOLKSWAGEN",
+      "modelo": "T-Cross 1.0 TSI Advance",
+      "titulo": "VOLKSWAGEN T-Cross",
+      "precio": "14.990",
+      "categoria": "segunda-mano",
+      "anio": "2021",
+      "km": "146.000",
+      "potencia": "95",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-cross-6cn5/1786552410953-3a92a165-dd67-4d31-a47a-4771a5879343-E5nJg0oPIKuyzZFEp5rAFkqp5tVJri.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-cross-6cn5/1786552412297-1b15a9b2-3c17-495c-b94c-2b21995eb5c8-TpPYuvKGCesObz0QqaQqXd8v4zsXVX.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-cross-6cn5/1786552413786-8ac23c54-4268-4ce7-a652-cc93187801f4-jogZMeIswLS7ksqpOzcD58VlH7b977.webp"
+      ],
+      "orden": 46
     }
   ]
 }
