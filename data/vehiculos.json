@@ -1136,6 +1136,48 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-9z02/1786549232912-SaveClip.App_724181760_17892645807542891_1926856147238957857_n-zns4KfSdxtDPqBWZCRuJnhas0cdGWm.jpg"
       ],
       "orden": 36
+    },
+    {
+      "slug": "volkswagen-tiguan-gcd4",
+      "marca": "VOLKSWAGEN",
+      "modelo": "TIGUAN",
+      "titulo": "VOLKSWAGEN TIGUAN",
+      "precio": "34.990",
+      "categoria": "ocasion",
+      "anio": "2025",
+      "km": "",
+      "potencia": "150",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "hibrido",
+          "texto": "Híbrido"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549518810-SaveClip.App_718868311_17890755474542891_7659699680189438658_n-7sUrExXAUvwL1NmWhMhv0QRvsIoghH.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549520570-SaveClip.App_718495764_17890755492542891_8644863726887207016_n-eY4CuaigHugFlqaCEx0eOaA1Wom86U.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549522063-SaveClip.App_718587879_17890755483542891_7665957300243564926_n-dlO4uIYydzMraZzshV1tNKM2yNXHtv.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549523670-SaveClip.App_718139062_17890755501542891_7535143389915017037_n-3ZXLJjLKWAROxRrBgQF79p5fsWZM6c.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549524932-SaveClip.App_718942712_17890755513542891_2500793549260609948_n-BdEptwiK60RUULefFFuGmZXBVAReUP.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549526542-SaveClip.App_719135563_17890755522542891_5694315409132595558_n-zoZSAWEIMU1CjoFkBQZdjVku4EK3yG.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549528205-SaveClip.App_717811269_17890755531542891_6721396993229439936_n-v2v3eek15kpx7V3xW8rfngRII3LMwY.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549529782-SaveClip.App_717909096_17890755543542891_1951291398750453390_n-faXoZx1xPwTOzBPCP3PRIa408Y37Bb.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549531412-SaveClip.App_717994353_17890755561542891_987719645163157081_n-PtPgpCFvGu1tJUeCBmiFpODMq9YalK.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549533037-SaveClip.App_718816532_17890755570542891_2889921530961126296_n-R8yUmU8MbDJW9d64XOHhaXCdDkYPjr.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549534195-SaveClip.App_718378765_17890755582542891_8731084803175789346_n-pzNzwCrXw5LDFLknseAPRndfpvAstn.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549535558-SaveClip.App_717286615_17890755600542891_4116760762175792663_n-kAimDtpIWkmF9j53QWEvM2huvEsv5f.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549537629-SaveClip.App_719233494_17890755615542891_822571327831293724_n-HhCmfAIJ7Cxdkwv65Bc1sHW0893gh8.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549538779-SaveClip.App_717437924_17890755624542891_6456827335618130072_n-cDdifJAIeZtNzoQyDf6Y6yOONgNHK6.jpg"
+      ],
+      "orden": 37
     }
   ]
 }
