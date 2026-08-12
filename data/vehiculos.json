@@ -1581,6 +1581,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/dacia-jogger-g5kz/1786552871764-fcba5755-ab11-416a-acca-81391a976869-gCCL3wHUEbOaUrxJj3Zqjv45HgOh5s.webp"
       ],
       "orden": 50
+    },
+    {
+      "slug": "nissan-juke-ib5v",
+      "marca": "Nissan",
+      "modelo": "Juke",
+      "titulo": "Nissan Juke",
+      "precio": "10.990",
+      "categoria": "segunda-mano",
+      "anio": "2016",
+      "km": "175.600",
+      "potencia": "115",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/nissan-juke-ib5v/1786552969097-630889a6-154f-47cb-997a-ea408633f77a-xejmpO8gKe5FtDnrQu1JaDNRVyWBYT.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/nissan-juke-ib5v/1786552970316-1f8a55f2-3689-4fe8-ac00-9bb9bee6cb33-XwZz46oiJ0UOVgjbSIsoqdv3cUNBc9.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/nissan-juke-ib5v/1786552971637-052bc74b-1d4d-4adf-bc9b-5e27b46656a7-XHAlL4BdqBtM5fCO5QiKjfYG8dXTiW.webp"
+      ],
+      "orden": 51
     }
   ]
 }
