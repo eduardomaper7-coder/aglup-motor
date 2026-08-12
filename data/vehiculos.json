@@ -1178,6 +1178,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-tiguan-gcd4/1786549538779-SaveClip.App_717437924_17890755624542891_6456827335618130072_n-cDdifJAIeZtNzoQyDf6Y6yOONgNHK6.jpg"
       ],
       "orden": 37
+    },
+    {
+      "slug": "opel-corsa-laj0",
+      "marca": "OPEL",
+      "modelo": "CORSA",
+      "titulo": "OPEL CORSA",
+      "precio": "8990",
+      "categoria": "ocasion",
+      "anio": "2017",
+      "km": "106.000",
+      "potencia": "115",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549748945-SaveClip.App_712903681_17890299747542891_1587980141420551884_n--1--MI5TAznohgUJL5VKhf6WLeGGMcbglJ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549750335-SaveClip.App_713303939_17890299756542891_3850281749457223912_n--1--LEuA75sQRaTdERAd0mlK1cSDqUdrjM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549751755-SaveClip.App_716110229_17890299774542891_8763419787206191083_n--1--ysrIvjtT6Gr45zUaPgUAdf31YFJuTW.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549753450-SaveClip.App_712523422_17890299795542891_4754834809151736248_n-m6IV55t2N9X9ArpJUFNEXV6Qu2f3Ii.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549755164-SaveClip.App_715910345_17890299783542891_3526165085674249085_n--1--R1AW5hWP7sATLS9VDx81Y7GQmCwyy4.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549756701-SaveClip.App_713744003_17890299804542891_4472346935945459526_n--1--jrjC9kK4cxp5FL75FCztiIIQ0Ry4U2.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549758219-SaveClip.App_713004077_17890299822542891_3130316990431865606_n--1--Yx6pBCSylLdh9zcTwBqhmkrhiS402K.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549759867-SaveClip.App_715508454_17890299813542891_4009287476737090303_n--1--ArYydWHBVfYwdtjlEAYJI5UzHntySl.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549761520-SaveClip.App_713423729_17890299834542891_1556629365235516996_n--1--XKBeTBybpGeA8qIVWyaTZl5AZstA6s.jpg"
+      ],
+      "orden": 38
     }
   ]
 }
