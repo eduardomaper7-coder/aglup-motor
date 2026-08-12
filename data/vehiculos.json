@@ -421,39 +421,6 @@
       "orden": 16
     },
     {
-      "slug": "toyota-rav4-zxxb",
-      "marca": "TOYOTA",
-      "modelo": "rav4",
-      "titulo": "TOYOTA rav4",
-      "precio": "",
-      "categoria": "segunda-mano",
-      "anio": "2017",
-      "km": "172500",
-      "potencia": "160",
-      "puertas": "",
-      "cambio": "automatico",
-      "cambioTexto": "Automático",
-      "combustibles": [
-        {
-          "slug": "hibrido",
-          "texto": "Híbrido"
-        }
-      ],
-      "etiquetaDgt": "",
-      "garantiaTexto": "Garantía incluida: 12 meses",
-      "vendido": false,
-      "reservado": false,
-      "borrador": false,
-      "fotos": [
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-rav4-zxxb/1786528597073-SaveClip.App_772656621_17903014755542891_8499917063519585587_n-pApxbOqUvMYYpciuLBpj89wx5Kknpi.jpg",
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-rav4-zxxb/1786528598453-SaveClip.App_770739423_17903014734542891_6123305773582350862_n-RTum9hGejYjU3LzJFDoTm7nWWdLGZ9.jpg",
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-rav4-zxxb/1786528599621-SaveClip.App_772656046_17903014737542891_6050492086845873109_n-8TMGoeq0j4FmlsUPLP3dUu3UZG0ECU.jpg",
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-rav4-zxxb/1786528600806-SaveClip.App_772677353_17903014791542891_5046142474762747765_n-9KUiiQWMBIhRw5kWe0N8olxpaMae8A.jpg",
-        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-rav4-zxxb/1786528601850-SaveClip.App_771210072_17903014794542891_4114695596924736220_n-LdwXQaeM1EwQllTCzzzSxINfBulmzo.jpg"
-      ],
-      "orden": 17
-    },
-    {
       "slug": "volkswagen-caddy-3a5i",
       "marca": "VOLKSWAGEN",
       "modelo": "CADDY",
