@@ -687,6 +687,44 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529822829-SaveClip.App_771940658_17903005977542891_5491981145610538590_n-fXu5tyBBccjZfeDFjQBu9mWWPYjM3n.jpg"
       ],
       "orden": 24
+    },
+    {
+      "slug": "mitsubishi-montero-sport-4x4-0r3m",
+      "marca": "MITSUBISHI",
+      "modelo": "MONTERO SPORT 4x4",
+      "titulo": "MITSUBISHI MONTERO SPORT 4x4",
+      "precio": "8.990",
+      "categoria": "segunda-mano",
+      "anio": "2004",
+      "km": "216.000",
+      "potencia": "125",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530314920-SaveClip.App_742738108_17896796832542891_8828611717089249987_n-j99Q7mooeYNexNFNo0yMUxRQjBABKL.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530316526-SaveClip.App_735222663_17896796865542891_8137304640015855299_n-xnp76CGAa0S614OA1wLuNk9J78b2sV.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530318656-SaveClip.App_742001726_17896796844542891_3252884874391172480_n-fbT3XjzfMzzqn9t5mVoPBuEPH6X3Ff.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530320361-SaveClip.App_741828013_17896797045542891_5785796530765300207_n-1ePJH1KmlvBerJvbB7oVRMXDhCwyhC.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530322032-SaveClip.App_741984600_17896797054542891_2525516755383281758_n-4MioBdGhT5GjWw4qRb0ymTjCeWLV7b.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530323852-SaveClip.App_742481602_17896797063542891_1144908964435145124_n-lxClIqF7AYzJhIgPENvsTnb85925sR.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530325413-SaveClip.App_743119408_17896797072542891_6351033330120264948_n-GBy05ReKCqCIUXwcvG31THrrGGRH6c.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530326842-SaveClip.App_741662263_17896797090542891_2278914915319917065_n-ReGUhKl77Vd5CO4w166z1n0d6BNCBE.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530328604-SaveClip.App_743744944_17896797081542891_2206543340262805107_n-4IP9l697tIxmy22zUDmQFFTanmgTBi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-sport-4x4-0r3m/1786530330464-SaveClip.App_742096686_17896797102542891_162489498231145362_n-VSFNjeNGkubYmnPnqC9U4ZSG4VpTDd.jpg"
+      ],
+      "orden": 25
     }
   ]
 }
