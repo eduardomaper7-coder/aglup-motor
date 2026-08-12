@@ -953,6 +953,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548619985-SaveClip.App_728912173_17893690944542891_122838449294295829_n-3FvuxCtqBsSGS19sYY5dC6asgoXgAS.jpg"
       ],
       "orden": 31
+    },
+    {
+      "slug": "mercedes-cla-45-amg-4matic-zkf5",
+      "marca": "Mercedes-Benz",
+      "modelo": "CLA 45 AMG 4MATIC",
+      "titulo": "MERCEDES CLA 45 AMG 4MATIC",
+      "precio": "31.500",
+      "categoria": "ocasion",
+      "anio": "2016",
+      "km": "130.000",
+      "potencia": "360",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548735395-SaveClip.App_727799320_17892946707542891_7305917131983057797_n-idXiAPLIycSGCqmimjaqkVvtKtUeM6.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548737047-SaveClip.App_727519038_17892946722542891_7939354028643168776_n-ND195pMG3ChphjyKZNbwOkiUzWSXgS.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548738339-SaveClip.App_727772848_17892946731542891_7738621984979821707_n-jqXx4jjQUEX2AyUdndAqgaBexQWDf0.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548739710-SaveClip.App_727518997_17892946740542891_3217175752043569120_n-GA1h8tXwxJjHjUKqNQx6KD1ili7chj.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548740940-SaveClip.App_727799211_17892946749542891_722530241497498918_n-FaVSoxqXNUzCiw0ND3dPErigrOMTGP.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548742461-SaveClip.App_726564429_17892946758542891_650586673423998821_n-YxeB7OQwfJW9cLcDcXkccbLat2WqZh.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548743874-SaveClip.App_726704603_17892946767542891_7720736380954635199_n-ELn6MHCEJJkgwO5lDvSqRSwDVOjJuq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548745182-SaveClip.App_727523874_17892946776542891_6551490895539216430_n-jt04HmeBIL7lVJdPsTVo8koqXavYNq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548746807-SaveClip.App_726575699_17892946809542891_8590742718005616743_n-aXw6UyFNeuKrbBHBL6zH48EiIEhJTS.jpg"
+      ],
+      "orden": 32
     }
   ]
 }
