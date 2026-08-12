@@ -764,6 +764,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mitsubishi-montero-4x4-7-plazas-3adm/1786530450436-SaveClip.App_731113764_17895295842542891_2777049208194898830_n-cIV18iCVHDcDgMwSH9h8OglfpvkZSv.jpg"
       ],
       "orden": 26
+    },
+    {
+      "slug": "volkswagen-golf-bluemotion-6vrf",
+      "marca": "VOLKSWAGEN",
+      "modelo": "GOLF BLUEMOTION",
+      "titulo": "VOLKSWAGEN GOLF BLUEMOTION",
+      "precio": "17.990",
+      "categoria": "segunda-mano",
+      "anio": "2019",
+      "km": "95.000",
+      "potencia": "130",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530600886-SaveClip.App_731047859_17894021367542891_4971449578194662856_n-jvIEwKcwFwAXGQZbCARwVv2HRFHnSk.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530602642-SaveClip.App_730376455_17894021391542891_3681718537813623848_n-szuJCp16ZMDThrs1cRZabZjwxgjj0P.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530604852-SaveClip.App_731022963_17894021400542891_2338192104543237073_n-884Qsg13CByqErefTrdrBmDmllBNga.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530606556-SaveClip.App_730439909_17894021409542891_9214397168319571564_n-744GSUxW3MUYAncSP18772XChlqiPQ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530608223-SaveClip.App_731106892_17894021418542891_6451627174474329892_n-EiUlPYoE6f4j241hBIyRhmw6RVnnzV.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530609881-SaveClip.App_730515893_17894021427542891_1075585357129419645_n-RsXitGuQ8DB2CZ1MWdaWdF01XwW6db.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530611571-SaveClip.App_730018309_17894021436542891_7079493970161408548_n-PdDF7aLuf6db8XvwnpIzid9foiNgcR.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530613288-SaveClip.App_730351014_17894021445542891_5712160998121394499_n-6WlRob7rvC3WXB90ZHhVwhAGyR71ao.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530614867-SaveClip.App_729929417_17894021457542891_2705139411075084365_n-VoN6xPBnoHYysftKSJGwASGM8Xac6Z.jpg"
+      ],
+      "orden": 27
     }
   ]
 }
