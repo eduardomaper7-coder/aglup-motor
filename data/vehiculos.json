@@ -1327,6 +1327,44 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550250372-SaveClip.App_688500611_17885618145542891_7777180833050778114_n-R7X2N9ZDH4eWy6DPyxQZieD6ra2F1Y.jpg"
       ],
       "orden": 42
+    },
+    {
+      "slug": "bmw-x3-xdrive-35i-2a30",
+      "marca": "BMW",
+      "modelo": "X3 XDRIVE 35i 5.5",
+      "titulo": "BMW X3 XDRIVE 35i",
+      "precio": "29990",
+      "categoria": "ocasion",
+      "anio": "2017",
+      "km": "52000",
+      "potencia": "306",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": true,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550541248-SaveClip.App_684620935_17885259504542891_2980689374418950959_n-JvfJHcRFc5IUEAybysvidzqExdGeSM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550542743-SaveClip.App_684245450_17885259513542891_5789461630860423418_n-kqBjaY2Xq6mcW2w8MkjyMeeeb75LXK.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550544083-SaveClip.App_686003771_17885259522542891_447964829448908792_n-qLIJu3vWpz1Sj5AXshHl1SzRCXn5rV.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550545427-SaveClip.App_684599775_17885259531542891_5526409392815806798_n-20nMR9m7mA3mCs4o0Os04wnXAv2S2t.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550546711-SaveClip.App_684394450_17885259621542891_4583804272072484264_n-PUIEQOVRaU25usXWdBQlXmlKSkRlpT.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550548129-SaveClip.App_686232910_17885259540542891_3889880033498779233_n-EAmYU8vJwPzXpCHA3CBKlVdoq0WMQq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550549597-SaveClip.App_684375245_17885259549542891_8052313970143160075_n-53j0tRRGwTweihNrF0mrRIexeCGamj.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550550969-SaveClip.App_686904461_17885259558542891_2988884005988275499_n-uHWNMqz8JdTned2lmV2VZPHwwrG4EX.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550552233-SaveClip.App_686224998_17885259576542891_7639118373866666338_n-Fzdldo7fPD29S7Z3IV0DpB3SuW5vS2.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550553422-SaveClip.App_684260814_17885259567542891_2275419586539002263_n-ZO8SuWbadqwLlUtRFqesnCnXAdWP0y.jpg"
+      ],
+      "orden": 43
     }
   ]
 }
