@@ -1988,6 +1988,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555080606-SaveClip.App_522683290_17842447908542891_1149760934385417713_n-YXBumsqCQOaQMAlqn0Y834Y96oYA6Q.jpg"
       ],
       "orden": 63
+    },
+    {
+      "slug": "volkswagen-t-roc-1-0-tk9u",
+      "marca": "VOLKSWAGEN",
+      "modelo": "T-ROC 1.0",
+      "titulo": "VOLKSWAGEN T-ROC 1.0",
+      "precio": "16990",
+      "categoria": "ocasion",
+      "anio": "2021",
+      "km": "56000",
+      "potencia": "110",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": true,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555173729-SaveClip.App_523594802_17842406859542891_478765387440558219_n-ReS7CivQlEKBIzdicyNBMVtOr8xVpN.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555175759-SaveClip.App_522669895_17842406922542891_8629310975558360184_n-pag212NgGQJjlNRVIAfbAkVizmjDnB.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555177192-SaveClip.App_523383289_17842406934542891_3653923232051842322_n-TgaELjE0io1yrLddT1RuRRo5jgbUAD.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555178909-SaveClip.App_522387788_17842406967542891_7139504353318746936_n-sHruEvSgPXsj1go7Wtb40eGLqm89Gw.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555180521-SaveClip.App_522657949_17842406955542891_4921542520727564568_n-om2kuuTvKXaTNU6oRzcQePCAhYB1Bq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555182373-SaveClip.App_521825532_17842406979542891_2453791684844065654_n-AA2Uau0YsRaxkBqZn5uKlSjaxUMCfZ.jpg"
+      ],
+      "orden": 64
     }
   ]
 }
