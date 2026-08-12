@@ -570,6 +570,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-1-5-i29z/1786529451005-SaveClip.App_771347577_17903009073542891_1390862487803689544_n-mxfjx893lwGnJSPxMmP3dWir0MsN8e.jpg"
       ],
       "orden": 22
+    },
+    {
+      "slug": "hyundai-tucson-1-6-k2vb",
+      "marca": "HYUNDAI",
+      "modelo": "TUCSON",
+      "titulo": "HYUNDAI TUCSON 1.6",
+      "precio": "14990",
+      "categoria": "segunda-mano",
+      "anio": "2016",
+      "km": "146000",
+      "potencia": "176",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529536858-SaveClip.App_771589824_17903007432542891_5914155956219155836_n--1--btycGDL4RYPOLQvPgdDI57FHehaHUP.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529538677-SaveClip.App_772760527_17903007453542891_6100704180058244008_n-oOR8hMsIBJ1J9nO0wr6bIIMn29ISCO.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529540334-SaveClip.App_771119086_17903007459542891_8786925749002709784_n-f1ZDCEosPsE0wLzvb7V5iZrcoOuNNg.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529541914-SaveClip.App_771984129_17903007504542891_7170756912815541740_n-0Tt21GaJgm2uK8z0caYMX6yFiB5anI.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529543206-SaveClip.App_771984121_17903007456542891_8190963985039929160_n-vpNPoIPmJuJ7ZOHxq0miEGKARZeTCM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529544745-SaveClip.App_772114911_17903007468542891_1665512693987357598_n-VYl7Jk4DMRahze4YaGBX79wHd1EeFw.jpg"
+      ],
+      "orden": 23
     }
   ]
 }
