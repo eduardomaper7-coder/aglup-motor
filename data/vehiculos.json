@@ -398,6 +398,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/toyota-rav4-zxxb/1786528601850-SaveClip.App_771210072_17903014794542891_4114695596924736220_n-LdwXQaeM1EwQllTCzzzSxINfBulmzo.jpg"
       ],
       "orden": 17
+    },
+    {
+      "slug": "volkswagen-caddy-3a5i",
+      "marca": "VOLKSWAGEN",
+      "modelo": "CADDY",
+      "titulo": "VOLKSWAGEN CADDY",
+      "precio": "10990",
+      "categoria": "segunda-mano",
+      "anio": "2011",
+      "km": "230000",
+      "potencia": "",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528753009-SaveClip.App_771940660_17903013369542891_6959205846822049369_n-MGcU7NzTnisquJ8sVnAlMU89z8Yaqs.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528755087-SaveClip.App_772893886_17903013378542891_2597907640941756752_n-nGMiXFIdOdMSrG4vK6FsobdVZAuDaY.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528756771-SaveClip.App_772656627_17903013387542891_5901853481001458689_n-dHB3EE7JmBaSv52lwOCYlw9RazKi3k.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528758367-SaveClip.App_772656160_17903013405542891_359751540786902833_n-NgIXc2Q19EemZEINjWAILiXUhnrNyd.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528759965-SaveClip.App_772676628_17903013432542891_1611940295071707627_n-1oCST3s5n9Ork1f9lqYV45unVdYodU.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-caddy-3a5i/1786528761471-SaveClip.App_771844930_17903013402542891_4121166064234349342_n-hdjoRPu0EzJE6HlhjXcUIkBK11s1tJ.jpg"
+      ],
+      "orden": 18
     }
   ]
 }
