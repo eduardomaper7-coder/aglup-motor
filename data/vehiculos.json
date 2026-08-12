@@ -1519,6 +1519,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mini-mini-cooper-apmi/1786552616875-b0d28b4e-a7bb-4e76-8094-503c73904662-cKvbr4OGNhn4qIqH0hldqHV0QVIQwQ.webp"
       ],
       "orden": 48
+    },
+    {
+      "slug": "fiat-500-damh",
+      "marca": "Fiat",
+      "modelo": "1.2 Collezione",
+      "titulo": "Fiat 500",
+      "precio": "8.990",
+      "categoria": "segunda-mano",
+      "anio": "018",
+      "km": "92.000",
+      "potencia": "69",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500-damh/1786552735251-3c76f08c-2bf1-41e5-bf53-7e9997bde852-GUcm58P0cdCimDcpGctfbNhgFb3NOo.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500-damh/1786552736929-a56baa7b-a57f-4d7b-ac62-9ef94f6fb282-HuVgkMcHLnurOGnxdsw3YOSD0NJNfK.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500-damh/1786552738620-a60df86f-4b86-444b-b6d2-c5d259614bf0-IUrcRJksU2Q6oftm6ONbhL1brJMBco.webp"
+      ],
+      "orden": 49
     }
   ]
 }
