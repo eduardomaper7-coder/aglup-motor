@@ -264,6 +264,42 @@
       "reservado": false,
       "borrador": true,
       "orden": 13
+    },
+    {
+      "slug": "fiat-panda-1-2-nijq",
+      "marca": "Fiat",
+      "modelo": "Panda",
+      "titulo": "FIAT PANDA 1.2",
+      "precio": "7990",
+      "categoria": "ocasion",
+      "anio": "2018",
+      "km": "140000",
+      "potencia": "70",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528043793-SaveClip.App_771822966_17903021469542891_96531936643736342_n-gj47UsBSiu46jFPtxMy5sid9R6NT8o.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528045430-SaveClip.App_772663911_17903021478542891_1326721275843558269_n-4prSmFU7P1lfsve8ISZ1vUS0t4kroK.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528046696-SaveClip.App_772840388_17903021448542891_599547410380130079_n-sTKVfb9zNUX7UhQrITpGSswCTufCY2.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528048120-SaveClip.App_772760162_17903021487542891_6334125017333885078_n-mjNmDmNrMHk5yQWI7LmehJLCX3xTWX.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528049293-SaveClip.App_771431062_17903021439542891_6944987720839891994_n-yQM47ZJanXWfPHHeuomHJANGJSF74R.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528050047-SaveClip.App_772707882_17903021430542891_3497060910913811900_n-atBnzNLoWsZv3RTtzVEmiNCKNNBeBj.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528051886-SaveClip.App_772156998_17903021457542891_2006574337909216082_n-832FSsvpMMkMSMBhVYjuSIAJJlBb3x.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528053217-SaveClip.App_773982921_17903021418542891_3759597575727216091_n-GZGmTi4ySWGZAHnRizk4t9QLTltPQn.jpg"
+      ],
+      "orden": 14
     }
   ]
 }
