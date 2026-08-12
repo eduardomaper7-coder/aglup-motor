@@ -1736,6 +1736,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a4-uj6b/1786553542790-79500665-46a1-4043-8aea-d1e468d7bc9c-2STbtyuh1qu7891ZVqIjMql67Yu6HL.webp"
       ],
       "orden": 55
+    },
+    {
+      "slug": "fiat-500l-6q7s",
+      "marca": "Fiat",
+      "modelo": "Fiat 500L Living",
+      "titulo": "Fiat 500L",
+      "precio": "11.999",
+      "categoria": "segunda-mano",
+      "anio": "2014",
+      "km": "116.000",
+      "potencia": "105",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500l-6q7s/1786554110057-25d5eb3a-09a4-4379-9fa6-9c28f457f494-9FWdhaOPUCoaZNeLVRVjfrWyRxuaRd.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500l-6q7s/1786554112809-ccc66120-3ed3-4d70-8499-3a32f99ee3a0-ryfpu4XfQIceaUikqgtJvrCGMfL6ZC.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500l-6q7s/1786554115462-cc22af70-4361-41d3-b28b-77e0059f9b32--1--56F8n6EokxzsG9mqML2dHoT00e5Oc5.webp"
+      ],
+      "orden": 56
     }
   ]
 }
