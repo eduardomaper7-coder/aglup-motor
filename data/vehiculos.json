@@ -1953,6 +1953,41 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-mwy6/1786554867403-faaa726e-5365-4e09-895b-a8fd9995897b-LgUhCvxEO29ZWi9iXlPwBwMtw0Z2J4.webp"
       ],
       "orden": 62
+    },
+    {
+      "slug": "mercedes-gle-63-s-amg-5-5-biturb-rcgy",
+      "marca": "MERCEDES",
+      "modelo": "GLE 63 S AMG 5.5 biturb",
+      "titulo": "MERCEDES GLE 63 S AMG 5.5 biturb",
+      "precio": "59990",
+      "categoria": "segunda-mano",
+      "anio": "2017",
+      "km": "143000",
+      "potencia": "557",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": true,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555070942-SaveClip.App_523074675_17842447764542891_5220902190867446666_n-JPOwPm1mxOj9Se7AHdi8JKUdszP6oF.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555072602-SaveClip.App_522966634_17842447860542891_3380294717759696798_n-P9Wc6SgVkbwgIHopyN9EDQP5KLZP3s.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555073993-SaveClip.App_522157897_17842447869542891_3485537101635671388_n-FD1IayJy2Ml7FmbPMWJ1AC9mYZDkQO.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555075503-SaveClip.App_523327649_17842447881542891_8901440253954154065_n-yNC9KvgmowlgLsAJVtWlAFWD9Rpd0W.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555076932-SaveClip.App_523190941_17842447899542891_3591932738888921339_n-aCxhmnGt8vkQeydvgLUQpCD2zUH5jf.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555078708-SaveClip.App_523532396_17842447890542891_6674742676154679587_n-h8DKxYBrdfaG6kYrWlTKDzglYac41h.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-gle-63-s-amg-5-5-biturb-rcgy/1786555080606-SaveClip.App_522683290_17842447908542891_1149760934385417713_n-YXBumsqCQOaQMAlqn0Y834Y96oYA6Q.jpg"
+      ],
+      "orden": 63
     }
   ]
 }
