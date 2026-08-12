@@ -921,6 +921,38 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548531962-SaveClip.App_728794884_17893691685542891_413685646924576934_n-fKZQrq7YUDmMHi3QxqCU7OGVZ6MXFs.jpg"
       ],
       "orden": 30
+    },
+    {
+      "slug": "opel-corsa-wtef",
+      "marca": "OPEL",
+      "modelo": "CORSA",
+      "titulo": "OPEL CORSA",
+      "precio": "10.990",
+      "categoria": "ocasion",
+      "anio": "2021",
+      "km": "140.000",
+      "potencia": "100",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548607165-SaveClip.App_730275133_17893690830542891_4072891061804585255_n-0vh36jeWDV8bEgQ0hnnZf8XFyiAXvH.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548608776-SaveClip.App_728912197_17893690854542891_5485792555019132432_n-UT7mM8Qc4rWvxRE2V1NKCqw8az7cMr.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548610333-SaveClip.App_730022152_17893690845542891_8510698835424013940_n-WdTKjB3sWU4IZPm68zDaiepy6NFd4j.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548612130-SaveClip.App_728606776_17893690863542891_7511867485206964193_n-wIn8MAbFOKEUV1OaWO565UHdTfUzvP.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548613440-SaveClip.App_729828946_17893690872542891_914743528047036047_n-pLNLJnOnPkmuXML7BvDhxc5hchB91d.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548614912-SaveClip.App_730598611_17893690890542891_4487816651552324903_n-GNG5GbBs8QwP8bl8rrnA0HQTYPl3hz.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548616621-SaveClip.App_731078867_17893690914542891_7678840701195357833_n-yH6hGSV0agPKYL6ZY2jMI45kiMTt2o.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548618179-SaveClip.App_730182760_17893690932542891_5039634260643386132_n-szE2jMy6FYfvw43Gj1FzXVH5SS7dRw.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-wtef/1786548619985-SaveClip.App_728912173_17893690944542891_122838449294295829_n-3FvuxCtqBsSGS19sYY5dC6asgoXgAS.jpg"
+      ],
+      "orden": 31
     }
   ]
 }
