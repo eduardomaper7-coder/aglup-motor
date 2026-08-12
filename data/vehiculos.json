@@ -847,6 +847,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548326954-SaveClip.App_729205054_17893697679542891_7834011150964925441_n-i10DaaWdnc3YL1kjIXwK3Q2QKOREC6.jpg"
       ],
       "orden": 28
+    },
+    {
+      "slug": "ford-c-max-sn76",
+      "marca": "FORD",
+      "modelo": "C-MAX",
+      "titulo": "FORD C-MAX",
+      "precio": "8.990",
+      "categoria": "segunda-mano",
+      "anio": "2015",
+      "km": "114.000",
+      "potencia": "125",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548412457-SaveClip.App_730473995_17893691736542891_4520940383944993123_n-06dOVnkVzFXV2g7IbsWYwJsXmfLh9o.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548414326-SaveClip.App_730140390_17893691922542891_6951019517856481582_n-ksi77OXFoD8jxhQxu85kiQ51LZ35Ds.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548416169-SaveClip.App_729139368_17893691940542891_4714992827703564624_n-DfzNT5BGjorS6Fadhh3f23y5ByOMoM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548418134-SaveClip.App_729616342_17893691952542891_4160115429274865737_n-N3Z2bhs0Vgr447B0GZtKxO9pBjZcsv.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548420078-SaveClip.App_730160893_17893691961542891_965627022222279647_n-gd6XIkL1LDXE5ts8VuMACzSSZZH9Kv.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548421543-SaveClip.App_728632085_17893691973542891_5430331612733629797_n-UerG39LNOQ2Pxyj71YK2o1JBZ02VkI.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548423411-SaveClip.App_729437678_17893691985542891_3842340404406389052_n-Urwi3ixSn1yMucvpVmWOLQ4FHp4PFO.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548425143-SaveClip.App_729275237_17893691994542891_199019432100053520_n-7W0Y5c50ONS9u3Y561iljiF8tKSEbs.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548426928-SaveClip.App_730244750_17893692003542891_8127710567383067374_n-UeGnBsPeYNem1OszW13mDbZg8mhYbA.jpg"
+      ],
+      "orden": 29
     }
   ]
 }
