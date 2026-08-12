@@ -604,6 +604,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-tucson-1-6-k2vb/1786529544745-SaveClip.App_772114911_17903007468542891_1665512693987357598_n-VYl7Jk4DMRahze4YaGBX79wHd1EeFw.jpg"
       ],
       "orden": 23
+    },
+    {
+      "slug": "hyundai-i20-1-0-pyky",
+      "marca": "HYUNDAI",
+      "modelo": "i20",
+      "titulo": "HYUNDAI i20 1.0",
+      "precio": "17990",
+      "categoria": "ocasion",
+      "anio": "2025",
+      "km": "24000",
+      "potencia": "100",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529811244-SaveClip.App_772904220_17903005905542891_6885797311447150707_n-6fYzZKZh55Bh983TXVQnK88tfhdFcq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529812851-SaveClip.App_771309599_17903005932542891_848916616312673861_n-lJtOuW5XozAezqq5xGDKmjbwXYMGpF.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529814370-SaveClip.App_772863199_17903005914542891_2207194871240652983_n-2xrlUMis9XExAqqtxJJ8gPZe3BVmRA.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529815639-SaveClip.App_770802531_17903005929542891_6734175639725092607_n-vWBA0Q3cOp9LeFPOFzIxzodI8iqJQa.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529816824-SaveClip.App_772714532_17903005941542891_3506672648310344225_n-5E9rKCwcdcYI0K8JhKdvvKqL7pvmW8.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529818095-SaveClip.App_771822989_17903005950542891_2119548918753297041_n-uBKICjXbTP5x2uFK34oghnlOPfbTPU.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529819474-SaveClip.App_772327419_17903005959542891_1319658502182191193_n-fRFhQ62YjKbSxRIDzDPw5OVsA4zgV2.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529820887-SaveClip.App_771512255_17903005968542891_7621131032768201344_n-cRA6NEBU08JFMQVS31Z1qZU0laCsxi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i20-1-0-pyky/1786529822829-SaveClip.App_771940658_17903005977542891_5491981145610538590_n-fXu5tyBBccjZfeDFjQBu9mWWPYjM3n.jpg"
+      ],
+      "orden": 24
     }
   ]
 }
