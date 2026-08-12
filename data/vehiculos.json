@@ -1860,6 +1860,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-astra-e9fq/1786554464021-5d44ed0e-906e-470e-8405-0e5e1d672162-zGJhbFnQLWbgBF5SWtx2WBWKdxp4Gs.webp"
       ],
       "orden": 59
+    },
+    {
+      "slug": "ford-focus-g1fo",
+      "marca": "Ford",
+      "modelo": "Focus",
+      "titulo": "Ford Focus",
+      "precio": "17.999",
+      "categoria": "segunda-mano",
+      "anio": "2013",
+      "km": "180.000",
+      "potencia": "250",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-focus-g1fo/1786554543839-84e5a2c7-fe79-45e9-b4ec-5615140d2cf4-OXDeTny17xmeoh6D9dbpYFK8w3YUsZ.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-focus-g1fo/1786554545565-2910db99-cd58-4a59-8ae9-f5efa1c2c957-XGWLeD8ksFX1CUqbFiCA05yqKc9F9n.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-focus-g1fo/1786554547420-369c5090-cd59-4dbe-8065-3b228262a238-t9eHSZ7KY3SnmIUpkGATXQTyYn7MKA.webp"
+      ],
+      "orden": 60
     }
   ]
 }
