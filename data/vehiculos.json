@@ -809,6 +809,44 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-bluemotion-6vrf/1786530614867-SaveClip.App_729929417_17894021457542891_2705139411075084365_n-VoN6xPBnoHYysftKSJGwASGM8Xac6Z.jpg"
       ],
       "orden": 27
+    },
+    {
+      "slug": "honda-civic-type-r-qias",
+      "marca": "HONDA",
+      "modelo": "CÍVIC TYPE R",
+      "titulo": "HONDA CÍVIC TYPE R",
+      "precio": "20.000",
+      "categoria": "segunda-mano",
+      "anio": "2002",
+      "km": "250.000",
+      "potencia": "200",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548312675-SaveClip.App_729349122_17893697148542891_8972499441999124053_n-7MoJWDFOJa9UK8iu5UwrQsVFk2pu6H.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548314275-SaveClip.App_729819864_17893697577542891_592149531508533541_n-jhk5QLTtr3q9hCtcr3IzGq2H3G4iZC.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548315980-SaveClip.App_729867605_17893697568542891_4875638470609592723_n-9RY4Qiin6CbhGoeZ5a2jZU2cYeNQoF.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548317350-SaveClip.App_729413439_17893697589542891_8063545462097108264_n-CZPJ5ltN1R8pIJgZVrL6g4MsbIQhrF.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548318562-SaveClip.App_730049428_17893697601542891_8095669702340591183_n-rCWA7vyL9zDRAhdYHMiigAY3rno8Ge.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548320056-SaveClip.App_729657873_17893697625542891_4898211244545931946_n-cDLNndpGpsjchhGrqaJzECh4Tai774.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548321455-SaveClip.App_729349118_17893697634542891_3242880721816098776_n-aXvmCN0781HNMTkmeDhFx3xvWSKka5.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548323958-SaveClip.App_729988414_17893697646542891_176509935877553443_n-6vCVY3ULCKDk2tvNZbesk84LokEXtM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548325562-SaveClip.App_729437677_17893697655542891_1815441757456046541_n-4lZqC1xbJ4tFeMfFUKCKJ3sahvqzod.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/honda-civic-type-r-qias/1786548326954-SaveClip.App_729205054_17893697679542891_7834011150964925441_n-i10DaaWdnc3YL1kjIXwK3Q2QKOREC6.jpg"
+      ],
+      "orden": 28
     }
   ]
 }
