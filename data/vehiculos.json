@@ -1023,6 +1023,47 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548854835-SaveClip.App_727799359_17892944814542891_8437336255992333372_n-MNNplknpTOV6IylCLb73gav5nxijT2.jpg"
       ],
       "orden": 33
+    },
+    {
+      "slug": "porsche-panamera-4fit",
+      "marca": "PORSCHE",
+      "modelo": "PANAMERA",
+      "titulo": "PORSCHE PANAMERA",
+      "precio": "59990",
+      "categoria": "segunda-mano",
+      "anio": "2017",
+      "km": "110.000",
+      "potencia": "440",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "hibrido",
+          "texto": "Híbrido"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548962351-SaveClip.App_719161043_17891287545542891_788403905506518998_n-uK2SmF9S6NOhc5XlvvrscBWBeom2KO.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548964333-SaveClip.App_720040750_17891287557542891_3125618855858638893_n-qZ2Xb5hDhiQ8MjugGVo0zcb8KTlGUS.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548965886-SaveClip.App_719891623_17891287566542891_2567208963820344407_n-0wKts1OEc7Tt30eoWzsBf0Obea0xu3.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548967455-SaveClip.App_719623795_17891287578542891_668974627299294576_n-htqHDNcOymnchoyRQkUeBzAuDIhhow.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548969078-SaveClip.App_719598874_17891287821542891_1153801699927845005_n-H0k6jBEy0ihhjOr3H3B5WLDmS0fWkO.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548970666-SaveClip.App_721135865_17891287830542891_3632607645242398030_n-2RCENDpK19sOw8re6H4r04qtfn93fi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548972428-SaveClip.App_719427269_17891287839542891_8856870691315498790_n-hihMBrrznFyoMLKWgzqtNWlRx7TeDk.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548974143-SaveClip.App_721454502_17891287848542891_3340902753092629923_n-C2ZQuLcRpr2Bmx4uV5h9O8ZKzORlyM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548975616-SaveClip.App_720805197_17891287857542891_2031389889124176550_n-zV5knIOZ1qB9A6UN76LnFdbbxJCJha.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548977012-SaveClip.App_719491058_17891287866542891_6201531007238337474_n-McDWuL0em5T8ucIAJuEVFRZ1Tsq4WC.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548978843-SaveClip.App_720874000_17891287875542891_1063946401630463504_n-Bh9etjbPadB5jvjjBzkycWUcUqPXf8.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548980439-SaveClip.App_719970014_17891287884542891_2296086685227417678_n-rXlqE3SixgeN4BzWCYyQ7YwKhiER9K.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548981883-SaveClip.App_720040747_17891287893542891_7851574428325481878_n-QVTvuQoWMGNMPapaNGE06BPEQfCexV.jpg"
+      ],
+      "orden": 34
     }
   ]
 }
