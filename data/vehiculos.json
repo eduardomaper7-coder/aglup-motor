@@ -466,6 +466,40 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-cascada-5vwf/1786528881120-SaveClip.App_772647472_17903012322542891_4468207298212006287_n-VIy8O69x7aHaFqIXUwEPFZmsLHiGjb.jpg"
       ],
       "orden": 19
+    },
+    {
+      "slug": "volkswagen-golf-b5lq",
+      "marca": "VOLKSWAGEN",
+      "modelo": "golf",
+      "titulo": "VOLKSWAGEN golf",
+      "precio": "7990",
+      "categoria": "segunda-mano",
+      "anio": "2012",
+      "km": "204000",
+      "potencia": "105",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529120424-SaveClip.App_771589826_17903009889542891_5933163308249283176_n-g8Y7PJhj7GtvMCgFuacYQrdBsnnQPX.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529121986-SaveClip.App_771909962_17903009892542891_8776776984909120422_n-J7ZK5Wt7NSNvnGdmDd0CoSQeB2zA7d.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529123949-SaveClip.App_771347560_17903009901542891_6320135551190521179_n-D18hKo1xY0xOqw4z2mJDIctteseebN.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529125271-SaveClip.App_771000381_17903009943542891_8416166557424953544_n-JuVc4XkED9PJ3ujr8H3cdpxHZzZzIi.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529127042-SaveClip.App_772783096_17903009928542891_5085582324142429591_n-OHdmj9hWN3uYaD68mYCRW2w60DbGIg.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529128623-SaveClip.App_771822969_17903009910542891_4054004192288550498_n-bvbyZbqnV0Y7tPLpJDpgdxreZnNGg8.jpg"
+      ],
+      "orden": 20
     }
   ]
 }
