@@ -1767,6 +1767,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500l-6q7s/1786554115462-cc22af70-4361-41d3-b28b-77e0059f9b32--1--56F8n6EokxzsG9mqML2dHoT00e5Oc5.webp"
       ],
       "orden": 56
+    },
+    {
+      "slug": "hyundai-i10-a3s1",
+      "marca": "Hyundai",
+      "modelo": "i10",
+      "titulo": "Hyundai i10",
+      "precio": "7.990",
+      "categoria": "segunda-mano",
+      "anio": "2014",
+      "km": "",
+      "potencia": "66",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-a3s1/1786554266316-6e4eb97d-65e2-4429-8aef-053339a830b1-UlCOIdtnuG71Bwls2areQM8FWM2dti.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-a3s1/1786554268202-13bbe598-005a-4c45-9fc0-0fffbe334654-BbVFuVvfqNYGpGTvl7soGYKlT1Jfqk.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-a3s1/1786554270532-f210732c-b5af-42c4-99ad-268fcd44a0b0-O7FQIiM8t5NSFlhZdDgIJ2gJy3wIqf.webp"
+      ],
+      "orden": 57
     }
   ]
 }
