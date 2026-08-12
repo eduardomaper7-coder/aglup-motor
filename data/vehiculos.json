@@ -500,6 +500,42 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-golf-b5lq/1786529128623-SaveClip.App_771822969_17903009910542891_4054004192288550498_n-bvbyZbqnV0Y7tPLpJDpgdxreZnNGg8.jpg"
       ],
       "orden": 20
+    },
+    {
+      "slug": "mercedes-a180-cdi-110cv-automatico-ejh7",
+      "marca": "Mercedes-Benz",
+      "modelo": "Clase A A 180 CDI",
+      "titulo": "Mercedes A180 CDI 110CV Automático",
+      "precio": "14990",
+      "categoria": "ocasion",
+      "anio": "2015",
+      "km": "166000",
+      "potencia": "110",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529278235-SaveClip.App_772914968_17903009352542891_772714786817409898_n-w8G0GEzBkbQxAeZGYXXY3HZJVxBAi4.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529280064-SaveClip.App_772727905_17903009343542891_1613299486907192827_n-wGGqrHUM3S9ooWswRSpzoQdroWKcZz.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529281379-SaveClip.App_772868662_17903009388542891_3148347165271503673_n-TDfhJoEmeFcr367nrnpLsznUKdYFsm.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529282597-SaveClip.App_771210062_17903009397542891_6334646139425177230_n-t1aU2rgxpt0mw2HUxQnS0YSYCIFChj.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529283857-SaveClip.App_771431067_17903009361542891_9221343772271453442_n-MMtZQlW1Rl4K2kSldLeoxxwpjfXF80.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529285411-SaveClip.App_771855057_17903009376542891_5124327635911622181_n-CPLNXD0nzAVFoIuiXbDp4DSTCKmY9w.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529292176-SaveClip.App_771431061_17903009379542891_1162264392982572673_n-jWhh4oY7pgKYrk390uqApOQFXoLbfr.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-a180-cdi-110cv-automatico-ejh7/1786529293874-SaveClip.App_770962926_17903009406542891_1587934155498446597_n-P4UTaUWPxb0tX1N7O9IsJ9feTwnFqp.jpg"
+      ],
+      "orden": 21
     }
   ]
 }
