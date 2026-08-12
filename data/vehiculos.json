@@ -1396,6 +1396,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-vito-wl4h/1786551957953-4411602e-239c-48a8-9b15-4dcf738bfa6a-emar7Gu2OE0ycqxm7QfKJXAIFCLsGw.webp"
       ],
       "orden": 44
+    },
+    {
+      "slug": "land-rover-discovery-0a5z",
+      "marca": "",
+      "modelo": "TD 5 SE",
+      "titulo": "Land Rover Discovery",
+      "precio": "8.990",
+      "categoria": "segunda-mano",
+      "anio": "2000",
+      "km": "215.000",
+      "potencia": "138",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/land-rover-discovery-0a5z/1786552130889-ba9d275b-93eb-454c-9dc1-250c3f3439a0-bjMFWFRekP6DeDtBWNWDcxEAlKAJVn.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/land-rover-discovery-0a5z/1786552127841-7af18d0b-0c71-44b2-99cd-841c67f85210-Pl8I4h0IUS5hqfOvWpiXXAj16KoLdx.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/land-rover-discovery-0a5z/1786552129549-8a7d883e-0afa-4381-91b2-d5f1b4b0823d-bmpivHtEELIAtJfDgfHE1GxEqYP6qY.webp"
+      ],
+      "orden": 45
     }
   ]
 }
