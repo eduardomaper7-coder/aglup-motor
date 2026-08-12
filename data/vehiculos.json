@@ -2022,6 +2022,41 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-roc-1-0-tk9u/1786555182373-SaveClip.App_521825532_17842406979542891_2453791684844065654_n-AA2Uau0YsRaxkBqZn5uKlSjaxUMCfZ.jpg"
       ],
       "orden": 64
+    },
+    {
+      "slug": "audi-a1-ycn8",
+      "marca": "AUDI",
+      "modelo": "A1",
+      "titulo": "AUDI A1",
+      "precio": "7990",
+      "categoria": "segunda-mano",
+      "anio": "2011",
+      "km": "200000",
+      "potencia": "105",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": true,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555399585-SaveClip.App_523250771_17842511931542891_661464191603032812_n-AUjaQUVqf0GnDV7W27eIS0rpptaYiY.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555396873-SaveClip.App_522148639_17842512099542891_5562175465847364883_n-5tbadKdSyRunEWLAphBpvSnxw9jfeE.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555398175-SaveClip.App_522703991_17842511970542891_720030102070121774_n-57nGXrHAeiZgKjlzTADNrIYwghJq7R.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555400919-SaveClip.App_522166014_17842512168542891_3851448298797965550_n-kP7JFWDoFI3UKdUYJ3pyZpWrtOCTTX.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555402045-SaveClip.App_522662831_17842512135542891_5469486216297801131_n-gLeIDXi1P55GczxaLbhB2ufDizGCAO.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555403424-SaveClip.App_522956499_17842512204542891_4410877212573473761_n-wD1xFb1fNZnZjF7iuUDilUke9AFTNo.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/audi-a1-ycn8/1786555404889-SaveClip.App_522848421_17842512225542891_3589958863448470143_n-vrrlTcbLYGb6mLSMTpo33EQGOBIn9o.jpg"
+      ],
+      "orden": 65
     }
   ]
 }
