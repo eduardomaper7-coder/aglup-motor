@@ -1829,6 +1829,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-buay/1786554351087-e688d64d-6c8e-4738-a2fa-d05d92f301f6--1--AQAxGztbpwMcL9ACyhjK6FeHP5Qei0.webp"
       ],
       "orden": 58
+    },
+    {
+      "slug": "opel-astra-e9fq",
+      "marca": "Opel",
+      "modelo": "Astra",
+      "titulo": "Opel Astra",
+      "precio": "8.990",
+      "categoria": "ocasion",
+      "anio": "2014",
+      "km": "181.000",
+      "potencia": "140",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-astra-e9fq/1786554459955-09f16781-9f1a-4e3d-a271-047efc7f4f61-vReNCGFoKKQ3vktuk1l2TAeGuUoVoU.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-astra-e9fq/1786554461945-cf038719-d65d-4fb0-b17e-7774f3782021-GDm7FCRtf7XEPqTu1mzuPZPyI2hCCV.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-astra-e9fq/1786554464021-5d44ed0e-906e-470e-8405-0e5e1d672162-zGJhbFnQLWbgBF5SWtx2WBWKdxp4Gs.webp"
+      ],
+      "orden": 59
     }
   ]
 }
