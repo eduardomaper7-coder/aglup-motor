@@ -1064,6 +1064,41 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/porsche-panamera-4fit/1786548981883-SaveClip.App_720040747_17891287893542891_7851574428325481878_n-QVTvuQoWMGNMPapaNGE06BPEQfCexV.jpg"
       ],
       "orden": 34
+    },
+    {
+      "slug": "citroen-c3-79kw",
+      "marca": "CITROEN",
+      "modelo": "C3",
+      "titulo": "CITROEN C3",
+      "precio": "8490",
+      "categoria": "segunda-mano",
+      "anio": "2018",
+      "km": "153.000",
+      "potencia": "82",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549094609-SaveClip.App_725074095_17892640617542891_6283491899335222154_n-JEbI8zRrdAzfdTwgPiELcNd4D1I1vd.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549096588-SaveClip.App_725599176_17892640638542891_8529489854910467490_n-SCVBmno2H3ffIKyNkjSDeDfIW43h4z.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549098486-SaveClip.App_725751008_17892641283542891_2780527105529844557_n-K775NAb9tzJZ2QIi0pj7P7L5wddMRM.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549100105-SaveClip.App_726392044_17892641295542891_2621082574091857009_n-ztypik2qiwOKQz21fp3vuVy2Xv9yUx.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549101324-SaveClip.App_724958579_17892641313542891_8858991913748828172_n-c0gohiQcTPVqjIGRDh6ul3cA0i8yvB.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549102915-SaveClip.App_726606391_17892641331542891_7250341075802604375_n-SBw5xc3s3lxWfLlnfV7JKcfvQty69L.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c3-79kw/1786549104817-SaveClip.App_724937519_17892641340542891_4992025355293143374_n-Pvs3O5TQbIObNtrFGIZiZFIAR6ZgbG.jpg"
+      ],
+      "orden": 35
     }
   ]
 }
