@@ -1288,6 +1288,45 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550125348-SaveClip.App_713725287_17890131219542891_2693656184378869695_n-Lim431O4WcXMI3JU1aUWxbXQ1n0O6V.jpg"
       ],
       "orden": 41
+    },
+    {
+      "slug": "mercedes-cla-250-2-0-vqa8",
+      "marca": "Mercedes-Benz",
+      "modelo": "CLA 250 2.0",
+      "titulo": "MERCEDES CLA 250 2.0",
+      "precio": "39990",
+      "categoria": "ocasion",
+      "anio": "2024",
+      "km": "21000",
+      "potencia": "224",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550235782-SaveClip.App_684791525_17885618052542891_3652068072512230037_n-i60oeYL4RX9BULUQBwVLhnZw0Vkftv.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550237523-SaveClip.App_686924827_17885618061542891_8058561521921171360_n-8LyHGDjZGB371k4KLybuCciU3jByfJ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550239236-SaveClip.App_688617369_17885618070542891_8653330598136927506_n-LM2ePvcEf9WKErwNJosp6lgLK1WmPm.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550240715-SaveClip.App_684578255_17885618079542891_2682320589783577230_n-tq0ySyGgg2eFEf3QyaQFbbABUbvYEQ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550242024-SaveClip.App_688711740_17885618088542891_4637722007270523016_n-gM7tVcL8eMQTz8Bj5VwEWMLVd1eFEe.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550243705-SaveClip.App_684259422_17885618097542891_238255982864652177_n-Xny7ASziPl2GQIMtRt6YW7iVYWYOQV.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550244872-SaveClip.App_685637841_17885618106542891_1603556134275747880_n-fU7gUBqAqgiRmpq3XfOvB8AbMjvUKC.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550246272-SaveClip.App_687523009_17885618115542891_9115451711534245005_n-nlZOAscTDJdBwESXIH1rPqSU4adN61.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550247741-SaveClip.App_684658049_17885618124542891_6006246987852268495_n-wlb1nHop7bcLgTCNh03lpE8EWEgpv3.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550249090-SaveClip.App_684276390_17885618136542891_1559982682746815536_n-BFOsz7y6u6tIwRmcD63dMRZAG26Srd.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-250-2-0-vqa8/1786550250372-SaveClip.App_688500611_17885618145542891_7777180833050778114_n-R7X2N9ZDH4eWy6DPyxQZieD6ra2F1Y.jpg"
+      ],
+      "orden": 42
     }
   ]
 }
