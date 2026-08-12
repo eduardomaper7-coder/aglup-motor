@@ -1365,6 +1365,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/bmw-x3-xdrive-35i-2a30/1786550553422-SaveClip.App_684260814_17885259567542891_2275419586539002263_n-ZO8SuWbadqwLlUtRFqesnCnXAdWP0y.jpg"
       ],
       "orden": 43
+    },
+    {
+      "slug": "mercedes-vito-wl4h",
+      "marca": "",
+      "modelo": "",
+      "titulo": "Mercedes Vito",
+      "precio": "13.990",
+      "categoria": "ocasion",
+      "anio": "2016",
+      "km": "239.000",
+      "potencia": "114",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-vito-wl4h/1786551955446-6a7e8085-e102-416d-991f-46a89f9f1887-dVzla9BchaWkIQ6z6zlD9083K4oXIG.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-vito-wl4h/1786551956900-0b2ee947-691d-4b01-b834-638bb9dbc372-iIeOB1A5MSaxcvFuYyK7aZX9WehCmA.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-vito-wl4h/1786551957953-4411602e-239c-48a8-9b15-4dcf738bfa6a-emar7Gu2OE0ycqxm7QfKJXAIFCLsGw.webp"
+      ],
+      "orden": 44
     }
   ]
 }
