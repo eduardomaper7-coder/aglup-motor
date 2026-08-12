@@ -1550,6 +1550,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-500-damh/1786552738620-a60df86f-4b86-444b-b6d2-c5d259614bf0-IUrcRJksU2Q6oftm6ONbhL1brJMBco.webp"
       ],
       "orden": 49
+    },
+    {
+      "slug": "dacia-jogger-g5kz",
+      "marca": "Dacia",
+      "modelo": "1.0 ECO-G Essential 5pl.",
+      "titulo": "Dacia Jogger",
+      "precio": "13.990",
+      "categoria": "ocasion",
+      "anio": "2023",
+      "km": "164.561",
+      "potencia": "100",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "glp",
+          "texto": "GLP"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/dacia-jogger-g5kz/1786552868647-d5636d76-0b94-42e3-bc27-0397b66705d4-v70GjMZao3QdM3qsfr3Ri8UieHeIvz.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/dacia-jogger-g5kz/1786552870227-61bafca5-27b1-4b1b-a07b-15302a20e062-dTUfN0qGg1ByYb4diFzelXWeox1iXR.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/dacia-jogger-g5kz/1786552871764-fcba5755-ab11-416a-acca-81391a976869-gCCL3wHUEbOaUrxJj3Zqjv45HgOh5s.webp"
+      ],
+      "orden": 50
     }
   ]
 }
