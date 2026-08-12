@@ -1612,6 +1612,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/nissan-juke-ib5v/1786552971637-052bc74b-1d4d-4adf-bc9b-5e27b46656a7-XHAlL4BdqBtM5fCO5QiKjfYG8dXTiW.webp"
       ],
       "orden": 51
+    },
+    {
+      "slug": "ford-tourneo-courier-nv69",
+      "marca": "Ford",
+      "modelo": "Tourneo Courier",
+      "titulo": "Ford Tourneo Courier",
+      "precio": "10.990",
+      "categoria": "segunda-mano",
+      "anio": "2017",
+      "km": "168.000",
+      "potencia": "100",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-tourneo-courier-nv69/1786553229280-005a69e6-ff36-413a-8b32-4beee4617117-rc3ppbfRWAYxEfqP5E7qa3dXSdzCkG.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-tourneo-courier-nv69/1786553231482-6b594901-3fdf-4e68-b952-24d4f91a9d39-2leQenoaPE6fvPB1e9o3KEcQCNNdjn.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-tourneo-courier-nv69/1786553233106-0d7ba51c-0652-4afc-8c99-cbe80a055bd5-mYbGOqlU7SWc9VD02OA89UDTbVDYsf.webp"
+      ],
+      "orden": 52
     }
   ]
 }
