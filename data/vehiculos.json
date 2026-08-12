@@ -1253,6 +1253,41 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549982855-SaveClip.App_710986369_17890153329542891_4408688391899789559_n-97lf7f222fp1JIhdu2eYTO00CwgxuL.jpg"
       ],
       "orden": 40
+    },
+    {
+      "slug": "hyundai-i10-1-2-t4rt",
+      "marca": "",
+      "modelo": "",
+      "titulo": "Hyundai I10 1.2",
+      "precio": "9990",
+      "categoria": "ocasion",
+      "anio": "",
+      "km": "119.000",
+      "potencia": "87",
+      "puertas": "",
+      "cambio": "automatico",
+      "cambioTexto": "Automático",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550114701-SaveClip.App_713344415_17890131147542891_3605876327339867287_n-QyN5elniEbj0Dc8aoq0QtskQRqC8w5.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550116474-SaveClip.App_715450445_17890131168542891_1049089183732091234_n-LfIAFer2Mai1TbyTVa8NMWo2WXrdNE.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550118041-SaveClip.App_714651109_17890131177542891_8960722124373131174_n-rfpXi3iSpnRXEzWANts0JLu9xtIuLU.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550119760-SaveClip.App_713664623_17890131192542891_6512795348902928006_n-zHwK9Gb3NsH4x5kqOxeXyCUhomSWzw.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550121780-SaveClip.App_715235688_17890131201542891_8173828673450168402_n-bkqsIWcYmLRATtUrl0R402Mim6c7m2.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550123329-SaveClip.App_712703449_17890131228542891_4337428583265777559_n-SQphMDsuSRZ0Ln1JwMafmCrBKlXoMo.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/hyundai-i10-1-2-t4rt/1786550125348-SaveClip.App_713725287_17890131219542891_2693656184378869695_n-Lim431O4WcXMI3JU1aUWxbXQ1n0O6V.jpg"
+      ],
+      "orden": 41
     }
   ]
 }
