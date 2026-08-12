@@ -990,6 +990,39 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-cla-45-amg-4matic-zkf5/1786548746807-SaveClip.App_726575699_17892946809542891_8590742718005616743_n-aXw6UyFNeuKrbBHBL6zH48EiIEhJTS.jpg"
       ],
       "orden": 32
+    },
+    {
+      "slug": "peugeot-2008-gt-1ton",
+      "marca": "PEUGEOT",
+      "modelo": "2008 GT",
+      "titulo": "PEUGEOT 2008 GT",
+      "precio": "21990",
+      "categoria": "ocasion",
+      "anio": "2024",
+      "km": "40.000",
+      "potencia": "130",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548840729-SaveClip.App_727799132_17892944667542891_7921367071132606854_n-pOWgfGrfMI3A7JpRC5xQvRxGH2Yzzq.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548842948-SaveClip.App_726914322_17892944679542891_3496782968687797072_n-IhyEcWUv0M1M24ZaFgL2NCxJMkPQCk.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548844333-SaveClip.App_727519034_17892944688542891_9206297973656408131_n-5j4Azqf8FR7AYnfV9QlrN4n0pzZGCE.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548845920-SaveClip.App_726704541_17892944697542891_8031645365233614792_n-XVlx0GRrXPcuJF0WvHvRzjapTiTlvC.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548847687-SaveClip.App_727518823_17892944706542891_8567785183468404851_n-lZxxjistFSSbWGGfncxn17M5YXm2yu.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548849066-SaveClip.App_727799074_17892944760542891_8704493174386018178_n-pmNcRfw6HN8F1PndBH6K4QfaNUhTGr.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548850373-SaveClip.App_727518694_17892944775542891_1636836048190225178_n-tXGxUEsCLiZgi3r1TwkuDQdWXeqcAH.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548851761-SaveClip.App_727772817_17892944796542891_4386145628481001136_n-ec4qqTMvWqPQbQZ4DJ2JB3gy7lpZka.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548853248-SaveClip.App_726859365_17892944805542891_4626328031686344600_n-NrJ8hjiOxElztD5Ml2nAaThdjvmEXW.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-2008-gt-1ton/1786548854835-SaveClip.App_727799359_17892944814542891_8437336255992333372_n-MNNplknpTOV6IylCLb73gav5nxijT2.jpg"
+      ],
+      "orden": 33
     }
   ]
 }
