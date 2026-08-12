@@ -1251,6 +1251,41 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549862682-SaveClip.App_715304470_17890299066542891_367390071561078008_n-BwDClxoccDClRu1vCr5u48D3JoQKOP.jpg"
       ],
       "orden": 39
+    },
+    {
+      "slug": "fiat-scudo-pjyg",
+      "marca": "FIAT",
+      "modelo": "SCUDO",
+      "titulo": "FIAT SCUDO",
+      "precio": "13990",
+      "categoria": "ocasion",
+      "anio": "2014",
+      "km": "240.000",
+      "potencia": "",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549973118-SaveClip.App_713003593_17890235703542891_6055498488862220058_n-TZzpcHZdfIyyF6BQY6MvsuIwBvnLdy.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549974749-SaveClip.App_713184092_17890235712542891_6500052755543444981_n-18abgOARoa4LaAJN3RpC2j9yu9IcZT.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549976257-SaveClip.App_712964242_17890235721542891_2867115432016232451_n-nW7BDmfDiUCoh2TnOqK4myHX2XiTjn.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549978033-SaveClip.App_712944179_17890235733542891_6172141062215512832_n-ApVojsm17ypM33fJBJS9kglUrpEUu9.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549979554-SaveClip.App_714104269_17890235742542891_283171434747034972_n-2svGZFXfrOHNu8PXGgw5Xi0o7mFMpo.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549981321-SaveClip.App_716010429_17890235757542891_1674270115654816482_n-NLZjRHzk3MeBE2JN7cUnxzFQ22SpFR.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-scudo-pjyg/1786549982855-SaveClip.App_710986369_17890153329542891_4408688391899789559_n-97lf7f222fp1JIhdu2eYTO00CwgxuL.jpg"
+      ],
+      "orden": 40
     }
   ]
 }
