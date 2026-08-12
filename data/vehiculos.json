@@ -1458,6 +1458,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/volkswagen-t-cross-6cn5/1786552413786-8ac23c54-4268-4ce7-a652-cc93187801f4-jogZMeIswLS7ksqpOzcD58VlH7b977.webp"
       ],
       "orden": 46
+    },
+    {
+      "slug": "citroen-c4-cactus-8xv3",
+      "marca": "Citroen",
+      "modelo": "1.2 PureTech Feel Edition 82",
+      "titulo": "Citroen C4 Cactus",
+      "precio": "7.990",
+      "categoria": "ocasion",
+      "anio": "2017",
+      "km": "170.000",
+      "potencia": "82",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c4-cactus-8xv3/1786552531849-294bc150-c379-47c6-b301-665518773108-HDMDdaN1dc2z02Oob0szlMEk7qto4r.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c4-cactus-8xv3/1786552533188-f0276ad4-ad24-45c4-a445-604f676d24f3-mjaaj3ShfwzQkY9niVqFNZZO4SqcHo.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c4-cactus-8xv3/1786552534456-c8e8473b-9835-4037-a9f5-853bda999819-iV39Z2ZICGlUeXif93S0treWjhq6dt.webp"
+      ],
+      "orden": 47
     }
   ]
 }
