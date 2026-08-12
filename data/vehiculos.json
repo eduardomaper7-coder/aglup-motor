@@ -884,6 +884,43 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-sn76/1786548426928-SaveClip.App_730244750_17893692003542891_8127710567383067374_n-UeGnBsPeYNem1OszW13mDbZg8mhYbA.jpg"
       ],
       "orden": 29
+    },
+    {
+      "slug": "peugeot-3008-uwsc",
+      "marca": "PEUGEOT",
+      "modelo": "3008",
+      "titulo": "PEUGEOT 3008",
+      "precio": "12.990",
+      "categoria": "ocasion",
+      "anio": "2017",
+      "km": "120.000",
+      "potencia": "130",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548518205-SaveClip.App_729657868_17893691070542891_4492558841765783511_n-ktBu3mqFxVL1g8KWSK0eiRztr9HMLs.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548520215-SaveClip.App_728627387_17893691091542891_4473092799220924161_n-984iP1W3XQpDDN4HmqQ6ZnqgaeKn4b.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548521927-SaveClip.App_730348074_17893691604542891_5905721751426275231_n-BCYDeJRqzIad1mBQF4XbkWCWOKAAVd.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548523722-SaveClip.App_729522893_17893691616542891_8035705819834007402_n-XBTdqMxcIP2IDxTeRiqV16vat6nn29.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548525494-SaveClip.App_730515885_17893691634542891_8634145309313322712_n-007yZPeCuUosRihs1HXyYdVdaNCQFZ.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548527103-SaveClip.App_730160925_17893691643542891_5980899960621597379_n-9degMoaEfI5wDOW9xWiPPfruRCyui9.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548528772-SaveClip.App_729167944_17893691652542891_788632831794044317_n-WbopjggZe5egh44XHTgsOoCXAE1vDz.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548530173-SaveClip.App_729784885_17893691664542891_6263175419795910834_n-oVXpOLIxtBvX7B6ORbxu0GlhIBcJcf.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-3008-uwsc/1786548531962-SaveClip.App_728794884_17893691685542891_413685646924576934_n-fKZQrq7YUDmMHi3QxqCU7OGVZ6MXFs.jpg"
+      ],
+      "orden": 30
     }
   ]
 }
