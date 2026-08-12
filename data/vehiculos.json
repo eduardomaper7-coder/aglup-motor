@@ -1489,6 +1489,36 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/citroen-c4-cactus-8xv3/1786552534456-c8e8473b-9835-4037-a9f5-853bda999819-iV39Z2ZICGlUeXif93S0treWjhq6dt.webp"
       ],
       "orden": 47
+    },
+    {
+      "slug": "mini-mini-cooper-apmi",
+      "marca": "MINI",
+      "modelo": "Cooper",
+      "titulo": "MINI Mini Cooper",
+      "precio": "6.490",
+      "categoria": "segunda-mano",
+      "anio": "2008",
+      "km": "225.000",
+      "potencia": "120",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mini-mini-cooper-apmi/1786552615300-0a207ead-57a1-473a-bc38-874fc7a6c0c3-hXsmZnjQogpb39Avn0Efvs5nCE07d7.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mini-mini-cooper-apmi/1786552616875-b0d28b4e-a7bb-4e76-8094-503c73904662-cKvbr4OGNhn4qIqH0hldqHV0QVIQwQ.webp"
+      ],
+      "orden": 48
     }
   ]
 }
