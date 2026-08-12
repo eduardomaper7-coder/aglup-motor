@@ -1922,6 +1922,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-m-iezl/1786554658117-4a6e987f-2713-4eb5-a632-4c83b8b1dba7-gHXmnqpfviquismUDk4lD9QTH1kPje.webp"
       ],
       "orden": 61
+    },
+    {
+      "slug": "peugeot-108-mwy6",
+      "marca": "Peugeot",
+      "modelo": "108",
+      "titulo": "Peugeot 108",
+      "precio": "7.490",
+      "categoria": "ocasion",
+      "anio": "2014",
+      "km": "113.000",
+      "potencia": "82",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "gasolina",
+          "texto": "Gasolina"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-mwy6/1786554864078-4af8e62f-ac83-4371-9bf4-78851e21c680-EYmacENaIN6k9o6Yiivc9KrIidqx3y.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-mwy6/1786554865727-57ff440e-9a2c-41c7-8672-dae671ad0071-Bg59HKh28IuVmsLv0pzD9vhqci2F30.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-108-mwy6/1786554867403-faaa726e-5365-4e09-895b-a8fd9995897b-LgUhCvxEO29ZWi9iXlPwBwMtw0Z2J4.webp"
+      ],
+      "orden": 62
     }
   ]
 }
