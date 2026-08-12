@@ -1674,6 +1674,37 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/ford-c-max-pkat/1786553310533-d9529149-d925-4b43-bc07-c74489671833-D9aBqRzAvrStEcDeLL9mGoqc1VzLtn.webp"
       ],
       "orden": 53
+    },
+    {
+      "slug": "mercedes-clase-c-rsbu",
+      "marca": "Mercedes-Benz",
+      "modelo": "Clase C",
+      "titulo": "Mercedes Clase C",
+      "precio": "29.990",
+      "categoria": "segunda-mano",
+      "anio": "2016",
+      "km": "164.000",
+      "potencia": "170",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-c-rsbu/1786553411461-dd66d336-73d8-483a-8f09-9bdf1609c5c0-Ewzr6ZuANDFCshvwTKd9C5XP7nj2GP.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-c-rsbu/1786553413053-0d0abc99-b22d-47b4-a42e-b470dba55bc2-fARX2F6Rb2ZLLyWtMQ3ukZi5AxKwdZ.webp",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/mercedes-clase-c-rsbu/1786553415004-b17c1d64-267a-41bd-9711-61347ba154e2-jTOQ0JBCUSUbtti6Jw7OI0NhyuuBa8.webp"
+      ],
+      "orden": 54
     }
   ]
 }
