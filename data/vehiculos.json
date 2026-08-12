@@ -1215,6 +1215,42 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/opel-corsa-laj0/1786549761520-SaveClip.App_713423729_17890299834542891_1556629365235516996_n--1--XKBeTBybpGeA8qIVWyaTZl5AZstA6s.jpg"
       ],
       "orden": 38
+    },
+    {
+      "slug": "peugeot-rifter-nhd1",
+      "marca": "PEUGEOT",
+      "modelo": "RIFTER",
+      "titulo": "PEUGEOT RIFTER",
+      "precio": "19990",
+      "categoria": "ocasion",
+      "anio": "2023",
+      "km": "80.000",
+      "potencia": "130",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [
+        {
+          "slug": "diesel",
+          "texto": "Diésel"
+        }
+      ],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549851353-SaveClip.App_713004191_17890298970542891_3745784294943031659_n-Dm8e5cUz6XhHVKggMX4qZDB4uwzQua.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549852901-SaveClip.App_716270575_17890298988542891_1287024151325410522_n-N7dJQNktgiBI3C1QdnipX4rNIkjhAX.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549854686-SaveClip.App_712883239_17890298997542891_8721177337943490487_n-hKZcMVd15iIa8v4RlKjYDDh4wpufEK.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549856124-SaveClip.App_712984961_17890299006542891_2283211808110043154_n-qNrjegq1iox900eYCgSWJVezXVX33q.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549858139-SaveClip.App_717006439_17890299015542891_7509527696011325558_n-k1UAeFoI7ZZcvR6FHoToPUExdEQDIc.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549859461-SaveClip.App_712357257_17890299036542891_7632029710287707198_n-aGHYoK1jn8JRCeykdMeqW52s8PT3IH.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549860875-SaveClip.App_712903679_17890299024542891_4164248859348183007_n-AxQOwIaFNt22oz8NyZYkEIsnpr2BTp.jpg",
+        "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/peugeot-rifter-nhd1/1786549862682-SaveClip.App_715304470_17890299066542891_367390071561078008_n-BwDClxoccDClRu1vCr5u48D3JoQKOP.jpg"
+      ],
+      "orden": 39
     }
   ]
 }
