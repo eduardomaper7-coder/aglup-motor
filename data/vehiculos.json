@@ -300,6 +300,28 @@
         "https://i5yycnoqim73ainy.public.blob.vercel-storage.com/vehiculos/fiat-panda-1-2-nijq/1786528046696-SaveClip.App_772840388_17903021448542891_599547410380130079_n-sTKVfb9zNUX7UhQrITpGSswCTufCY2.jpg"
       ],
       "orden": 14
+    },
+    {
+      "slug": "opel-mokka-x",
+      "marca": "Opel",
+      "modelo": "Mokka X",
+      "titulo": "Opel Mokka X",
+      "precio": "",
+      "categoria": "ocasion",
+      "anio": "2017",
+      "km": "",
+      "potencia": "140",
+      "puertas": "",
+      "cambio": "manual",
+      "cambioTexto": "Manual",
+      "combustibles": [],
+      "etiquetaDgt": "",
+      "garantiaTexto": "Garantía incluida: 12 meses",
+      "vendido": false,
+      "reservado": false,
+      "borrador": false,
+      "fotos": [],
+      "orden": 15
     }
   ]
 }
