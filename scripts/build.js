@@ -357,7 +357,13 @@ function spliceGrid(fileContent, gridInnerHtml, gridEnd) {
   }
   const before = fileContent.slice(0, contentStart);
   const after = fileContent.slice(endIdx);
-  return before + '\n' + gridInnerHtml + '\n' + after;
+  // El div.w-grid-list original se cerraba justo antes de gridEnd, pero ese
+  // cierre formaba parte del contenido antiguo que estamos descartando (las
+  // tarjetas viejas). Si no se vuelve a añadir aquí, el div se queda abierto
+  // para siempre: el navegador termina metiendo el resto de la página dentro
+  // de él, lo que rompe la maquetación del listado (columna estrecha, altura
+  // gigantesca, texto cortado).
+  return before + '\n' + gridInnerHtml + '\n</div>\n' + after;
 }
 
 function main() {
