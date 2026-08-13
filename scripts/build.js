@@ -341,7 +341,18 @@ function spliceSelectOptions(fileContent, selectName, innerHtml) {
   return fileContent.slice(0, contentStart) + innerHtml + fileContent.slice(endIdx);
 }
 
-function spliceGrid(fileContent, gridInnerHtml, gridEnd) {
+// Mensaje de "sin resultados" que WordPress deja en el HTML estático cuando,
+// en el momento de la migración, esa categoría no tenía ningún vehículo
+// publicado (p. ej. "segunda mano" estaba vacía en ese momento). El bloque
+// queda congelado tal cual en el fichero para siempre porque spliceGrid solo
+// toca la parte de arriba (las tarjetas); si no se retira aquí, el mensaje se
+// sigue mostrando aunque ya haya vehículos, y si no se vuelve a añadir cuando
+// la categoría SÍ está vacía, no se avisa de nada. Por eso lo gestionamos a
+// mano a partir de la lista real de vehículos en cada build.
+const NO_RESULTS_RE = /<div class="w-grid-none[^"]*">[^<]*<\/div>/;
+const NO_RESULTS_HTML = '<div class="w-grid-none type_message">No se han encontrado resultados.</div>';
+
+function spliceGrid(fileContent, gridInnerHtml, gridEnd, listaVacia) {
   const divIdx = fileContent.indexOf('<div class="w-grid-list');
   if (divIdx === -1) {
     throw new Error('No se ha encontrado el contenedor w-grid-list en el fichero.');
@@ -356,7 +367,14 @@ function spliceGrid(fileContent, gridInnerHtml, gridEnd) {
     throw new Error('No se ha encontrado el final del bloque de listado en el fichero.');
   }
   const before = fileContent.slice(0, contentStart);
-  const after = fileContent.slice(endIdx);
+  let after = fileContent.slice(endIdx);
+  // Quita cualquier mensaje de "sin resultados" congelado de la migración;
+  // si de verdad no hay vehículos en esta categoría, se vuelve a añadir justo
+  // debajo, así siempre refleja el estado real en vez de uno fosilizado.
+  after = after.replace(NO_RESULTS_RE, '');
+  if (listaVacia) {
+    after = after.replace(gridEnd, NO_RESULTS_HTML + gridEnd);
+  }
   // El div.w-grid-list original se cerraba justo antes de gridEnd, pero ese
   // cierre formaba parte del contenido antiguo que estamos descartando (las
   // tarjetas viejas). Si no se vuelve a añadir aquí, el div se queda abierto
@@ -403,8 +421,20 @@ function main() {
     }
     const lista = categoria ? ordenados.filter((v) => v.categoria === categoria) : ordenados;
     const cardsHtml = categoria ? cardsHtmlPara(lista) : cardsHtmlTodos;
-    const original = readFile(file);
-    let actualizado = spliceGrid(original, cardsHtml, gridEnd);
+    let original = readFile(file);
+    // Otro resto congelado de la migración: si en el momento de exportar la
+    // página desde WordPress esa categoría estaba vacía, el contenedor
+    // ".w-grid" del listado se exportó con la clase "hidden" puesta (en el
+    // sitio real la quitaba JS al cargar los resultados por AJAX). Como aquí
+    // no hay AJAX, esa clase se queda para siempre y el listado no se ve
+    // nunca aunque ya tenga vehículos - solo la quitamos del contenedor del
+    // grid en sí (el "hidden" de otros elementos, como el botón "Cargar más",
+    // es intencional y no se toca).
+    original = original.replace(
+      /(class="w-grid us_product_list[^"]*?)\bhidden\s*/,
+      '$1'
+    );
+    let actualizado = spliceGrid(original, cardsHtml, gridEnd, lista.length === 0);
     if (filtro) {
       actualizado = spliceSelectOptions(
         actualizado,
