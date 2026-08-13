@@ -1,7 +1,7 @@
 const { put } = require('@vercel/blob');
 const { sendText, getMediaUrl, downloadMedia } = require('./_lib/whatsapp');
 const { getSession, saveSession, clearSession, mutarSesion } = require('./_lib/sessions');
-const { crearVehiculoBorrador } = require('./_lib/vehiculos-store');
+const { crearVehiculoBorrador, calcularCategoria } = require('./_lib/vehiculos-store');
 
 // ---------------------------------------------------------------------------
 // Bot de WhatsApp: guía al cliente paso a paso para dar de alta un vehículo.
@@ -15,8 +15,6 @@ const TEXTOS = {
   pideFotoOtraVez: 'Manda al menos una foto y luego escribe *LISTO* para continuar.',
   fotoRecibida: (n) => `Foto ${n} recibida ✅. Manda más fotos o escribe *LISTO* para continuar.`,
   pideTitulo: '¿Marca y modelo del coche? (ejemplo: Audi A1 Adrenalin)',
-  pideCategoria: '¿Categoría? Responde: ocasión, segunda mano o seminuevo',
-  categoriaInvalida: 'No reconozco esa opción. Responde: ocasión, segunda mano o seminuevo',
   pidePrecio: '¿Precio de venta en euros? (solo el número, ejemplo: 11000)',
   precioInvalido: 'No he entendido el precio. Manda solo el número, ejemplo: 11000',
   pideAnio: '¿Año de matriculación? (ejemplo: 2019)',
@@ -53,14 +51,6 @@ const CAMBIOS = {
   automático: { slug: 'automatico', texto: 'Automático' },
 };
 
-const CATEGORIAS = {
-  ocasion: 'ocasion',
-  'ocasión': 'ocasion',
-  'segunda mano': 'segunda-mano',
-  segundamano: 'segunda-mano',
-  'segunda-mano': 'segunda-mano',
-  seminuevo: 'seminuevo',
-};
 const CATEGORIA_TEXTO = { ocasion: 'Ocasión', 'segunda-mano': 'Segunda mano', seminuevo: 'Seminuevo' };
 
 function normalizar(texto) {
@@ -169,15 +159,6 @@ async function procesarMensaje(telefono, mensaje) {
       session.datos.titulo = original;
       session.datos.marca = partes[0] || '';
       session.datos.modelo = partes.slice(1).join(' ');
-      session.step = 'categoria';
-      await saveSession(telefono, session, sha);
-      return TEXTOS.pideCategoria;
-    }
-    case 'categoria': {
-      const clave = normalizar(original);
-      const slug = CATEGORIAS[clave];
-      if (!slug) return TEXTOS.categoriaInvalida;
-      session.datos.categoria = slug;
       session.step = 'precio';
       await saveSession(telefono, session, sha);
       return TEXTOS.pidePrecio;
@@ -203,6 +184,8 @@ async function procesarMensaje(telefono, mensaje) {
       const digitos = soloDigitos(original);
       if (!digitos) return TEXTOS.kmInvalido;
       session.datos.km = `${digitos} km`;
+      // Ya tenemos año y km: la categoría se calcula sola, no se pregunta.
+      session.datos.categoria = calcularCategoria(session.datos.anio, session.datos.km);
       session.step = 'potencia';
       await saveSession(telefono, session, sha);
       return TEXTOS.pidePotencia;

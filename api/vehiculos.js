@@ -1,5 +1,6 @@
 const { checkAuth } = require('./_lib/auth');
 const { getFile, putFile, deleteFile, triggerDeploy } = require('./_lib/github');
+const { calcularCategoria } = require('./_lib/vehiculos-store');
 
 const DATA_PATH = 'data/vehiculos.json';
 
@@ -61,6 +62,12 @@ module.exports = async (req, res) => {
         seminuevo: 'Seminuevo',
         'sin-categorizar': 'Sin categorizar',
       };
+
+      // La categoría ya no se elige a mano desde el panel: se calcula aquí
+      // siempre a partir del año y los kilómetros, tanto al crear como al
+      // editar (así si se corrige el año o el kilometraje, la categoría se
+      // recalcula sola).
+      incoming.categoria = calcularCategoria(incoming.anio, incoming.km);
 
       let index = -1;
       if (incoming.slug) {

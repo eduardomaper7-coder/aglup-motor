@@ -118,6 +118,11 @@
     border-radius: 6px; font-size: 14px;
   }
   textarea { resize: vertical; min-height: 50px; }
+  .categoria-auto {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--gris-borde);
+    border-radius: 6px; font-size: 14px; background: #f5f5f5; color: #333;
+    box-sizing: border-box;
+  }
   .checks { display: flex; gap: 14px; flex-wrap: wrap; }
   .checks label { display: flex; align-items: center; gap: 6px; font-weight: 400; }
   .separador { border: none; border-top: 1px solid var(--gris-borde); margin: 20px 0; }
@@ -210,13 +215,8 @@
         <input type="text" id="fPrecio" placeholder="11.000" />
       </div>
       <div>
-        <label>Categoría</label>
-        <select id="fCategoria">
-          <option value="ocasion">Ocasión</option>
-          <option value="segunda-mano">Segunda mano</option>
-          <option value="seminuevo">Seminuevo</option>
-          <option value="sin-categorizar">Sin categorizar</option>
-        </select>
+        <label>Categoría (automática)</label>
+        <div class="categoria-auto" id="fCategoriaAuto">—</div>
       </div>
     </div>
 
@@ -321,6 +321,31 @@ function slugify(s) {
     .replace(/(^-|-$)/g, '');
 }
 
+// La categoría ya no se elige a mano: se calcula sola a partir del año y los
+// kilómetros. Esta función es solo para la vista previa en el formulario;
+// quien decide de verdad al guardar es el servidor (misma regla, por si
+// alguna vez difieren no se puede "hacer trampa" desde el navegador).
+const CATEGORIA_TEXTO = { ocasion: 'Ocasión', 'segunda-mano': 'Segunda mano', seminuevo: 'Seminuevo' };
+function numeroDe(valor) {
+  const digitos = String(valor == null ? '' : valor).replace(/[^0-9]/g, '');
+  return digitos ? parseInt(digitos, 10) : null;
+}
+function calcularCategoriaPreview(anioValor, kmValor) {
+  const anioNum = numeroDe(anioValor);
+  const anioActual = new Date().getFullYear();
+  const anio = anioNum && anioNum > 1900 && anioNum <= anioActual + 1 ? anioNum : null;
+  const km = numeroDe(kmValor);
+  if (anio !== null && anio >= anioActual - 6 && km !== null && km <= 50000) return 'seminuevo';
+  if ((km !== null && km >= 150000) || (anio !== null && anio <= 2012)) return 'ocasion';
+  return 'segunda-mano';
+}
+function actualizarCategoriaPreview() {
+  const cat = calcularCategoriaPreview($('fAnio').value, $('fKm').value);
+  $('fCategoriaAuto').textContent = CATEGORIA_TEXTO[cat] || cat;
+}
+$('fAnio').addEventListener('input', actualizarCategoriaPreview);
+$('fKm').addEventListener('input', actualizarCategoriaPreview);
+
 function apiFetch(url, options = {}) {
   return fetch(url, {
     ...options,
@@ -410,7 +435,7 @@ function renderLista() {
         <div class="cuerpo">
           <h3>${escapeHtml(v.titulo)}</h3>
           <div class="precio">${escapeHtml(v.precio || '')} €</div>
-          <div class="meta">${escapeHtml(v.anio || '')} · ${escapeHtml(v.km || '')} · ${escapeHtml(v.potencia || '')}</div>
+          <div class="meta">${escapeHtml(v.anio || '')} · ${escapeHtml(v.km || '')} · ${escapeHtml(v.potencia || '')} · ${escapeHtml((datos.categorias && datos.categorias[v.categoria]) || CATEGORIA_TEXTO[v.categoria] || v.categoria || '')}</div>
           <div class="acciones">
             <button class="btn-secundario btn-mini" data-accion="editar">Editar</button>
             <button class="btn-primario btn-mini" data-accion="publicar">Publicar</button>
@@ -526,9 +551,9 @@ function abrirFormulario(vehiculo) {
   $('fModelo').value = vehiculo?.modelo || '';
   $('fTitulo').value = vehiculo?.titulo || '';
   $('fPrecio').value = vehiculo?.precio || '';
-  $('fCategoria').value = vehiculo?.categoria || 'ocasion';
   $('fAnio').value = vehiculo?.anio || '';
   $('fKm').value = vehiculo?.km || '';
+  actualizarCategoriaPreview();
   $('fPotencia').value = vehiculo?.potencia || '';
   $('fPuertas').value = vehiculo?.puertas || '';
   $('fCambio').value = vehiculo?.cambio || 'manual';
@@ -570,7 +595,6 @@ function recogerFormulario() {
     modelo: $('fModelo').value.trim(),
     titulo: $('fTitulo').value.trim(),
     precio: $('fPrecio').value.trim(),
-    categoria: $('fCategoria').value,
     anio: $('fAnio').value.trim(),
     km: $('fKm').value.trim(),
     potencia: $('fPotencia').value.trim(),

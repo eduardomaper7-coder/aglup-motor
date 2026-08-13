@@ -21,6 +21,49 @@ function slugify(s) {
     .replace(/(^-|-$)/g, '');
 }
 
+// Extrae el primer número de una cadena tipo "120000 km" o "13.990" y lo
+// devuelve como entero, o null si no hay ningún dígito.
+function numeroDe(valor) {
+  const digitos = String(valor == null ? '' : valor).replace(/[^0-9]/g, '');
+  return digitos ? parseInt(digitos, 10) : null;
+}
+
+// ---------------------------------------------------------------------------
+// Clasificación automática de la categoría de un vehículo.
+//
+// Ni el panel /admin ni el bot de WhatsApp piden ya la categoría: se calcula
+// aquí a partir del año de matriculación y los kilómetros, con estas reglas
+// (pensadas para el stock habitual del concesionario, con muchos vehículos
+// de kilometraje alto):
+//
+//   - "seminuevo": matriculado en los últimos 6 años Y con 50.000 km o menos
+//     (poco uso, prácticamente nuevo).
+//   - "ocasion": muy rodado (150.000 km o más) o muy antiguo (2012 o
+//     anterior) — el lote de vehículos económicos/de oportunidad.
+//   - "segunda-mano": el resto — el grueso habitual del stock.
+//
+// Un año fuera de rango (p. ej. un error de escritura como "18" en vez de
+// "2018") se descarta como dato no fiable en vez de usarse tal cual.
+const SEMINUEVO_ANTIGUEDAD_MAX_ANIOS = 6;
+const SEMINUEVO_KM_MAX = 50000;
+const OCASION_KM_MIN = 150000;
+const OCASION_ANIO_MAX = 2012;
+
+function calcularCategoria(anioValor, kmValor) {
+  const anioNum = numeroDe(anioValor);
+  const anioActual = new Date().getFullYear();
+  const anio = anioNum && anioNum > 1900 && anioNum <= anioActual + 1 ? anioNum : null;
+  const km = numeroDe(kmValor);
+
+  if (anio !== null && anio >= anioActual - SEMINUEVO_ANTIGUEDAD_MAX_ANIOS && km !== null && km <= SEMINUEVO_KM_MAX) {
+    return 'seminuevo';
+  }
+  if ((km !== null && km >= OCASION_KM_MIN) || (anio !== null && anio <= OCASION_ANIO_MAX)) {
+    return 'ocasion';
+  }
+  return 'segunda-mano';
+}
+
 async function loadVehiculos() {
   const file = await getFile(DATA_PATH);
   if (!file) {
@@ -64,7 +107,7 @@ async function crearVehiculoBorrador(datos, fotos) {
     marca: datos.marca || '',
     modelo: datos.modelo || '',
     titulo: datos.titulo,
-    categoria: datos.categoria || 'sin-categorizar',
+    categoria: calcularCategoria(datos.anio, datos.km),
     precio: datos.precio,
     anio: datos.anio,
     km: datos.km,
@@ -98,4 +141,5 @@ module.exports = {
   nextOrden,
   uniqueSlug,
   crearVehiculoBorrador,
+  calcularCategoria,
 };
