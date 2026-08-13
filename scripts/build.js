@@ -26,7 +26,34 @@ const GRID_END_CAROUSEL = '<div class="w-grid-carousel-json';
 
 const LISTING_PAGES = [
   { file: path.join(ROOT, 'index.html'), gridEnd: GRID_END_CAROUSEL },
-  { file: path.join(ROOT, 'coches-tenerife', 'index.html'), gridEnd: GRID_END_LOADMORE },
+  { file: path.join(ROOT, 'coches-tenerife', 'index.html'), gridEnd: GRID_END_LOADMORE, filtro: true },
+  // Páginas de categoría (enlazadas desde el menú "Comprar coche"): antes se
+  // quedaban congeladas con el contenido original de la migración porque
+  // nunca se regeneraban. Cada una solo muestra los vehículos de su categoría.
+  {
+    file: path.join(ROOT, 'coche', 'ocasion', 'index.html'),
+    gridEnd: GRID_END_LOADMORE,
+    categoria: 'ocasion',
+    filtro: true,
+  },
+  {
+    file: path.join(ROOT, 'coche', 'segunda-mano', 'index.html'),
+    gridEnd: GRID_END_LOADMORE,
+    categoria: 'segunda-mano',
+    filtro: true,
+  },
+  {
+    file: path.join(ROOT, 'coche', 'seminuevo', 'index.html'),
+    gridEnd: GRID_END_LOADMORE,
+    categoria: 'seminuevo',
+    filtro: true,
+  },
+  {
+    file: path.join(ROOT, 'coche', 'sin-categorizar', 'index.html'),
+    gridEnd: GRID_END_LOADMORE,
+    categoria: 'sin-categorizar',
+    filtro: true,
+  },
 ];
 
 function log(...args) {
@@ -203,6 +230,14 @@ function slugify(s) {
     .replace(/(^-|-$)/g, '');
 }
 
+// Extrae solo los dígitos de un texto tipo "13.990" o "165000 km" y lo
+// devuelve como número (o '' si no hay ninguno) — para poder filtrar/ordenar
+// en el navegador sin tener que volver a parsear el texto formateado.
+function soloNumero(texto) {
+  const digitos = String(texto ?? '').replace(/[^0-9]/g, '');
+  return digitos === '' ? '' : String(parseInt(digitos, 10));
+}
+
 function buildCardHtml(tplCard, v, categorias, isFirst, isLast) {
   let out = tplCard;
   const posClass = [isFirst ? 'first' : '', isLast ? 'last' : ''].filter(Boolean).join(' ');
@@ -223,11 +258,87 @@ function buildCardHtml(tplCard, v, categorias, isFirst, isLast) {
     '{{ANIO}}': v.anio,
     '{{CAMBIO_SLUG}}': v.cambio,
     '{{CAMBIO_TEXTO}}': v.cambioTexto,
+    '{{DATA_PRECIO}}': soloNumero(v.precio),
+    '{{DATA_KM}}': soloNumero(v.km),
+    '{{DATA_ANIO}}': soloNumero(v.anio),
+    '{{DATA_MARCA_SLUG}}': slugify(v.marca),
+    '{{DATA_MODELO_SLUG}}': slugify(v.modelo),
+    '{{DATA_COMBUSTIBLE_SLUGS}}': (v.combustibles || []).map((c) => c.slug).join(' '),
+    '{{DATA_VENDIDO}}': v.vendido ? '1' : '0',
   };
   for (const [token, value] of Object.entries(replacements)) {
     out = out.split(token).join(value ?? '');
   }
   return out;
+}
+
+// ---- Opciones dinámicas del buscador avanzado (Marca/Modelo/Combustible/Cambio) ----
+// El widget original traía las opciones fijas de la migración (Audi, Mercedes,
+// Nissan, Opel...) y nunca se actualizaban con el catálogo real, así que el
+// filtro no encontraba coincidencias. Aquí se recalculan en cada build a
+// partir de los vehículos publicados.
+
+function buildFiltroOpciones(vehiculos) {
+  const marcas = new Map(); // slug -> texto
+  const modelos = new Map(); // slug -> { texto, marcaSlug }
+  const combustibles = new Map(); // slug -> texto
+  const cambios = new Map(); // slug -> texto
+
+  for (const v of vehiculos) {
+    const marcaSlug = slugify(v.marca);
+    if (marcaSlug && !marcas.has(marcaSlug)) marcas.set(marcaSlug, v.marca);
+    const modeloSlug = slugify(v.modelo);
+    if (modeloSlug && !modelos.has(modeloSlug)) modelos.set(modeloSlug, { texto: v.modelo, marcaSlug });
+    for (const c of v.combustibles || []) {
+      if (c.slug && !combustibles.has(c.slug)) combustibles.set(c.slug, c.texto);
+    }
+    if (v.cambio && !cambios.has(v.cambio)) cambios.set(v.cambio, v.cambioTexto || v.cambio);
+  }
+
+  const porTexto = (texto) => (a, b) => String(a[1]).localeCompare(String(b[1]), 'es');
+
+  const opcionesMarca = [...marcas.entries()]
+    .sort(porTexto())
+    .map(([slug, texto]) => `<option value="${slug}">${texto}</option>`)
+    .join('');
+
+  const opcionesModelo = [...modelos.entries()]
+    .sort((a, b) => String(a[1].texto).localeCompare(String(b[1].texto), 'es'))
+    .map(([slug, { texto, marcaSlug }]) => `<option value="${slug}" data-marca="${marcaSlug}">${texto}</option>`)
+    .join('');
+
+  const opcionesCombustible = [...combustibles.entries()]
+    .sort(porTexto())
+    .map(([slug, texto]) => `<option value="${slug}">${texto}</option>`)
+    .join('');
+
+  const opcionesCambio = [...cambios.entries()]
+    .sort(porTexto())
+    .map(([slug, texto]) => `<option value="${slug}">${texto}</option>`)
+    .join('');
+
+  return { opcionesMarca, opcionesModelo, opcionesCombustible, opcionesCambio };
+}
+
+// Sustituye el contenido de un <select name="..."> por las opciones dadas,
+// buscando siempre el marcador name="..."> y el siguiente </select> (igual
+// que spliceGrid con el listado de tarjetas). A diferencia de un token
+// {{...}}, este marcador no se "consume": sigue estando en el fichero
+// después de cada build, así que las opciones se pueden refrescar de nuevo
+// en el build siguiente en vez de quedarse congeladas con lo que hubiera la
+// primera vez (era el mismo problema que tenían las páginas de categoría).
+function spliceSelectOptions(fileContent, selectName, innerHtml) {
+  const marker = `name="${selectName}">`;
+  const idx = fileContent.indexOf(marker);
+  if (idx === -1) {
+    throw new Error(`No se ha encontrado el <select name="${selectName}"> en el fichero.`);
+  }
+  const contentStart = idx + marker.length;
+  const endIdx = fileContent.indexOf('</select>', contentStart);
+  if (endIdx === -1) {
+    throw new Error(`No se ha encontrado el cierre </select> de ${selectName}.`);
+  }
+  return fileContent.slice(0, contentStart) + innerHtml + fileContent.slice(endIdx);
 }
 
 function spliceGrid(fileContent, gridInnerHtml, gridEnd) {
@@ -271,20 +382,47 @@ function main() {
     log('Ficha generada:', `coches/${v.slug}/index.html`);
   }
 
-  // 2. Tarjetas del listado (mismo grid en home y en coches-tenerife)
-  const cardsHtml = ordenados
-    .map((v, i) => buildCardHtml(tplCard, v, categorias, i === 0, i === ordenados.length - 1))
-    .join('\n');
+  // 2. Tarjetas de cada listado. Home y coches-tenerife muestran todo; las
+  // páginas de categoría solo los vehículos de esa categoría.
+  function cardsHtmlPara(lista) {
+    return lista.map((v, i) => buildCardHtml(tplCard, v, categorias, i === 0, i === lista.length - 1)).join('\n');
+  }
+  const cardsHtmlTodos = cardsHtmlPara(ordenados);
+  const filtroOpciones = buildFiltroOpciones(ordenados);
 
-  for (const { file, gridEnd } of LISTING_PAGES) {
+  for (const { file, gridEnd, categoria, filtro } of LISTING_PAGES) {
     if (!fs.existsSync(file)) {
       log('AVISO: no existe', file, '- se omite.');
       continue;
     }
+    const lista = categoria ? ordenados.filter((v) => v.categoria === categoria) : ordenados;
+    const cardsHtml = categoria ? cardsHtmlPara(lista) : cardsHtmlTodos;
     const original = readFile(file);
-    const actualizado = spliceGrid(original, cardsHtml, gridEnd);
+    let actualizado = spliceGrid(original, cardsHtml, gridEnd);
+    if (filtro) {
+      actualizado = spliceSelectOptions(
+        actualizado,
+        'f_marca',
+        '<option value="">Todas las marcas</option>' + filtroOpciones.opcionesMarca
+      );
+      actualizado = spliceSelectOptions(
+        actualizado,
+        'f_modelo',
+        '<option value="">Todos los modelos</option>' + filtroOpciones.opcionesModelo
+      );
+      actualizado = spliceSelectOptions(
+        actualizado,
+        'f_combustible',
+        '<option value="">Cualquiera</option>' + filtroOpciones.opcionesCombustible
+      );
+      actualizado = spliceSelectOptions(
+        actualizado,
+        'f_cambio',
+        '<option value="">Cualquiera</option>' + filtroOpciones.opcionesCambio
+      );
+    }
     writeFile(file, actualizado);
-    log('Listado actualizado:', path.relative(ROOT, file));
+    log('Listado actualizado:', path.relative(ROOT, file), `(${lista.length} vehículos)`);
   }
 
   log('Build completado.');
